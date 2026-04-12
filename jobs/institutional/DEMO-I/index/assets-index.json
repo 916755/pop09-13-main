@@ -1,0 +1,17 @@
+[
+  {
+    "label": "INST-WING-A",
+    "path": "./images/INST-WING-A.png",
+    "thumb": "./thumbs/INST-WING-A.png"
+  },
+  {
+    "label": "INST-WING-B",
+    "path": "./images/INST-WING-B.png",
+    "thumb": "./thumbs/INST-WING-B.png"
+  },
+  {
+    "label": "INST-PLAN-A",
+    "path": "./images/INST-PLAN-A.png",
+    "thumb": "./thumbs/INST-PLAN-A.png"
+  }
+]

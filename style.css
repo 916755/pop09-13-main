@@ -1,0 +1,528 @@
+/* ===========================
+   Prince of Prints — DEMO CSS
+   Clean, single-layout, stable viewer sizing
+   =========================== */
+
+:root{
+  --bg:#0f172a;
+  --panel:#0b1220;
+  --panel2:#111827;
+  --line:#1f2937;
+  --muted:#9aa4b2;
+  --text:#e5e7eb;
+
+  --accent:#22d3ee;
+  --ring: rgba(34, 211, 238, 0.35);
+
+  --danger:#b30000;
+
+  --page-max: 1100px;
+  --page-pad: 18px;
+
+  --radius: 14px;
+}
+
+*{ box-sizing:border-box; }
+html, body{ height:100%; }
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* ===== Page wrapper (ZOOM-STABLE) ===== */
+.page{
+  width: 100%;
+  max-width: var(--page-max);
+  margin-inline: auto;
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+  padding-bottom: 24px;
+}
+
+
+/* ===== Header / Footer ===== */
+.app-header, .app-footer{
+  background: linear-gradient(180deg, #0b1220, #0b1220d0);
+  border-bottom: 1px solid var(--line);
+}
+.app-footer{ border-top: 1px solid var(--line); border-bottom:none; }
+
+.app-header .page,
+.app-footer .page{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.app-header h1{
+  margin:0;
+  font-size: 22px;
+  letter-spacing: .3px;
+}
+.tagline{
+  margin:4px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+}
+#status-text{
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* ===== Main container ===== */
+main.container{
+  display:block;
+}
+main.container .page{
+  padding-top: 18px;
+}
+
+/* ===== Steps ===== */
+.step{
+  display:none;
+  width:100%;
+  max-width: 820px;    /* general steps */
+  margin: 16px auto;
+}
+.step.active{ display:block; }
+
+/* Step 4 wants to be wide */
+#step-4.step{
+  max-width: var(--page-max);
+}
+
+.visually-hidden{
+  position:absolute !important;
+  width:1px; height:1px;
+  padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0 0 0 0);
+  border:0;
+}
+
+/* ===== Controls ===== */
+.control{
+  display:grid;
+  gap:6px;
+  margin: 12px 0;
+}
+.control label{
+  font-size: 12px;
+  color: var(--muted);
+}
+
+select, input, button{
+  background: var(--panel);
+  color: var(--text);
+  border: 1px solid #253041;
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 16px;
+  outline:none;
+}
+
+select:focus, input:focus{
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--ring);
+}
+
+button{
+  cursor:pointer;
+  font-weight: 700;
+}
+button[disabled]{ opacity:.55; cursor:not-allowed; }
+
+/* Inline row controls (like jump input + button) */
+.row{
+  display:flex;
+  gap: 10px;
+  align-items: center;
+}
+.row > *{ flex:1 1 auto; }
+.row .tight{ flex: 0 0 auto; }
+
+/* ===== Step navigation buttons ===== */
+.step-nav{
+  display:flex;
+  gap:12px;
+  justify-content:flex-end;
+  align-items:center;
+  margin-top: 18px;
+}
+.step-nav .back-btn,
+.step-nav .next-btn{
+  min-height: 44px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #253041;
+  background: var(--panel);
+  color: var(--text);
+  font-size: 16px;
+  font-weight: 800;
+}
+.step-nav .back-btn:hover,
+.step-nav .next-btn:hover{
+  border-color: var(--accent);
+}
+
+/* ===== Viewer card ===== */
+.viewer{
+  width:100%;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 10px;
+  overflow: hidden;
+
+  /* keeps layout stable */
+  display: grid;
+  gap: 10px;
+}
+
+/* ===== Status toolbar (Step 4) ===== */
+.status-toolbar{
+  display:flex;
+  flex-wrap: wrap;
+  align-items:center;
+  gap: 10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  background: rgba(15, 23, 42, 0.9);
+  border: 1px solid var(--line);
+}
+
+.status-label{
+  font-size: 14px;
+  font-weight: 800;
+  color: var(--muted);
+  margin-right: 4px;
+}
+
+.status-btn{
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 14px;
+  font-weight: 900;
+  border: 1px solid transparent;
+  cursor:pointer;
+  white-space: nowrap;
+  min-height: 36px;
+}
+
+.status-btn.status-none{ background:#374151; border-color:#4b5563; color:#e5e7eb; }
+.status-btn.status-missing{ background:#facc15; border-color:#eab308; color:#111827; }
+.status-btn.status-rigged{ background:#f472b6; border-color:#db2777; color:#111827; }
+.status-btn.status-erected{ background:#60a5fa; border-color:#2563eb; color:#0b1120; }
+.status-btn.status-complete{ background:#4ade80; border-color:#16a34a; color:#052e16; }
+.status-btn.status-clear{
+  background: rgba(255,255,255,.08);
+  border-color: rgba(255,255,255,.25);
+  color: #e9eefc;
+}
+
+.status-btn:hover{ filter: brightness(1.05); }
+.status-btn.active{
+  box-shadow: 0 0 0 3px rgba(34,211,238,.45);
+  transform: translateY(-1px);
+}
+
+/* ===== Image wrapper + image ===== */
+#image-wrapper{
+  position: relative;      /* anchors overlay */
+  width: 100%;
+  display:block;
+}
+
+#image, #sheet-image{
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 75vh;        /* keeps it usable on laptop */
+  object-fit: contain;
+  display:block;
+  border-radius: 10px;
+
+  user-select:none;
+  -webkit-user-drag:none;
+  touch-action:auto;
+}
+
+/* Caption (created by JS) */
+#image-caption{
+  pointer-events:none;
+}
+
+/* ===== Prev/Next row ===== */
+.control.buttons{
+  display:flex;
+  gap: 10px;
+  justify-content:flex-end;
+}
+
+/* ===== Mapping overlay ===== */
+#map-layer{
+  position:absolute;
+  inset:0;
+  z-index: 20;
+  pointer-events:none; /* layer ignores clicks; children receive them */
+}
+
+/* Hotspots */
+.map-hit{
+  position:absolute;
+  box-sizing:border-box;
+  background: transparent;
+  border: none;
+  pointer-events:auto;
+  cursor:pointer;
+}
+
+/* Status fills + borders */
+.map-hit.status-yellow{ background: rgba(250,204,21,.40); border: 2px solid #eab308; }
+.map-hit.status-pink{ background: rgba(244,114,182,.40); border: 2px solid #db2777; }
+.map-hit.status-blue{ background: rgba(96,165,250,.40); border: 2px solid #2563eb; }
+.map-hit.status-green{ background: rgba(74,222,128,.40); border: 2px solid #16a34a; }
+
+/* ===== Demo banner + instructions ===== */
+#demo-banner{
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  width: 100%;
+  background: var(--danger);
+  color: #fff;
+  text-align:center;
+  font-weight: 1000;
+  padding: 8px 0;
+  letter-spacing: 1px;
+}
+
+#demo-instructions{
+  position: sticky;
+  top: 44px; /* sits below banner */
+  z-index: 9999;
+
+  width: min(820px, 100%);
+  margin: 10px auto 0;
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  padding: 10px 12px;
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+#demo-instructions ol{
+  margin: 6px 0 0 18px;
+}
+
+#demo-hide{
+  position:absolute;
+  top: 6px;
+  right: 8px;
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  cursor:pointer;
+}
+#demo-hide:hover{ color:#ffb3b3; }
+
+/* ===== Mobile tweaks ===== */
+@media (max-width: 520px){
+  .page{ --page-pad: 12px; }
+  .step{ margin: 12px auto; }
+  .status-toolbar{ border-radius: 16px; }
+  #image, #sheet-image{ max-height: 70vh; }
+}
+/* =========================
+   ZOOM-FIX OVERRIDES (LAST)
+   ========================= */
+
+/* 1) Prevent “mobile layout” from triggering on laptop just because you zoomed */
+@media (max-width: 700px) {
+  /* DELETE or comment out your old 700px block.
+     If you can't/don't want to delete it, neutralize its most harmful parts: */
+  #image, #sheet-image { max-height: none !important; }
+}
+
+/* 2) Make Step 4 + viewer truly full width */
+#step-4.step{
+  max-width: none !important;
+  width: 100% !important;
+  margin: 12px auto !important;
+}
+
+/* 3) Remove ANY max-height vh clamps (vh shrinks “visually” at high zoom) */
+#image, #sheet-image{
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  max-width: 100% !important;
+  object-fit: contain;
+  display: block;
+}
+
+/* 4) Ensure the viewer itself doesn't get constrained by inline/fit sizing */
+.viewer,
+#image-wrapper{
+  width: 100% !important;
+  max-width: none !important;
+}
+
+/* 5) Optional: reduce side padding so it feels less like “big borders” */
+.page{
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+/* ===== Let the blueprint grow on desktop zoom ===== */
+@media (min-width: 521px){
+  #image, #sheet-image{
+    max-height: none !important;
+  }
+}
+/* ===== DESKTOP ZOOM FIX: make Step 4 full-bleed (ignores max-width containers) ===== */
+@media (min-width: 521px){
+  #step-4{
+    max-width: none !important;
+    width: 100vw !important;                 /* take full viewport width */
+    margin-left: calc(50% - 50vw) !important;/* center full-bleed block */
+    margin-right: calc(50% - 50vw) !important;
+  }
+
+  #step-4 .viewer,
+  #step-4 #image-wrapper{
+    width: 100% !important;
+    max-width: none !important;
+  }
+
+  #step-4 #image,
+  #step-4 #sheet-image{
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+}
+/* ===== FINAL OVERRIDE: STOP SHRINKING ON BROWSER ZOOM ===== */
+#image, #sheet-image{
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;   /* <-- kills 75vh/70vh clamps */
+  max-width: 100% !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+/* ===== ABSOLUTE ZOOM LOCK (FINAL) ===== */
+#step-4,
+#step-4.step,
+.viewer,
+#image-wrapper{
+  width: 100% !important;
+  max-width: none !important;
+  height: auto !important;
+  max-height: none !important;
+  min-height: 0 !important;
+}
+
+#image,
+#sheet-image{
+  width: 100% !important;
+  height: auto !important;
+  max-width: 100% !important;
+  max-height: none !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+/* ===== IN-APP BLUEPRINT ZOOM (NOT BROWSER ZOOM) ===== */
+.zoom-toolbar{
+  display:flex;
+  gap:10px;
+  justify-content:flex-end;
+  align-items:center;
+}
+
+.zoom-toolbar button{
+  min-width: 56px;
+  padding: 10px 12px;
+  border-radius: 12px;
+  font-weight: 900;
+}
+
+#zoom-viewport{
+  width: 100%;
+  overflow: auto;              /* enables pan when zoomed */
+  border-radius: 12px;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* zoom stage scales image + overlay together */
+#zoom-stage{
+  transform-origin: top left;
+  transform: scale(var(--popZoom, 1));
+  width: fit-content;          /* allows stage to exceed viewport */
+}
+
+/* keep image natural; DO NOT max-height clamp */
+#image, #sheet-image{
+  max-height: none !important;
+}
+/* ===== POP ZOOM FIX: allow zoomed sheet to exceed the viewer and pan ===== */
+
+/* 1) Stop clipping the zoomed content */
+.viewer{
+  overflow: visible !important;
+}
+
+/* 2) The viewport must scroll when the stage is larger */
+#zoom-viewport{
+  overflow: auto !important;
+  max-height: none !important;
+}
+
+/* 3) Let the sheet be its natural width (not forced to fit 100%) */
+#image-wrapper{
+  width: fit-content !important;
+}
+
+#sheet-image, #image{
+  width: auto !important;
+  max-width: none !important;
+  height: auto !important;
+}
+/* === FIX: sticky header overlapping content === */
+:root{
+  --topbar-h: 92px; /* adjust if needed */
+}
+
+body{
+  padding-top: var(--topbar-h);
+}
+
+/* Prevent anchor/scroll-to headings from hiding under the header */
+[id]{
+  scroll-margin-top: calc(var(--topbar-h) + 16px);
+}
+/* ===============================
+   Inventory Checkmark Overlay
+=============================== */
+.hit.inventory-checked::after {
+  content: "✓";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  width: 18px;
+  height: 18px;
+  background: #2ecc71;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}

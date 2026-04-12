@@ -1,0 +1,934 @@
+[
+  {
+    "x": 446,
+    "y": 716,
+    "w": 66,
+    "h": 70,
+    "label": "237C",
+    "type": "member",
+    "fetch": "images/columns=C/237C.png",
+    "map": "jobs/industrial/24-36N/maps/members/237C.json"
+  },
+  {
+    "x": 505,
+    "y": 753,
+    "w": 159,
+    "h": 101,
+    "label": "288D",
+    "type": "member",
+    "fetch": "images/Braces=D/288D.png",
+    "map": "jobs/industrial/24-36N/maps/members/288D.json"
+  },
+  {
+    "x": 751,
+    "y": 751,
+    "w": 173,
+    "h": 102,
+    "label": "289D",
+    "type": "member",
+    "fetch": "images/Braces=D/289D.png",
+    "map": "jobs/industrial/24-36N/maps/members/289D.json"
+  },
+  {
+    "x": 522,
+    "y": 721,
+    "w": 867,
+    "h": 38,
+    "label": "369B",
+    "type": "member",
+    "fetch": "images/Beams=B/369B.png",
+    "map": "jobs/industrial/24-36N/maps/members/369B.json"
+  },
+  {
+    "x": 949,
+    "y": 751,
+    "w": 99,
+    "h": 96,
+    "label": "291D",
+    "type": "member",
+    "fetch": "images/Braces=D/291D.png",
+    "map": "jobs/industrial/24-36N/maps/members/291D.json"
+  },
+  {
+    "x": 1046,
+    "y": 768,
+    "w": 102,
+    "h": 80,
+    "label": "292D",
+    "type": "member",
+    "fetch": "images/Beaces=D/292D.png",
+    "map": "jobs/industrial/24-36N/maps/members/292D.json"
+  },
+  {
+    "x": 1174,
+    "y": 767,
+    "w": 105,
+    "h": 85,
+    "label": "294D",
+    "type": "member",
+    "fetch": "images/Braces=D/294D.png",
+    "map": "jobs/industrial/24-36N/maps/members/294D.json"
+  },
+  {
+    "x": 1292,
+    "y": 762,
+    "w": 94,
+    "h": 91,
+    "label": "296D",
+    "type": "member",
+    "fetch": "images/Braces=D/296D.png",
+    "map": "jobs/industrial/24-36N/maps/members/296D.json"
+  },
+  {
+    "x": 1382,
+    "y": 708,
+    "w": 59,
+    "h": 78,
+    "label": "235C",
+    "type": "member",
+    "fetch": "images/columns=C/235C.png", 
+    "map": "jobs/industrial/24-36N/maps/members/235C.json"
+  },
+  {
+    "x": 1387,
+    "y": 782,
+    "w": 33,
+    "h": 304,
+    "label": "338B",
+    "type": "member",
+    "fetch": "images/Braces=B/338B.png",  
+    "map": "jobs/industrial/24-36N/maps/members/338B.json"
+  },
+  {
+    "x": 1305,
+    "y": 979,
+    "w": 74,
+    "h": 104,
+    "label": "294D",
+    "type": "member",
+    "fetch": "images/Braces=D/294D.png",
+    "map": "jobs/industrial/24-36N/maps/members/294D.json"
+  },
+  {
+    "x": 1173,
+    "y": 986,
+    "w": 95,
+    "h": 96,
+    "label": "295D",
+    "type": "member",
+    "fetch": "images/Braces=D/295D.png",
+    "map": "jobs/industrial/24-36N/maps/members/295D.json"
+  },
+  {
+    "x": 1065,
+    "y": 976,
+    "w": 65,
+    "h": 108,
+    "label": "291D",
+    "type": "member",
+    "fetch": "images/Braces=D/291D.png",
+    "map": "jobs/industrial/24-36N/maps/members/291D.json"
+  },
+  {
+    "x": 950,
+    "y": 984,
+    "w": 83,
+    "h": 100,
+    "label": "293D",
+    "type": "member",
+    "fetch": "images/Braces=D/293D.png",
+    "map": "jobs/industrial/24-36N/maps/members/293D.json"
+  },
+  {
+    "x": 771,
+    "y": 986,
+    "w": 144,
+    "h": 94,
+    "label": "288D",
+    "type": "member",
+    "fetch": "images/Braces=D/288D.png",
+    "map": "jobs/industrial/24-36N/maps/members/288D.json"
+  },
+  {
+    "x": 492,
+    "y": 984,
+    "w": 156,
+    "h": 85,
+    "label": "290D",
+    "type": "member",
+    "fetch": "images/Braces=D/290D.png",
+    "map": "jobs/industrial/24-36N/maps/members/290D.json"
+  },
+  {
+    "x": 415,
+    "y": 1050,
+    "w": 118,
+    "h": 74,
+    "label": "238C",
+    "type": "member",
+    "fetch": "images/columns=C/238C.png",
+    "map": "jobs/industrial/24-36N/maps/members/238C.json"
+  },
+  {
+    "x": 517,
+    "y": 1078,
+    "w": 1295,
+    "h": 32,
+    "label": "329B",
+    "type": "member",
+    "fetch": "images/Beams=B/329B.png",
+    "map": "jobs/industrial/24-36N/maps/members/329B.json"
+  },
+  {
+    "x": 446,
+    "y": 802,
+    "w": 44,
+    "h": 1000,
+    "label": "367B",
+    "type": "member",
+    "fetch": "images/Columns=C/367B.png",
+    "map": "jobs/industrial/24-36N/maps/members/367B.json"
+  },
+  {
+    "x": 1130,
+    "y": 781,
+    "w": 48,
+    "h": 1033,
+    "label": "371B",
+    "type": "member",
+    "fetch": "images/Columns=C/371B.png",
+    "map": "jobs/industrial/24-36N/maps/members/371B.json"
+  },
+  {
+    "x": 1816,
+    "y": 779,
+    "w": 78,
+    "h": 1002,
+    "label": "372B",
+    "type": "member",
+    "fetch": "images/Columns=C/372B.png",
+    "map": "jobs/industrial/24-36N/maps/members/372B.json"
+  },
+  {
+    "x": 2510,
+    "y": 779,
+    "w": 78,
+    "h": 993,
+    "label": "368B",
+    "type": "member",
+    "fetch": "images/Columns=C/368B.png",
+    "map": "jobs/industrial/24-36N/maps/members/368B.json"
+  },
+  {
+    "x": 1850,
+    "y": 718,
+    "w": 66,
+    "h": 70,
+    "label": "234C",
+    "type": "member",
+    "fetch": "images/columns=C/234C.png",
+    "map": "jobs/industrial/24-36N/maps/members/234C.json"
+  },
+  {
+    "x": 1451,
+    "y": 769,
+    "w": 145,
+    "h": 85,
+    "label": "297D",
+    "type": "member",
+    "fetch": "images/Braces=D/297D.png",
+    "map": "jobs/industrial/24-36N/maps/members/297D.json"
+  },
+  {
+    "x": 1633,
+    "y": 747,
+    "w": 195,
+    "h": 108,
+    "label": "299D",
+    "type": "member",
+    "fetch": "images/Braces=D/299D.png",
+    "map": "jobs/industrial/24-36N/maps/members/299D.json"
+  },
+  {
+    "x": 1939,
+    "y": 750,
+    "w": 168,
+    "h": 107,
+    "label": "300D",
+    "type": "member",
+    "fetch": "images/Braces=D/300D.png",
+    "map": "jobs/industrial/24-36N/maps/members/300D.json"
+  },
+  {
+    "x": 2270,
+    "y": 749,
+    "w": 221,
+    "h": 110,
+    "label": "302D",
+    "type": "member",
+    "fetch": "images/Braces=D/302D.png",
+    "map": "jobs/industrial/24-36N/maps/members/302D.json"
+  },
+  {
+    "x": 1436,
+    "y": 729,
+    "w": 1086,
+    "h": 18,
+    "label": "370B",
+    "type": "member",
+    "fetch": "images/Beams=B/370B.png",
+    "map": "jobs/industrial/24-36N/maps/members/370B.json"
+  },
+  {
+    "x": 1857,
+    "y": 854,
+    "w": 659,
+    "h": 9,
+    "label": "348B",
+    "type": "member",
+    "fetch": "images/Beams=B/348B.png",
+    "map": "jobs/industrial/24-36N/maps/members/348B.json"
+  },
+  {
+    "x": 1853,
+    "y": 863,
+    "w": 671,
+    "h": 14,
+    "label": "347B",
+    "type": "member",
+    "fetch": "images/Beams=B/347B.png",
+    "map": "jobs/industrial/24-36N/maps/members/347B.json"
+  },
+  {
+    "x": 1168,
+    "y": 856,
+    "w": 648,
+    "h": 9,
+    "label": "354B",
+    "type": "member",
+    "fetch": "images/Beams=B/354B.png",
+    "map": "jobs/industrial/24-36N/maps/members/354B.json"
+  },
+  {
+    "x": 1166,
+    "y": 866,
+    "w": 645,
+    "h": 12,
+    "label": "353B",
+    "type": "member",
+    "fetch": "images/Beams=B/353B.png",
+    "map": "jobs/industrial/24-36N/maps/members/353B.json"
+  },
+  {
+    "x": 480,
+    "y": 857,
+    "w": 648,
+    "h": 11,
+    "label": "348B",
+    "type": "member",
+    "fetch": "images/Beams=B/348B.png",
+    "map": "jobs/industrial/24-36N/maps/members/348B.json"
+  },
+  {
+    "x": 477,
+    "y": 871,
+    "w": 644,
+    "h": 9,
+    "label": "347B",
+    "type": "member",
+    "fetch": "images/Beams=B/347B.png",
+    "map": "jobs/industrial/24-36N/maps/members/347B.json"
+  },
+  {
+    "x": 494,
+    "y": 959,
+    "w": 653,
+    "h": 17,
+    "label": "348B",
+    "type": "member",
+    "fetch": "images/Beams=B/348B.png",
+    "map": "jobs/industrial/24-36N/maps/members/348B.json"
+  },
+  {
+    "x": 520,
+    "y": 978,
+    "w": 628,
+    "h": 15,
+    "label": "347B",
+    "type": "member",
+    "fetch": "images/Beams=B/347B.png",
+    "map": "jobs/industrial/24-36N/maps/members/347B.json"
+  },
+  {
+    "x": 1158,
+    "y": 964,
+    "w": 667,
+    "h": 15,
+    "label": "354B",
+    "type": "member",
+    "fetch": "images/Beams=B/354B.png",
+    "map": "jobs/industrial/24-36N/maps/members/354B.json"
+  },
+  {
+    "x": 1162,
+    "y": 975,
+    "w": 659,
+    "h": 26,
+    "label": "353B",
+    "type": "member",
+    "fetch": "images/Beams=B/353B.png",
+    "map": "jobs/industrial/24-36N/maps/members/353B.json"
+  },
+  {
+    "x": 1435,
+    "y": 1003,
+    "w": 103,
+    "h": 76,
+    "label": "298D",
+    "type": "member",
+    "fetch": "images/Braces=D/298D.png",
+    "map": "jobs/industrial/24-36N/maps/members/298D.json"
+  },
+  {
+    "x": 1686,
+    "y": 995,
+    "w": 126,
+    "h": 82,
+    "label": "297D",
+    "type": "member",
+    "fetch": "images/Braces=D/297D.png",
+    "map": "jobs/industrial/24-36N/maps/members/297D.json"
+  },
+  {
+    "x": 1884,
+    "y": 961,
+    "w": 621,
+    "h": 14,
+    "label": "348B",
+    "type": "member",
+    "fetch": "images/Beams=B/348B.png",
+    "map": "jobs/industrial/24-36N/maps/members/348B.json"
+  },
+  {
+    "x": 1877,
+    "y": 975,
+    "w": 621,
+    "h": 17,
+    "label": "347B",
+    "type": "member",
+    "fetch": "images/Beams=B/347B.png",
+    "map": "jobs/industrial/24-36N/maps/members/347B.json"
+  },
+  {
+    "x": 1893,
+    "y": 1000,
+    "w": 205,
+    "h": 89,
+    "label": "301D",
+    "type": "member",
+    "fetch": "images/Braces=D/301D.png",
+    "map": "jobs/industrial/24-36N/maps/members/301D.json"
+  },
+  {
+    "x": 2328,
+    "y": 992,
+    "w": 161,
+    "h": 93,
+    "label": "300D",
+    "type": "member",
+    "fetch": "images/Braces=D/300D.png",
+    "map": "jobs/industrial/24-36N/maps/members/300D.json"
+  },
+  {
+    "x": 1893,
+    "y": 1078,
+    "w": 611,
+    "h": 25,
+    "label": "333B",
+    "type": "member",
+    "fetch": "images/Beams=B/333B.png", 
+    "map": "jobs/industrial/24-36N/maps/members/333B.json"  
+  },
+  {
+    "x": 1888,
+    "y": 1146,
+    "w": 618,
+    "h": 17,
+    "label": "348B",
+    "type": "member",
+    "fetch": "images/Beams=B/348B.png",
+    "map": "jobs/industrial/24-36N/maps/members/348B.json"
+  },
+  {
+    "x": 1895,
+    "y": 1168,
+    "w": 610,
+    "h": 14,
+    "label": "347B",
+    "type": "member",
+    "fetch": "images/Beams=B/347B.png",
+    "map": "jobs/industrial/24-36N/maps/members/347B.json"
+  },
+  {
+    "x": 1902,
+    "y": 1182,
+    "w": 243,
+    "h": 129,
+    "label": "309D",
+    "type": "member",
+    "fetch": "images/Braces=D/309D.png",
+    "map": "jobs/industrial/24-36N/maps/members/309D.json"
+  },
+  {
+    "x": 2253,
+    "y": 1189,
+    "w": 215,
+    "h": 119,
+    "label": "311D",
+    "type": "member",
+    "fetch": "images/Braces=D/311D.png",
+    "map": "jobs/industrial/24-36N/maps/members/311D.json"
+  },
+  {
+    "x": 1204,
+    "y": 1172,
+    "w": 279,
+    "h": 148,
+    "label": "308D",
+    "type": "member",
+    "fetch": "images/Braces=D/308D.png",
+    "map": "jobs/industrial/24-36N/maps/members/308D.json"
+  },
+  {
+    "x": 1533,
+    "y": 1166,
+    "w": 281,
+    "h": 147,
+    "label": "308D",
+    "type": "member",
+    "fetch": "images/Braces=D/308D.png",
+    "map": "jobs/industrial/24-36N/maps/members/308D.json"
+  },
+  {
+    "x": 1195,
+    "y": 1171,
+    "w": 298,
+    "h": 146,
+    "label": "306D",
+    "type": "member",
+    "fetch": "images/Braces=D/306D.png",
+    "map": "jobs/industrial/24-36N/maps/members/306D.json"
+  },
+  {
+    "x": 1174,
+    "y": 1150,
+    "w": 636,
+    "h": 14,
+    "label": "354B",
+    "type": "member",
+    "fetch": "images/Beams=B/354B.png",
+    "map": "jobs/industrial/24-36N/maps/members/354B.json"
+  },
+  {
+    "x": 1172,
+    "y": 1161,
+    "w": 654,
+    "h": 15,
+    "label": "353B",
+    "type": "member",
+    "fetch": "images/Beams=B/353B.png",
+    "map": "jobs/industrial/24-36N/maps/members/353B.json"
+  },
+  {
+    "x": 1169,
+    "y": 1307,
+    "w": 642,
+    "h": 11,
+    "label": "352B",
+    "type": "member",
+    "fetch": "images/Beams=B/352B.png",
+    "map": "jobs/industrial/24-36N/maps/members/352B.json"
+  },
+  {
+    "x": 1166,
+    "y": 1323,
+    "w": 653,
+    "h": 11,
+    "label": "351B",
+    "type": "member",
+    "fetch": "images/Beams=B/351B.png",
+    "map": "jobs/industrial/24-36N/maps/members/351B.json"
+  },
+  {
+    "x": 476,
+    "y": 1308,
+    "w": 657,
+    "h": 7,
+    "label": "346B",
+    "type": "member",
+    "fetch": "images/Beams=B/346B.png",
+    "map": "jobs/industrial/24-36N/maps/members/346B.json"
+  },
+  {
+    "x": 491,
+    "y": 1326,
+    "w": 653,
+    "h": 15,
+    "label": "345B",
+    "type": "member",
+    "fetch": "images/Beams=B/345B.png",
+    "map": "jobs/industrial/24-36N/maps/members/345B.json"
+  },
+  {
+    "x": 505,
+    "y": 1370,
+    "w": 1994,
+    "h": 19,
+    "label": "365T",
+    "type": "member",
+    "fetch": "images/Trusses=T/365T.png",
+    "map": "jobs/industrial/24-36N/maps/members/365T.json"
+  },
+  {
+    "x": 494,
+    "y": 1153,
+    "w": 662,
+    "h": 13,
+    "label": "348B",
+    "type": "member",
+    "fetch": "images/Beams=B/348B.png",
+    "map": "jobs/industrial/24-36N/maps/members/348B.json"
+  },
+  {
+    "x": 526,
+    "y": 1160,
+    "w": 619,
+    "h": 19,
+    "label": "347B",
+    "type": "member",
+    "fetch": "images/Beams=B/347B.png",
+    "map": "jobs/industrial/24-36N/maps/members/347B.json"
+  },
+  {
+    "x": 528,
+    "y": 1186,
+    "w": 235,
+    "h": 116,
+    "label": "303D",
+    "type": "member",
+    "fetch": "images/Braces=D/303D.png",
+    "map": "jobs/industrial/24-36N/maps/members/303D.json"
+  },
+  {
+    "x": 895,
+    "y": 1188,
+    "w": 209,
+    "h": 110,
+    "label": "304D",
+    "type": "member",
+    "fetch": "images/Braces=D/304D.png",
+    "map": "jobs/industrial/24-36N/maps/members/304D.json"
+  },
+  {
+    "x": 496,
+    "y": 1422,
+    "w": 645,
+    "h": 11,
+    "label": "344B",
+    "type": "member",
+    "fetch": "images/Beams=B/344B.png",
+    "map": "jobs/industrial/24-36N/maps/members/344B.json"
+  },
+  {
+    "x": 479,
+    "y": 1437,
+    "w": 658,
+    "h": 11,
+    "label": "343B",
+    "type": "member",
+    "fetch": "images/Beams=B/343B.png",
+    "map": "jobs/industrial/24-36N/maps/members/343B.json"
+  },
+  {
+    "x": 1870,
+    "y": 1311,
+    "w": 643,
+    "h": 7,
+    "label": "358B",
+    "type": "member",
+    "fetch": "images/Beams=B/358B.png",
+    "map": "jobs/industrial/24-36N/maps/members/358B.json"
+  },
+  {
+    "x": 1847,
+    "y": 1317,
+    "w": 675,
+    "h": 14,
+    "label": "357B",
+    "type": "member",
+    "fetch": "images/Beams=B/357B.png",
+    "map": "jobs/industrial/24-36N/maps/members/357B.json"
+  },
+  {
+    "x": 1870,
+    "y": 1421,
+    "w": 649,
+    "h": 11,
+    "label": "356B",
+    "type": "member",
+    "fetch": "images/Beams=B/356B.png",
+    "map": "jobs/industrial/24-36N/maps/members/356B.json"
+  },
+  {
+    "x": 1866,
+    "y": 1436,
+    "w": 661,
+    "h": 10,
+    "label": "355B",
+    "type": "member",
+    "fetch": "images/Beams=B/355B.png",
+    "map": "jobs/industrial/24-36N/maps/members/355B.json"
+  },
+  {
+    "x": 1171,
+    "y": 1418,
+    "w": 658,
+    "h": 15,
+    "label": "350B",
+    "type": "member",
+    "fetch": "images/Beams=B/350B.png",
+    "map": "jobs/industrial/24-36N/maps/members/350B.json"
+  },
+  {
+    "x": 1175,
+    "y": 1433,
+    "w": 658,
+    "h": 15,
+    "label": "349B",
+    "type": "member",
+    "fetch": "images/Beams=B/349B.png",
+    "map": "jobs/industrial/24-36N/maps/members/349B.json"
+  },
+  {
+    "x": 474,
+    "y": 1534,
+    "w": 666,
+    "h": 11,
+    "label": "346B",
+    "type": "member",
+    "fetch": "images/Beams=B/346B.png",
+    "map": "jobs/industrial/24-36N/maps/members/346B.json"
+  },
+  {
+    "x": 481,
+    "y": 1543,
+    "w": 657,
+    "h": 19,
+    "label": "345B",
+    "type": "member",
+    "fetch": "images/Beams=B/345B.png",
+    "map": "jobs/industrial/24-36N/maps/members/345B.json"
+  },
+  {
+    "x": 1168,
+    "y": 1534,
+    "w": 654,
+    "h": 11,
+    "label": "352B",
+    "type": "member",
+    "fetch": "images/Beams=B/352B.png",
+    "map": "jobs/industrial/24-36N/maps/members/352B.json"
+  },
+  {
+    "x": 1163,
+    "y": 1550,
+    "w": 661,
+    "h": 11,
+    "label": "351B",
+    "type": "member",
+    "fetch": "images/Beams=B/351B.png",
+    "map": "jobs/industrial/24-36N/maps/members/351B.json"
+  },
+  {
+    "x": 1864,
+    "y": 1537,
+    "w": 650,
+    "h": 11,
+    "label": "358B",
+    "type": "member",
+    "fetch": "images/Beams=B/358B.png",
+    "map": "jobs/industrial/24-36N/maps/members/358B.json"
+  },
+  {
+    "x": 1851,
+    "y": 1553,
+    "w": 657,
+    "h": 11,
+    "label": "357B",
+    "type": "member",
+    "fetch": "images/Beams=B/357B.png",
+    "map": "jobs/industrial/24-36N/maps/members/357B.json"
+  },
+  {
+    "x": 1874,
+    "y": 1651,
+    "w": 649,
+    "h": 8,
+    "label": "356B",
+    "type": "member",
+    "fetch": "images/Beams=B/356B.png",
+    "map": "jobs/industrial/24-36N/maps/members/356B.json"
+  },
+  {
+    "x": 1873,
+    "y": 1662,
+    "w": 649,
+    "h": 11,
+    "label": "355B",
+    "type": "member",
+    "fetch": "images/Beams=B/355B.png",
+    "map": "jobs/industrial/24-36N/maps/members/355B.json"
+  },
+  {
+    "x": 1169,
+    "y": 1649,
+    "w": 658,
+    "h": 14,
+    "label": "350B",
+    "type": "member",
+    "fetch": "images/Beams=B/350B.png",
+    "map": "jobs/industrial/24-36N/maps/members/350B.json"
+  },
+  {
+    "x": 1167,
+    "y": 1662,
+    "w": 668,
+    "h": 15,
+    "label": "349B",
+    "type": "member",
+    "fetch": "images/Beams=B/349B.png",
+    "map": "jobs/industrial/24-36N/maps/members/349B.json"
+  },
+  {
+    "x": 478,
+    "y": 1651,
+    "w": 659,
+    "h": 10,
+    "label": "344B",
+    "type": "member",
+    "fetch": "images/Beams=B/344B.png",
+    "map": "jobs/industrial/24-36N/maps/members/344B.json"
+  },
+  {
+    "x": 486,
+    "y": 1666,
+    "w": 658,
+    "h": 10,
+    "label": "343B",
+    "type": "member",
+    "fetch": "images/Beams=B/343B.png",
+    "map": "jobs/industrial/24-36N/maps/members/343B.json"
+  },
+  {
+    "x": 498,
+    "y": 1677,
+    "w": 222,
+    "h": 73,
+    "label": "304D",
+    "type": "member",
+    "fetch": "images/Braces=D/304D.png",
+    "map": "jobs/industrial/24-36N/maps/members/304D.json"
+  },
+  {
+    "x": 876,
+    "y": 1677,
+    "w": 247,
+    "h": 88,
+    "label": "303D",
+    "type": "member",
+    "fetch": "images/Braces=D/303D.png",
+    "map": "jobs/industrial/24-36N/maps/members/303D.json"
+  },
+  {
+    "x": 1191,
+    "y": 1680,
+    "w": 274,
+    "h": 92,
+    "label": "307D",
+    "type": "member",
+    "fetch": "images/Braces=D/307D.png",
+    "map": "jobs/industrial/24-36N/maps/members/307D.json"
+  },
+  {
+    "x": 1562,
+    "y": 1684,
+    "w": 250,
+    "h": 84,
+    "label": "306D",
+    "type": "member",
+    "fetch": "images/Braces=D/306D.png",
+    "map": "jobs/industrial/24-36N/maps/members/306D.json"
+  },
+  {
+    "x": 1894,
+    "y": 1680,
+    "w": 232,
+    "h": 88,
+    "label": "310D",
+    "type": "member",
+    "fetch": "images/Braces=D/310D.png",
+    "map": "jobs/industrial/24-36N/maps/members/310D.json"
+  },
+  {
+    "x": 2299,
+    "y": 1674,
+    "w": 190,
+    "h": 87,
+    "label": "309D",
+    "type": "member",
+    "fetch": "images/Braces=D/309D.png",
+    "map": "jobs/industrial/24-36N/maps/members/309D.json"
+  },
+  {
+    "x": 1862,
+    "y": 1778,
+    "w": 661,
+    "h": 10,
+    "label": "B195 (no cutsheet)"
+  },
+  {
+    "x": 1858,
+    "y": 1787,
+    "w": 662,
+    "h": 11,
+    "label": "B54 (no cutsheet)"
+  },
+  {
+    "x": 1178,
+    "y": 1778,
+    "w": 630,
+    "h": 7,
+    "label": "B195 (no cutsheet)"
+  },
+  {
+    "x": 1169,
+    "y": 1787,
+    "w": 665,
+    "h": 11,
+    "label": "B54 (no cutsheet)"
+  },
+  {
+    "x": 476,
+    "y": 1773,
+    "w": 668,
+    "h": 15,
+    "label": "B195 (no cutsheet)"
+  },
+  {
+    "x": 455,
+    "y": 1784,
+    "w": 692,
+    "h": 18,
+    "label": "B54 (no cutsheet)"
+  }
+]

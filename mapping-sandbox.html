@@ -1,0 +1,786 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Prince of Prints – Mapping Sandbox (Simple & Precise)</title>
+  <style>
+    :root {
+      --bg:#050913;
+      --panel:#0b1220;
+      --panel2:#0f172a;
+      --accent:#38bdf8;
+      --accent-soft:rgba(56,189,248,0.15);
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+      --danger:#f97373;
+      --grid:#1f2937;
+    }
+    * { box-sizing:border-box; }
+    html,body{
+      margin:0;
+      padding:0;
+      height:100%;
+      font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+      color:var(--text);
+      background:radial-gradient(circle at top, #111827, #020617 55%);
+      overflow:hidden;
+    }
+    body{ display:flex; flex-direction:column; }
+
+    header{
+      padding:10px 18px;
+      background:linear-gradient(to right,#020617,#020617 55%,#042f2e);
+      border-bottom:1px solid #111827;
+      display:flex;
+      align-items:center;
+      gap:12px;
+      font-size:14px;
+    }
+    header strong{ font-size:15px; letter-spacing:.03em; }
+    header span.tagline{ color:var(--muted); font-size:13px; }
+
+    main{
+      flex:1;
+      display:grid;
+      grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.3fr);
+      gap:0;
+      background:radial-gradient(circle at top left,#020617,#000);
+    }
+
+    .panel{
+      padding:12px 16px 14px;
+      background:var(--panel);
+      border-right:1px solid #020617;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      height:100%;
+    }
+    .panel-right{
+      background:var(--panel2);
+      border-left:1px solid #020617;
+      overflow:hidden;
+    }
+
+    .row{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+    .row label{ font-size:13px; color:var(--muted); }
+
+    input[type="file"]{
+      font-size:13px;
+      color:var(--text);
+      max-width:220px;
+    }
+    input[type="text"]{
+      background:#020617;
+      border:1px solid #1f2937;
+      border-radius:999px;
+      padding:6px 10px;
+      color:var(--text);
+      font-size:13px;
+      min-width:260px;
+    }
+    input[type="text"]:focus{
+      outline:none;
+      border-color:var(--accent);
+      box-shadow:0 0 0 1px rgba(56,189,248,0.4);
+    }
+
+    button{
+      border:none;
+      cursor:pointer;
+      font-size:13px;
+      border-radius:999px;
+      padding:7px 14px;
+      background:#020617;
+      color:var(--text);
+      border:1px solid #1f2937;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+      white-space:nowrap;
+    }
+    button.primary{
+      background:var(--accent);
+      color:#020617;
+      border-color:var(--accent);
+      font-weight:600;
+    }
+    button.danger{
+      border-color:var(--danger);
+      color:var(--danger);
+      background:rgba(248,113,113,0.06);
+    }
+    button:disabled{
+      opacity:.45;
+      cursor:not-allowed;
+    }
+
+    .chip{
+      padding:3px 8px;
+      border-radius:999px;
+      border:1px solid #1f2937;
+      font-size:11px;
+      color:var(--muted);
+      background:#020617;
+    }
+
+    /* viewport */
+    #viewport{
+      flex:1;
+      margin-top:8px;
+      border-radius:18px;
+      background:radial-gradient(circle at top,#020617,#000);
+      border:1px solid #020617;
+      position:relative;
+      overflow:hidden;
+    }
+    #viewport canvas{
+      position:absolute;
+      left:0; top:0;
+      width:100%; height:100%;
+      image-rendering:crisp-edges;
+      background:
+        linear-gradient(#020617,#020617) padding-box,
+        linear-gradient(135deg,#22d3ee33,#4ade8033) border-box;
+    }
+    #viewport .grid{
+      position:absolute;
+      inset:0;
+      pointer-events:none;
+      background:
+        linear-gradient(to right, var(--grid) 1px, transparent 1px),
+        linear-gradient(to bottom, var(--grid) 1px, transparent 1px);
+      background-size:64px 64px;
+      opacity:.35;
+    }
+
+    .zoom-info{
+      font-size:12px;
+      color:var(--muted);
+      margin-left:auto;
+    }
+
+    /* right side */
+    .panel-right-inner{
+      display:flex;
+      flex-direction:column;
+      height:100%;
+      gap:10px;
+    }
+    .info-card{
+      background:#020617;
+      border-radius:16px;
+      border:1px solid #111827;
+      padding:10px 12px;
+      font-size:13px;
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+    .info-card h3{
+      margin:0 0 4px;
+      font-size:13px;
+      letter-spacing:.05em;
+      text-transform:uppercase;
+      color:var(--muted);
+    }
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:4px 12px;
+      font-size:12px;
+      color:var(--muted);
+    }
+    .info-grid span.value{ color:var(--text); }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      font-size:12px;
+      margin-top:4px;
+    }
+    thead{
+      background:#020617;
+      position:sticky;
+      top:0;
+      z-index:2;
+    }
+    th,td{
+      padding:5px 6px;
+      border-bottom:1px solid #111827;
+      text-align:right;
+    }
+    th:first-child, td:first-child{ text-align:left; }
+    tbody tr.selected{
+      background:rgba(56,189,248,0.12);
+    }
+
+    .table-wrap{
+      flex:1;
+      border-radius:16px;
+      border:1px solid #111827;
+      overflow:auto;
+      background:radial-gradient(circle at top left,#020617,#020617 40%,#020617);
+      margin-top:2px;
+    }
+
+    .shortcuts{
+      font-size:11px;
+      color:var(--muted);
+      padding:4px 2px 0;
+    }
+    .shortcuts strong{ color:var(--accent); font-weight:500; }
+
+  </style>
+</head>
+<body>
+<header>
+  <strong>Prince of Prints · Mapping Sandbox</strong>
+  <span class="tagline">Draw hotspots precisely · export JSON for PoP viewer</span>
+</header>
+
+<main>
+  <!-- LEFT: image + drawing -->
+  <section class="panel">
+    <div class="row">
+      <label>Sheet Image:</label>
+      <input type="file" id="fileInput" accept="image/*">
+      <button id="resetBtn">Reset view</button>
+      <span class="zoom-info" id="zoomLabel">Zoom 100%</span>
+    </div>
+
+    <div class="row">
+      <label>Load URL:</label>
+      <input type="text" id="urlInput" placeholder="jobs/industrial/24-36N/images/Erection-E0-11/E4.png">
+      <button class="primary" id="loadUrlBtn">Load URL</button>
+      <span class="chip">Two-click: drag box, then name in side panel.</span>
+    </div>
+
+    <div class="row">
+      <button id="modeAdd" class="primary">Add Box</button>
+      <button id="modeSelect">Select/Move</button>
+
+      <button id="fitBtn">Fit</button>
+      <button id="zoomInBtn">+</button>
+      <button id="zoomOutBtn">-</button>
+    </div>
+
+    <div id="viewport">
+      <canvas id="sheetCanvas"></canvas>
+      <div class="grid"></div>
+    </div>
+
+    <div class="shortcuts">
+      <strong>Shortcuts:</strong>
+      Space + drag = pan · Wheel = zoom · A = Add mode · S = Select mode · Del = delete box · Arrows = nudge 1px (Ctrl = 10px)
+    </div>
+  </section>
+
+  <!-- RIGHT: metadata + box list -->
+  <section class="panel panel-right">
+    <div class="panel-right-inner">
+      <div class="info-card">
+        <h3>Current Box</h3>
+        <div class="info-grid">
+          <span>Label</span><span class="value" id="curLabel">None</span>
+          <span>x0% / y0%</span><span class="value" id="curStart">–</span>
+          <span>x1% / y1%</span><span class="value" id="curEnd">–</span>
+          <span>Status</span><span class="value" id="curStatus">Idle</span>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <h3>Edit Selected Box</h3>
+        <div class="info-grid">
+          <span>Label</span>
+          <span class="value"><input id="editLabel" type="text" placeholder="B-121" style="width:100%;min-width:0;"></span>
+          <span>x0%</span><span class="value"><input id="editX0" type="text" style="width:100%;min-width:0;"></span>
+          <span>y0%</span><span class="value"><input id="editY0" type="text" style="width:100%;min-width:0;"></span>
+          <span>x1%</span><span class="value"><input id="editX1" type="text" style="width:100%;min-width:0;"></span>
+          <span>y1%</span><span class="value"><input id="editY1" type="text" style="width:100%;min-width:0;"></span>
+        </div>
+        <div class="row" style="margin-top:6px;">
+          <button id="applyEditBtn">Apply</button>
+          <button class="danger" id="deleteBtn">Delete</button>
+          <button id="importBtn">Import JSON</button>
+          <button class="primary" id="exportBtn">Export JSON (pixels)</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Label</th>
+              <th>x0%</th>
+              <th>y0%</th>
+              <th>x1%</th>
+              <th>y1%</th>
+            </tr>
+          </thead>
+          <tbody id="boxTableBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script>
+(() => {
+  const canvas = document.getElementById('sheetCanvas');
+  const ctx = canvas.getContext('2d');
+  let img = null;
+  let imgW = 0, imgH = 0;
+
+  const state = {
+    zoom: 1,
+    offsetX: 0,
+    offsetY: 0,
+    mode: 'add', // 'add' | 'select'
+    boxes: [],   // {x0,y0,x1,y1,label} in 0–1 fractional coords
+    drag: null,  // pan or draw state
+    selected: -1
+  };
+
+  const els = {
+    zoomLabel: document.getElementById('zoomLabel'),
+    curLabel: document.getElementById('curLabel'),
+    curStart: document.getElementById('curStart'),
+    curEnd: document.getElementById('curEnd'),
+    curStatus: document.getElementById('curStatus'),
+    tbody: document.getElementById('boxTableBody'),
+    modeAdd: document.getElementById('modeAdd'),
+    modeSelect: document.getElementById('modeSelect'),
+    editLabel: document.getElementById('editLabel'),
+    editX0: document.getElementById('editX0'),
+    editY0: document.getElementById('editY0'),
+    editX1: document.getElementById('editX1'),
+    editY1: document.getElementById('editY1'),
+  };
+
+  function setStatus(msg){ els.curStatus.textContent = msg; }
+  function setZoom(z){
+    state.zoom = Math.min(8, Math.max(0.1, z));
+    els.zoomLabel.textContent = 'Zoom ' + Math.round(state.zoom*100) + '%';
+    draw();
+  }
+
+  function resizeCanvas() {
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width;
+    canvas.height = rect.height;
+    draw();
+  }
+  window.addEventListener('resize', resizeCanvas);
+  resizeCanvas();
+
+  function loadImageFromFile(file){
+    if (!file) return;
+    const url = URL.createObjectURL(file);
+    loadImageFromUrl(url, () => URL.revokeObjectURL(url));
+  }
+
+  function loadImageFromUrl(url, done){
+    const image = new Image();
+    image.onload = () => {
+      img = image;
+      imgW = img.naturalWidth;
+      imgH = img.naturalHeight;
+      state.boxes = [];
+      state.selected = -1;
+      fitView();
+      refreshTable();
+      updateCurrentBox();
+      setStatus('Image loaded ('+imgW+'×'+imgH+')');
+      if (done) done();
+    };
+    image.onerror = () => {
+      setStatus('Failed to load image');
+    };
+    image.src = url;
+  }
+
+  function fitView(){
+    if (!img) return;
+    const w = canvas.width, h = canvas.height;
+    const scale = Math.min(w / imgW, h / imgH);
+    state.zoom = scale;
+    state.offsetX = (w - imgW*scale)/2;
+    state.offsetY = (h - imgH*scale)/2;
+    setZoom(state.zoom);
+  }
+
+  function draw(){
+    ctx.setTransform(1,0,0,1,0,0);
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+
+    if (!img) {
+      ctx.fillStyle = '#020617';
+      ctx.fillRect(0,0,canvas.width,canvas.height);
+      return;
+    }
+
+    // draw image
+    ctx.setTransform(state.zoom,0,0,state.zoom,state.offsetX,state.offsetY);
+    ctx.drawImage(img,0,0);
+
+    // draw boxes
+    ctx.lineWidth = 2 / state.zoom;
+    state.boxes.forEach((b, idx) => {
+      const x = b.x0*imgW, y = b.y0*imgH;
+      const w = (b.x1-b.x0)*imgW;
+      const h = (b.y1-b.y0)*imgH;
+      ctx.strokeStyle = idx === state.selected ? '#22d3ee' : '#22c55e';
+      ctx.fillStyle = idx === state.selected ? 'rgba(34,211,238,0.12)' : 'rgba(34,197,94,0.10)';
+      ctx.beginPath();
+      ctx.rect(x,y,w,h);
+      ctx.fill();
+      ctx.stroke();
+      // label
+      ctx.fillStyle = 'rgba(0,0,0,0.7)';
+      ctx.fillRect(x,y-16, ctx.measureText(b.label).width+10, 14);
+      ctx.fillStyle = '#e5e7eb';
+      ctx.font = (10/state.zoom) + 'px system-ui';
+      ctx.fillText(b.label,x+4,y-5);
+    });
+
+    ctx.setTransform(1,0,0,1,0,0);
+  }
+
+  function canvasToImageCoords(cx,cy){
+    const x = (cx - state.offsetX) / state.zoom;
+    const y = (cy - state.offsetY) / state.zoom;
+    return { x, y };
+  }
+
+  function pickBox(cx,cy){
+    if (!img) return -1;
+    const {x,y} = canvasToImageCoords(cx,cy);
+    for(let i=state.boxes.length-1;i>=0;i--){
+      const b = state.boxes[i];
+      const x0 = b.x0*imgW, y0=b.y0*imgH;
+      const x1 = b.x1*imgW, y1=b.y1*imgH;
+      if (x>=x0 && x<=x1 && y>=y0 && y<=y1) return i;
+    }
+    return -1;
+  }
+
+  // mouse interactions
+  let isPanning = false;
+  let panStart = null;
+
+  canvas.addEventListener('mousedown', e=>{
+    if (!img) return;
+    const rect = canvas.getBoundingClientRect();
+    const cx = e.clientX-rect.left, cy = e.clientY-rect.top;
+    if (e.button === 1 || e.button===0 && e.shiftKey){
+      // pan
+      isPanning = true;
+      panStart = {x:e.clientX, y:e.clientY, ox:state.offsetX, oy:state.offsetY};
+      canvas.style.cursor = 'grabbing';
+      return;
+    }
+
+    if (state.mode === 'add'){
+      const {x,y} = canvasToImageCoords(cx,cy);
+      state.drag = { type:'draw', sx:x, sy:y, ex:x, ey:y };
+    } else {
+      const idx = pickBox(cx,cy);
+      state.selected = idx;
+      if (idx>=0){
+        const b = state.boxes[idx];
+        const {x,y} = canvasToImageCoords(cx,cy);
+        state.drag = { type:'move', idx, sx:x, sy:y, bx0:b.x0, by0:b.y0, bx1:b.x1, by1:b.y1 };
+        updateEditorsFromSelection();
+      } else {
+        state.drag = null;
+      }
+      refreshTable();
+      updateCurrentBox();
+      draw();
+    }
+  });
+
+  canvas.addEventListener('mousemove', e=>{
+    if (!img) return;
+    const rect = canvas.getBoundingClientRect();
+    const cx = e.clientX-rect.left, cy = e.clientY-rect.top;
+
+    if (isPanning && panStart){
+      const dx = e.clientX - panStart.x;
+      const dy = e.clientY - panStart.y;
+      state.offsetX = panStart.ox + dx;
+      state.offsetY = panStart.oy + dy;
+      draw();
+      return;
+    }
+
+    if (!state.drag) return;
+    if (state.drag.type === 'draw'){
+      const {x,y} = canvasToImageCoords(cx,cy);
+      state.drag.ex = x;
+      state.drag.ey = y;
+      draw();
+      // temporary preview
+      ctx.setTransform(state.zoom,0,0,state.zoom,state.offsetX,state.offsetY);
+      ctx.strokeStyle='#facc15';
+      ctx.lineWidth = 2/state.zoom;
+      ctx.setLineDash([6/state.zoom,4/state.zoom]);
+      ctx.strokeRect(state.drag.sx, state.drag.sy,
+        state.drag.ex-state.drag.sx,
+        state.drag.ey-state.drag.sy);
+      ctx.setLineDash([]);
+      ctx.setTransform(1,0,0,1,0,0);
+    } else if (state.drag.type === 'move'){
+      const {x,y} = canvasToImageCoords(cx,cy);
+      const dx = x - state.drag.sx;
+      const dy = y - state.drag.sy;
+      const b = state.boxes[state.drag.idx];
+      b.x0 = state.drag.bx0 + dx/imgW;
+      b.y0 = state.drag.by0 + dy/imgH;
+      b.x1 = state.drag.bx1 + dx/imgW;
+      b.y1 = state.drag.by1 + dy/imgH;
+      clampBox(b);
+      updateEditorsFromSelection();
+      draw();
+    }
+  });
+
+  window.addEventListener('mouseup', e=>{
+    if (isPanning){
+      isPanning = false;
+      canvas.style.cursor = 'default';
+    }
+    if (!state.drag || !img) { state.drag=null; return; }
+    if (state.drag.type === 'draw'){
+      const d = state.drag;
+      const minW = 5, minH = 5;
+      const w = Math.abs(d.ex-d.sx);
+      const h = Math.abs(d.ey-d.sy);
+      if (w<minW || h<minH){ state.drag=null; draw(); return; }
+      const x0 = Math.min(d.sx,d.ex)/imgW;
+      const y0 = Math.min(d.sy,d.ey)/imgH;
+      const x1 = Math.max(d.sx,d.ex)/imgW;
+      const y1 = Math.max(d.sy,d.ey)/imgH;
+      const label = prompt('Tag label (e.g., B-121):','');
+      if (!label){ state.drag=null; draw(); return; }
+      state.boxes.push({x0,y0,x1,y1,label:label.trim()});
+      state.selected = state.boxes.length-1;
+      refreshTable();
+      updateCurrentBox();
+      updateEditorsFromSelection();
+      draw();
+    }
+    state.drag=null;
+  });
+
+  canvas.addEventListener('wheel', e=>{
+    if (!img) return;
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const cx = e.clientX-rect.left, cy = e.clientY-rect.top;
+    const before = canvasToImageCoords(cx,cy);
+    const factor = e.deltaY<0 ? 1.1 : 0.9;
+    setZoom(state.zoom*factor);
+    const after = canvasToImageCoords(cx,cy);
+    state.offsetX += (before.x-after.x)*state.zoom;
+    state.offsetY += (before.y-after.y)*state.zoom;
+    draw();
+  }, {passive:false});
+
+  // keyboard shortcuts
+  window.addEventListener('keydown', e=>{
+    if (e.key === ' '){
+      e.preventDefault();
+      isPanning = true;
+      panStart = {x:e.clientX, y:e.clientY, ox:state.offsetX, oy:state.offsetY};
+      canvas.style.cursor = 'grabbing';
+    }
+    if (e.key === 'a' || e.key === 'A'){
+      setMode('add');
+    }
+    if (e.key === 's' || e.key === 'S'){
+      setMode('select');
+    }
+    if (e.key === 'Delete' && state.selected>=0){
+      state.boxes.splice(state.selected,1);
+      state.selected=-1;
+      refreshTable();
+      updateCurrentBox();
+      draw();
+    }
+  });
+  window.addEventListener('keyup', e=>{
+    if (e.key === ' '){
+      isPanning=false;
+      canvas.style.cursor='default';
+    }
+  });
+
+  // UI wiring
+  document.getElementById('fileInput').addEventListener('change', e=>{
+    const file = e.target.files[0];
+    if (file) loadImageFromFile(file);
+  });
+
+  document.getElementById('loadUrlBtn').addEventListener('click', ()=>{
+    const url = document.getElementById('urlInput').value.trim();
+    if (url) loadImageFromUrl(url);
+  });
+
+  document.getElementById('fitBtn').addEventListener('click', fitView);
+  document.getElementById('zoomInBtn').addEventListener('click', ()=>setZoom(state.zoom*1.2));
+  document.getElementById('zoomOutBtn').addEventListener('click', ()=>setZoom(state.zoom/1.2));
+  document.getElementById('resetBtn').addEventListener('click', ()=>{fitView();});
+
+  function setMode(mode){
+    state.mode = mode;
+    els.modeAdd.classList.toggle('primary', mode==='add');
+    els.modeSelect.classList.toggle('primary', mode==='select');
+    setStatus(mode==='add' ? 'Add mode' : 'Select/Move mode');
+  }
+  document.getElementById('modeAdd').onclick = ()=>setMode('add');
+  document.getElementById('modeSelect').onclick = ()=>setMode('select');
+  setMode('add');
+
+  function clampBox(b){
+    b.x0 = Math.max(0, Math.min(1, b.x0));
+    b.y0 = Math.max(0, Math.min(1, b.y0));
+    b.x1 = Math.max(0, Math.min(1, b.x1));
+    b.y1 = Math.max(0, Math.min(1, b.y1));
+    if (b.x1<b.x0){ const t=b.x0; b.x0=b.x1; b.x1=t; }
+    if (b.y1<b.y0){ const t=b.y0; b.y0=b.y1; b.y1=t; }
+  }
+
+  function refreshTable(){
+    els.tbody.innerHTML='';
+    state.boxes.forEach((b,idx)=>{
+      const tr = document.createElement('tr');
+      if (idx===state.selected) tr.classList.add('selected');
+      const pct = v => (v*100).toFixed(2);
+      tr.innerHTML = `
+        <td>${idx+1}</td>
+        <td>${b.label}</td>
+        <td>${pct(b.x0)}</td>
+        <td>${pct(b.y0)}</td>
+        <td>${pct(b.x1)}</td>
+        <td>${pct(b.y1)}</td>`;
+      tr.addEventListener('click', ()=>{
+        state.selected = idx;
+        updateEditorsFromSelection();
+        refreshTable();
+        updateCurrentBox();
+        draw();
+      });
+      els.tbody.appendChild(tr);
+    });
+  }
+
+  function updateCurrentBox(){
+    if (state.selected<0 || !state.boxes[state.selected]){
+      els.curLabel.textContent='None';
+      els.curStart.textContent='–';
+      els.curEnd.textContent='–';
+      return;
+    }
+    const b = state.boxes[state.selected];
+    const pct = v=>(v*100).toFixed(2)+'%';
+    els.curLabel.textContent = b.label;
+    els.curStart.textContent = pct(b.x0)+' / '+pct(b.y0);
+    els.curEnd.textContent = pct(b.x1)+' / '+pct(b.y1);
+  }
+
+  function updateEditorsFromSelection(){
+    const b = state.boxes[state.selected] || null;
+    if (!b){
+      els.editLabel.value='';
+      els.editX0.value=els.editY0.value=els.editX1.value=els.editY1.value='';
+      return;
+    }
+    const pct = v=>(v*100).toFixed(4);
+    els.editLabel.value = b.label;
+    els.editX0.value = pct(b.x0);
+    els.editY0.value = pct(b.y0);
+    els.editX1.value = pct(b.x1);
+    els.editY1.value = pct(b.y1);
+  }
+
+  document.getElementById('applyEditBtn').addEventListener('click', ()=>{
+    const b = state.boxes[state.selected];
+    if (!b) return;
+    const parsePct = v => Math.max(0, Math.min(100, parseFloat(v)||0))/100;
+    b.label = els.editLabel.value.trim() || b.label;
+    b.x0 = parsePct(els.editX0.value);
+    b.y0 = parsePct(els.editY0.value);
+    b.x1 = parsePct(els.editX1.value);
+    b.y1 = parsePct(els.editY1.value);
+    clampBox(b);
+    refreshTable();
+    updateCurrentBox();
+    draw();
+  });
+
+  document.getElementById('deleteBtn').addEventListener('click', ()=>{
+    if (state.selected<0) return;
+    if (!confirm('Delete selected box?')) return;
+    state.boxes.splice(state.selected,1);
+    state.selected=-1;
+    refreshTable();
+    updateCurrentBox();
+    draw();
+  });
+
+  document.getElementById('exportBtn').addEventListener('click', ()=>{
+    if (!img){ alert('No image loaded'); return; }
+    const out = state.boxes.map(b=>({
+      x: Math.round(b.x0*imgW),
+      y: Math.round(b.y0*imgH),
+      w: Math.round((b.x1-b.x0)*imgW),
+      h: Math.round((b.y1-b.y0)*imgH),
+      label: b.label
+    }));
+    const blob = new Blob([JSON.stringify(out,null,2)], {type:'application/json'});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'map.json';
+    a.click();
+    URL.revokeObjectURL(url);
+  });
+
+  document.getElementById('importBtn').addEventListener('click', ()=>{
+    const inp = document.createElement('input');
+    inp.type='file';
+    inp.accept='application/json';
+    inp.onchange = e=>{
+      const file = e.target.files[0];
+      if (!file) return;
+      file.text().then(txt=>{
+        try{
+          const arr = JSON.parse(txt);
+          if (!Array.isArray(arr)) throw new Error('Array expected');
+          state.boxes = arr.map(r=>({
+            x0: r.x / imgW,
+            y0: r.y / imgH,
+            x1: (r.x+r.w)/imgW,
+            y1: (r.y+r.h)/imgH,
+            label: r.label || ''
+          }));
+          state.selected = state.boxes.length>0 ? 0 : -1;
+          refreshTable();
+          updateCurrentBox();
+          updateEditorsFromSelection();
+          draw();
+        }catch(err){
+          alert('Import failed: '+err.message);
+        }
+      });
+    };
+    inp.click();
+  });
+
+})();
+</script>
+</body>
+</html>

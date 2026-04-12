@@ -1,0 +1,21 @@
+{
+  "name": "Prince of Prints",
+  "short_name": "PoP",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b2a4a",
+  "theme_color": "#0b2a4a",
+  "icons": [
+    {
+      "src": "assets/icons/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

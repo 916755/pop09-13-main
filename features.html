@@ -1,0 +1,531 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prince of Prints — Features & Roadmap</title>
+  <meta name="description" content="Current capabilities and planned upgrades for the Prince of Prints blueprint platform." />
+  <style>
+    :root{
+      --bg:#0b1220;
+      --panel:#0f1b33;
+      --panel2:#0c162a;
+      --text:#e9eefc;
+      --muted:#b9c4e6;
+      --line:rgba(255,255,255,.10);
+      --accent:#4bb3fd;
+      --good:#3ddc97;
+      --warn:#ffd166;
+      --future:#b388ff;
+      --danger:#ff6b6b;
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1100px 700px at 20% -10%, rgba(75,179,253,.25), transparent 55%),
+                  radial-gradient(900px 650px at 95% 10%, rgba(179,136,255,.18), transparent 55%),
+                  linear-gradient(180deg, var(--bg), #070c16 65%, #060a12);
+      color: var(--text);
+    }
+    a{color:var(--accent); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 60px}
+    header{
+      display:flex; gap:16px; align-items:center; justify-content:space-between;
+      padding:18px 18px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(15,27,51,.85), rgba(12,22,42,.85));
+      border-radius:18px;
+      box-shadow: var(--shadow);
+      position:sticky; top:10px; backdrop-filter: blur(10px);
+      z-index:2;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px; min-width:240px;
+    }
+    .logo{
+      width:42px; height:42px; border-radius:12px;
+      background: linear-gradient(135deg, rgba(75,179,253,.95), rgba(179,136,255,.85));
+      box-shadow: 0 10px 30px rgba(75,179,253,.2);
+    }
+    .brand h1{font-size:16px; margin:0; letter-spacing:.2px}
+    .brand p{margin:2px 0 0; font-size:12px; color:var(--muted)}
+    .actions{
+      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
+      justify-content:flex-end;
+    }
+    .chip{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      padding:9px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color: var(--muted);
+      user-select:none;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      border:1px solid rgba(75,179,253,.45);
+      background: rgba(75,179,253,.10);
+      color: var(--text);
+      padding:9px 12px;
+      border-radius:12px;
+      font-size:12px;
+      cursor:pointer;
+    }
+    .btn:hover{background: rgba(75,179,253,.16)}
+    .hero{
+      margin-top:18px;
+      border:1px solid var(--line);
+      background: linear-gradient(180deg, rgba(15,27,51,.55), rgba(12,22,42,.55));
+      border-radius:18px;
+      padding:22px 18px;
+      box-shadow: var(--shadow);
+    }
+    .hero h2{
+      margin:0 0 10px;
+      font-size:22px;
+      letter-spacing:.2px;
+    }
+    .hero p{margin:0; color:var(--muted); line-height:1.55}
+    .grid{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap:16px;
+    }
+    @media (max-width: 900px){
+      .grid{grid-template-columns:1fr}
+      header{position:static}
+      .brand{min-width:auto}
+    }
+    .card{
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.04);
+      border-radius:18px;
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .card .hd{
+      padding:14px 16px;
+      border-bottom:1px solid var(--line);
+      background: rgba(0,0,0,.15);
+      display:flex; align-items:center; justify-content:space-between; gap:12px;
+    }
+    .card .hd h3{margin:0; font-size:14px; letter-spacing:.2px}
+    .card .bd{padding:14px 16px}
+    .tag{
+      display:inline-flex; align-items:center; gap:8px;
+      border:1px solid var(--line);
+      padding:6px 10px;
+      border-radius:999px;
+      font-size:12px;
+      color: var(--muted);
+      background: rgba(255,255,255,.03);
+      white-space:nowrap;
+    }
+    .dot{width:8px; height:8px; border-radius:50%}
+    .dot.good{background:var(--good)}
+    .dot.warn{background:var(--warn)}
+    .dot.future{background:var(--future)}
+    .dot.danger{background:var(--danger)}
+
+    .list{display:grid; gap:10px}
+    .item{
+      display:flex; gap:12px; align-items:flex-start;
+      padding:12px 12px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(0,0,0,.12);
+      border-radius:14px;
+    }
+    .badge{
+      display:inline-flex; align-items:center; justify-content:center;
+      min-width:28px; height:28px;
+      border-radius:10px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      font-weight:700;
+      font-size:12px;
+      color: var(--text);
+      flex:0 0 auto;
+    }
+    .item h4{margin:0; font-size:13px}
+    .item p{margin:4px 0 0; color:var(--muted); font-size:12.5px; line-height:1.45}
+
+    .note{
+      margin-top:14px;
+      padding:12px 12px;
+      border-radius:14px;
+      border:1px dashed rgba(255,255,255,.16);
+      color: var(--muted);
+      background: rgba(0,0,0,.10);
+      font-size:12.5px;
+      line-height:1.55;
+    }
+    footer{
+      margin-top:18px;
+      color: rgba(233,238,252,.60);
+      font-size:12px;
+      text-align:center;
+    }
+    .small{font-size:11.5px; color: rgba(233,238,252,.65)}
+    .kpi{
+      display:grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap:10px;
+      margin-top:14px;
+    }
+    @media (max-width: 560px){
+      .kpi{grid-template-columns:1fr}
+    }
+    .kpi .box{
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.12);
+      border-radius:16px;
+      padding:12px 12px;
+    }
+    .kpi .box strong{display:block; font-size:13px}
+    .kpi .box span{display:block; margin-top:4px; color:var(--muted); font-size:12px; line-height:1.4}
+  </style>
+</head>
+<body>
+
+
+  <div class="wrap">
+    <header>
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Prince of Prints</h1>
+          <p>Capabilities that exist now + the planned roadmap</p>
+        </div>
+      </div>
+
+      <div class="actions">
+      
+<a class="btn" href="/app.html?v=live">Open App</a>
+
+        <div class="chip" title="Built & working">
+          <span class="dot good"></span> Live features
+        </div>
+
+        
+        <div class="chip" title="Planned / in progress">
+          <span class="dot future"></span> Intended add-ons
+
+        </div>
+        <button class="btn" id="btnPrint" type="button">Print / Save PDF</button>
+      </div>
+    </header>
+
+    <section class="hero">
+      <h2>Blueprint access. Instant. Anywhere.</h2>
+      <p>
+        This page lists what <strong>Prince of Prints</strong> already does today, followed by planned upgrades —
+        focused on real jobsite time savings: from offload to erection, locating tags fast, instant access to cut sheets,
+        and reducing lost time on scrambled paperwork and prints (including damaged, covered, or missing tags).
+      </p>
+
+      <div class="kpi" aria-label="Value highlights">
+        <div class="box">
+          <strong>Receiving (offload)</strong>
+          <span>Replace scrambling through a bill of lading with tag-driven locate + checklist tracking.</span>
+        </div>
+        <div class="box">
+          <strong>Erection (field)</strong>
+          <span>Click &amp; Fetch from erection sheets directly into cut/detail sheets.</span>
+        </div>
+        <div class="box">
+          <strong>Progress (status)</strong>
+          <span>Color-coded piece statuses for fast visual coordination across crews.</span>
+        </div>
+      </div>
+
+      <div class="note">
+        <strong>Note:</strong> “Nationwide real-time” items listed below are planned additions (sync + permissions).
+        Current status tools can be local/exported per job; next step is secure job-scoped syncing.
+      </div>
+    </section>
+
+    <div class="grid">
+      <!-- LIVE FEATURES -->
+      <section class="card" id="live">
+        <div class="hd">
+          <h3>✅ Features that exist now</h3>
+          <span class="tag"><span class="dot good"></span> live / working</span>
+        </div>
+        <div class="bd">
+          <div class="list">
+
+            <div class="item">
+              <div class="badge">1</div>
+              <div>
+                <h4>Multiple construction type selection</h4>
+                <p>Select the job type / build type to load the correct job index and drawing set.</p>
+
+                <!-- Color Code Legend -->
+                <div class="note" style="margin-top:16px;">
+                  <strong>Color Code Legend (Jobsite Status)</strong>
+                  <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:10px; margin-top:10px;">
+
+                    <div class="item">
+                      <span class="dot" style="background:#ff77c8;"></span>
+                      <div>
+                        <strong>Pink — Rigged / Ready to Fly</strong>
+                        <div class="small">Piece has been prepared and is ready for lifting.</div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <span class="dot" style="background:#4bb3fd;"></span>
+                      <div>
+                        <strong>Blue — Connected / Erected</strong>
+                        <div class="small">Piece is in place and connected in the structure.</div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <span class="dot" style="background:#3ddc97;"></span>
+                      <div>
+                        <strong>Green — 100% Complete</strong>
+                        <div class="small">All work for this piece is complete.</div>
+                      </div>
+                    </div>
+
+                    <div class="item">
+                      <span class="dot" style="background:#ffffff; border:1px solid #ccc;"></span>
+                      <div>
+                        <strong>Default — Click &amp; Fetch</strong>
+                        <div class="small">No status applied. Tap to jump to details or cut sheets.</div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <!-- /Color Code Legend -->
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">2</div>
+              <div>
+                <h4>Security job code access</h4>
+                <p>Job access is tied to a code (example: <em>industrial/24-36N</em>) to keep each set scoped to that job.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">3</div>
+              <div>
+                <h4>Click &amp; Fetch (E-sheet ➜ detail)</h4>
+                <p>Tap a mapped member on an erection sheet and jump straight to the matching detail/cut sheet.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">4</div>
+              <div>
+                <h4>Jump-to-Tag workflow</h4>
+                <p>Type a tag and jump instantly — the fastest way to locate pieces when tags are scratched or covered.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">5</div>
+              <div>
+                <h4>Detail sheets + cut sheets navigation</h4>
+                <p>Category and sheet systems make large sets searchable and usable on mobile in the field.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">6</div>
+              <div>
+                <h4>Color-coded status system</h4>
+                <p>Piece statuses can be color-marked (rigged/erected/100% etc.) and saved/exported per job.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="note">
+            <strong>Primary time-saver right now:</strong> Click &amp; Fetch + Jump-to-Tag eliminates scrolling through
+            massive print stacks and reduces “hunt time” during receiving and erection.
+          </div>
+        </div>
+      </section>
+
+      <!-- ROADMAP -->
+      <section class="card" id="roadmap">
+        <div class="hd">
+          <h3>🧩 Intended add-ons (next build)</h3>
+          <span class="tag"><span class="dot future"></span> planned</span>
+        </div>
+        <div class="bd">
+          <div class="list">
+
+            <div class="item">
+              <div class="badge">A</div>
+              <div>
+                <h4>Receiving checklist (not just a tag list)</h4>
+                <p>
+                  In <strong>All</strong>, add a checkbox per tag so iron can be marked <em>received</em> during offload.
+                  Anything not checked becomes your “did not arrive” list.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">B</div>
+              <div>
+                <h4>Supervisor lock on status changes</h4>
+                <p>
+                  Prevent unauthorized edits. Add a supervisor lock / PIN / permission layer so only approved roles can
+                  change piece statuses.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">C</div>
+              <div>
+                <h4>Nationwide real-time sync per job</h4>
+                <p>
+                  Install a job-scoped sync layer so the moment a tag is marked missing/received/status-changed,
+                  it updates across <strong>every device</strong> tied to that job code.
+                </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">D</div>
+              <div>
+                <h4>Notes category (job-specific)</h4>
+                <p>Add a Notes section for delivery exceptions, RFIs, foreman notes, and daily coordination.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="badge">E</div>
+              <div>
+                <h4>Safety category (national standards)</h4>
+                <p>Short, specific safety reminders (P.P.E., falls, suspended loads, lift plans, wind limits, exclusions, “do not rig” notes).</p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="note">
+            <strong>Planned behavior:</strong> If a piece is missing on the ground, it can be marked yellow,
+            and that same tag turns yellow on <em>every device</em> logged into that same job code.
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- Founder Personal Note -->
+    <section class="card" style="margin-top:18px;">
+      <div class="hd">
+        <h3>A Personal Note from the Founder</h3>
+      </div>
+      <div class="bd">
+        <p>
+          After 40 years in the field with hands-on construction experience, I have lost count of the number
+          of times I made trip after trip back to the office just to locate a cut sheet or verify dimensions or bolt patterns —
+          usually because multiple pieces were missing tags, mis-marked, or simply could not be located.
+        </p>
+
+        <p>
+          Apps did not exist then, but they do now. This application was born out of that frustration. If nothing else,
+          it will drastically cut down on unnecessary office traffic — and if you’ve ever worked a muddy jobsite,
+          you already know how much of a benefit that alone can be.
+        </p>
+
+        <p>
+          When iron arrives on site and multiple trucks are lined up to be offloaded, a realistic inventory check almost
+          never happens. Each piece would require searching a scrambled bill of lading or expected inventory list.
+          In practice, that level of accuracy just does not occur.
+        </p>
+
+        <p>
+          The app is intentionally simple: enter a tag ID and it instantly jumps to that tag in the <strong>All</strong> list.
+          Tap it — checked. Fast. Easy. If you give an expediter or forklift operator a list of iron, they can stage material efficiently.
+          If a beam, column, angle, plate, or other piece cannot be found, that tag can be marked <strong>yellow</strong> directly on the erection drawing.
+        </p>
+
+        <p>
+          When pieces are rigged, they are marked <strong>pink</strong>, just like using highlighters on paper prints.
+          <strong>Blue</strong> indicates erected. <strong>Green</strong> indicates 100% complete. The intent is supervisory locks
+          so only a foreman or supervisor can set these statuses, with secure job-scoped syncing planned as a Phase II upgrade.
+        </p>
+
+        <p>
+          If a beam is flown and comes back as the wrong one, the solution is instant: click the beam directly on the
+          erection drawing and pull up the cut sheet to verify dimensions and bolt patterns — no walking, no guessing,
+          no wasted time. If it is the wrong one, go to the pile of missing tags or unmarked beams — you have the description and specs in your hand.
+        </p>
+
+        <p>
+          Today, the application works reliably on tablets and has proven the core workflow. Mobile phone usability remains
+          a target for the next development phase. With the right resources, this tool can become what many of us wished existed years ago —
+          a faster, simpler, and more accurate way to work. Every job’s print set is organized differently, so our plan is practical automation:
+          tools that generate indexes, thumbnails, and mapping workflows quickly and consistently — so new jobs can be set up fast without sacrificing accuracy.
+        </p>
+      </div>
+    </section>
+
+    <!-- Funding Ask -->
+    <section class="card" style="margin-top:18px;">
+      <div class="hd">
+        <h3>Funding Ask</h3>
+        <span class="tag"><span class="dot future"></span> seeking SEED support</span>
+      </div>
+      <div class="bd">
+        <p>
+          Prince of Prints is a field-built, job-scoped blueprint platform designed to reduce lost time during receiving,
+          sorting, locating, and erecting iron. The core workflow is proven on tablets. The next phase is mobile-first usability on phones,
+          plus secure multi-user coordination so a job’s receiving and status signals can be shared reliably across devices —
+          without cross-job data exposure.
+        </p>
+
+        <div class="note" style="margin-top:12px;">
+          <strong>We are seeking SEED funding to accelerate Phase II:</strong>
+          <ul style="margin:10px 0 0; padding-left:18px; color:var(--muted); line-height:1.55;">
+            <li><strong>Mobile-first usability</strong> — professional redesign for phone use in the field (touch targets, speed, glare/sunlight readability, glove-friendly interaction).</li>
+            <li><strong>Receiving &amp; inventory workflows</strong> — checklist-based offload verification tied directly to tags, including clear identification of missing material.</li>
+            <li><strong>Job-scoped synchronization</strong> — consistent status visibility across all devices associated with the same job code, without cross-job data exposure.</li>
+            <li><strong>Supervisor locks &amp; permissions</strong> — role-based control so only authorized foremen or supervisors can apply or change status color codes.</li>
+            <li><strong>Automation tools</strong> — tooling to generate indexes, thumbnails, mappings, and job setup artifacts reliably and repeatably at scale.</li>
+            <li><strong>Professional development &amp; hardening</strong> — structured engineering workshops, code review, testing, and performance optimization to improve durability, ease of use, and accuracy under real jobsite conditions.</li>
+            <li><strong>Intellectual property protection</strong> — completion and expansion of patent filings to protect core workflows, job-scoped access models, and field-driven interaction methods.</li>
+          </ul>
+        </div>
+
+        <p style="margin-top:12px;">
+          Our goal is straightforward: reduce office traffic, reduce wasted man-hours, and give crews a faster way to verify
+          what is on site and what is missing — using the same job code that already scopes access to each job.
+        </p>
+
+        <p class="small" style="margin-top:10px;">
+          Interested in funding, partnering, or piloting on an active job? Contact: <strong>[KerryFickel@princeofprints.info]</strong>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="small">
+        © <span id="yr"></span> Prince of Prints — Feature list & roadmap page (internal + demo use)
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('yr').textContent = new Date().getFullYear();
+    document.getElementById('btnPrint').addEventListener('click', () => window.print());
+  </script>
+</body>
+</html>
+

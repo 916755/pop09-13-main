@@ -1,0 +1,82 @@
+[
+  {
+    "x": 745,
+    "y": 937,
+    "w": 94,
+    "h": 165,
+    "label": "a556",
+    "fetch": "images/Angles=A/a556.png"
+  },
+  {
+    "x": 849,
+    "y": 924,
+    "w": 363,
+    "h": 215,
+    "label": "P122",
+    "fetch": "images/Plates=P/P122.png"
+  },
+  {
+    "x": 745,
+    "y": 1143,
+    "w": 83,
+    "h": 155,
+    "label": "a242",
+    "fetch": "images/Angles=A/a242.png"
+  },
+  {
+    "x": 728,
+    "y": 1331,
+    "w": 107,
+    "h": 263,
+    "label": "a586",
+    "fetch": "images/Angles=A/a586.png"
+  },
+  {
+    "x": 839,
+    "y": 1309,
+    "w": 200,
+    "h": 313,
+    "label": "P345",
+    "fetch": "images/Plates=P/P345.png"
+  },
+  {
+    "x": 2083,
+    "y": 1296,
+    "w": 185,
+    "h": 344,
+    "label": "P338",
+    "fetch": "images/Plates=P/P338.png"
+  },
+  {
+    "x": 2273,
+    "y": 1315,
+    "w": 94,
+    "h": 279,
+    "label": "a586",
+    "fetch": "images/Angles=A/a586.png"
+  },
+  {
+    "x": 2275,
+    "y": 1172,
+    "w": 107,
+    "h": 104,
+    "label": "a242",
+    "fetch": "images/Angles=A/a242.png"
+  },
+  {
+    "x": 1967,
+    "y": 915,
+    "w": 289,
+    "h": 226,
+    "label": "P361",
+    "fetch": "images/Plates=P/P361.png"
+  },
+  {
+    "x": 2278,
+    "y": 911,
+    "w": 80,
+    "h": 195,
+    "label": "a557",
+    "fetch": "images/Angles=A/a557.png"
+  }
+]

@@ -1,0 +1,102 @@
+[
+  {
+    "x": 719,
+    "y": 803,
+    "w": 133,
+    "h": 54,
+    "label": "P514",
+    "fetch": "images/Plates=P/P514.png"
+  },
+  {
+    "x": 755,
+    "y": 964,
+    "w": 392,
+    "h": 54,
+    "label": "P6",
+    "fetch": "images/Plates=P/P6.png"
+  },
+  {
+    "x": 1272,
+    "y": 962,
+    "w": 386,
+    "h": 51,
+    "label": "P6",
+    "fetch": "images/Plates=P/P6.png"
+  },
+  {
+    "x": 1787,
+    "y": 981,
+    "w": 210,
+    "h": 42,
+    "label": "P6",
+    "fetch": "images/Plates=P/P6.png"
+  },
+  {
+    "x": 2121,
+    "y": 973,
+    "w": 304,
+    "h": 44,
+    "label": "P6",
+    "fetch": "images/Plates=P/P6.png"
+  },
+  {
+    "x": 2253,
+    "y": 802,
+    "w": 187,
+    "h": 69,
+    "label": "P514",
+    "fetch": "images/Plates=P/P514.png"
+  },
+  {
+    "x": 2428,
+    "y": 1442,
+    "w": 76,
+    "h": 134,
+    "label": "a689"
+  },
+  {
+    "x": 2415,
+    "y": 1585,
+    "w": 99,
+    "h": 122,
+    "label": "a94"
+  },
+  {
+    "x": 1977,
+    "y": 1591,
+    "w": 165,
+    "h": 196,
+    "label": "wt315",
+    "fetch": "images/Plates=P/wt315.png"
+  },
+  {
+    "x": 1641,
+    "y": 1595,
+    "w": 167,
+    "h": 186,
+    "label": "wt315",
+    "fetch": "images/Plates=P/wt315.png"
+  },
+  {
+    "x": 1099,
+    "y": 1591,
+    "w": 211,
+    "h": 192,
+    "label": "wt315",
+    "fetch": "images/Plates=P/wt315.png"
+  },
+  {
+    "x": 647,
+    "y": 1597,
+    "w": 89,
+    "h": 112,
+    "label": "a94"
+  },
+  {
+    "x": 636,
+    "y": 1459,
+    "w": 89,
+    "h": 122,
+    "label": "a689"
+  }
+]

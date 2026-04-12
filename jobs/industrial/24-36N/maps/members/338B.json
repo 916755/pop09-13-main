@@ -1,0 +1,34 @@
+[
+  {
+    "x": 781,
+    "y": 1190,
+    "w": 179,
+    "h": 306,
+    "label": "a57",
+    "fetch": "images/Angles=A/a57.png"
+  },
+  {
+    "x": 1785,
+    "y": 1406,
+    "w": 396,
+    "h": 143,
+    "label": "P329",
+    "fetch": "images/Plates=P/P329.png"
+  },
+  {
+    "x": 1749,
+    "y": 984,
+    "w": 432,
+    "h": 213,
+    "label": "W137",
+    "fetch": "images/Plates=P/W137.png"
+  },
+  {
+    "x": 2051,
+    "y": 1236,
+    "w": 223,
+    "h": 156,
+    "label": "a47",
+    "fetch": "images/Angles=A/a47.png"
+  }
+]

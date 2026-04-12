@@ -1,0 +1,34 @@
+[
+  {
+    "x": 829,
+    "y": 1183,
+    "w": 142,
+    "h": 293,
+    "label": "a57",
+    "fetch": "images/Angles=A/a57.png"
+  },
+  {
+    "x": 1557,
+    "y": 1278,
+    "w": 340,
+    "h": 103,
+    "label": "a317",
+   "fetch": "images/Angles=A/a317.png" 
+  },
+  {
+    "x": 1555,
+    "y": 1384,
+    "w": 371,
+    "h": 151,
+    "label": "a318",
+    "fetch": "images/Angles=A/a318.png"
+  },
+  {
+    "x": 2233,
+    "y": 1175,
+    "w": 262,
+    "h": 254,
+    "label": "a128",
+    "fetch": "images/Angles=A/a128.png"
+  }
+]

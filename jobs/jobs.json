@@ -1,0 +1,12 @@
+
+{
+  "jobs": [
+    {
+      "id": "24-36N",
+      "label": "NARM Stilling Shed",
+      "index": "./24-36N/index/assets-index.json",
+      "imagesDir": "./24-36N/images/",
+      "thumbsDir": "./24-36N/thumbs/"
+    }
+  ]
+}

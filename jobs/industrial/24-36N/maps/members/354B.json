@@ -1,0 +1,18 @@
+[
+  {
+    "x": 1490,
+    "y": 1004,
+    "w": 177,
+    "h": 170,
+    "label": "a90",
+    "fetch": "images/Angles=A/a90.png"
+  },
+  {
+    "x": 1986,
+    "y": 994,
+    "w": 165,
+    "h": 208,
+    "label": "a90",
+    "fetch": "images/Angles=A/a90.png"
+  }
+]

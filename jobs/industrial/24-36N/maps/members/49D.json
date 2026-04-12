@@ -1,0 +1,26 @@
+[
+  {
+    "x": 988,
+    "y": 1314,
+    "w": 143,
+    "h": 153,
+    "label": "P69",
+    "fetch": "images/Plates=P/P69.png"
+  },
+  {
+    "x": 1313,
+    "y": 1050,
+    "w": 486,
+    "h": 654,
+    "label": "P184",
+    "fetch": "images/Plates=P/P184.png"
+  },
+  {
+    "x": 2170,
+    "y": 1324,
+    "w": 138,
+    "h": 185,
+    "label": "P69",
+    "fetch": "images/Plates=P/P69.png"
+  }
+]

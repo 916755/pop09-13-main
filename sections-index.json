@@ -1,0 +1,2394 @@
+﻿{
+    "angle=a":  [
+                    {
+                        "name":  "a11.png",
+                        "path":  "./assets/angle=a/a11.png"
+                    },
+                    {
+                        "name":  "a15.png",
+                        "path":  "./assets/angle=a/a15.png"
+                    },
+                    {
+                        "name":  "a16.png",
+                        "path":  "./assets/angle=a/a16.png"
+                    },
+                    {
+                        "name":  "a47.png",
+                        "path":  "./assets/angle=a/a47.png"
+                    },
+                    {
+                        "name":  "a49.png",
+                        "path":  "./assets/angle=a/a49.png"
+                    },
+                    {
+                        "name":  "a67.png",
+                        "path":  "./assets/angle=a/a67.png"
+                    },
+                    {
+                        "name":  "a68.png",
+                        "path":  "./assets/angle=a/a68.png"
+                    },
+                    {
+                        "name":  "a90.png",
+                        "path":  "./assets/angle=a/a90.png"
+                    },
+                    {
+                        "name":  "a94.png",
+                        "path":  "./assets/angle=a/a94.png"
+                    },
+                    {
+                        "name":  "a121.png",
+                        "path":  "./assets/angle=a/a121.png"
+                    },
+                    {
+                        "name":  "a137.png",
+                        "path":  "./assets/angle=a/a137.png"
+                    },
+                    {
+                        "name":  "a138.png",
+                        "path":  "./assets/angle=a/a138.png"
+                    },
+                    {
+                        "name":  "a165.png",
+                        "path":  "./assets/angle=a/a165.png"
+                    },
+                    {
+                        "name":  "a168.png",
+                        "path":  "./assets/angle=a/a168.png"
+                    },
+                    {
+                        "name":  "a242.png",
+                        "path":  "./assets/angle=a/a242.png"
+                    },
+                    {
+                        "name":  "a252.png",
+                        "path":  "./assets/angle=a/a252.png"
+                    },
+                    {
+                        "name":  "a270.png",
+                        "path":  "./assets/angle=a/a270.png"
+                    },
+                    {
+                        "name":  "a274.png",
+                        "path":  "./assets/angle=a/a274.png"
+                    },
+                    {
+                        "name":  "a295.png",
+                        "path":  "./assets/angle=a/a295.png"
+                    },
+                    {
+                        "name":  "a297.png",
+                        "path":  "./assets/angle=a/a297.png"
+                    },
+                    {
+                        "name":  "a301.png",
+                        "path":  "./assets/angle=a/a301.png"
+                    },
+                    {
+                        "name":  "a311.png",
+                        "path":  "./assets/angle=a/a311.png"
+                    },
+                    {
+                        "name":  "a313.png",
+                        "path":  "./assets/angle=a/a313.png"
+                    },
+                    {
+                        "name":  "a314.png",
+                        "path":  "./assets/angle=a/a314.png"
+                    },
+                    {
+                        "name":  "a315.png",
+                        "path":  "./assets/angle=a/a315.png"
+                    },
+                    {
+                        "name":  "a316.png",
+                        "path":  "./assets/angle=a/a316.png"
+                    },
+                    {
+                        "name":  "a317.png",
+                        "path":  "./assets/angle=a/a317.png"
+                    },
+                    {
+                        "name":  "a318.png",
+                        "path":  "./assets/angle=a/a318.png"
+                    },
+                    {
+                        "name":  "a419.png",
+                        "path":  "./assets/angle=a/a419.png"
+                    },
+                    {
+                        "name":  "a426.png",
+                        "path":  "./assets/angle=a/a426.png"
+                    },
+                    {
+                        "name":  "a431.png",
+                        "path":  "./assets/angle=a/a431.png"
+                    },
+                    {
+                        "name":  "a467.png",
+                        "path":  "./assets/angle=a/a467.png"
+                    },
+                    {
+                        "name":  "a479.png",
+                        "path":  "./assets/angle=a/a479.png"
+                    },
+                    {
+                        "name":  "a480.png",
+                        "path":  "./assets/angle=a/a480.png"
+                    },
+                    {
+                        "name":  "a481.png",
+                        "path":  "./assets/angle=a/a481.png"
+                    },
+                    {
+                        "name":  "a514.png",
+                        "path":  "./assets/angle=a/a514.png"
+                    },
+                    {
+                        "name":  "a519.png",
+                        "path":  "./assets/angle=a/a519.png"
+                    },
+                    {
+                        "name":  "a520.png",
+                        "path":  "./assets/angle=a/a520.png"
+                    },
+                    {
+                        "name":  "a521.png",
+                        "path":  "./assets/angle=a/a521.png"
+                    },
+                    {
+                        "name":  "a523.png",
+                        "path":  "./assets/angle=a/a523.png"
+                    },
+                    {
+                        "name":  "a524.png",
+                        "path":  "./assets/angle=a/a524.png"
+                    },
+                    {
+                        "name":  "a539.png",
+                        "path":  "./assets/angle=a/a539.png"
+                    },
+                    {
+                        "name":  "a540.png",
+                        "path":  "./assets/angle=a/a540.png"
+                    },
+                    {
+                        "name":  "a550.png",
+                        "path":  "./assets/angle=a/a550.png"
+                    },
+                    {
+                        "name":  "a553.png",
+                        "path":  "./assets/angle=a/a553.png"
+                    },
+                    {
+                        "name":  "a554.png",
+                        "path":  "./assets/angle=a/a554.png"
+                    },
+                    {
+                        "name":  "a555.png",
+                        "path":  "./assets/angle=a/a555.png"
+                    },
+                    {
+                        "name":  "a556.png",
+                        "path":  "./assets/angle=a/a556.png"
+                    },
+                    {
+                        "name":  "a557.png",
+                        "path":  "./assets/angle=a/a557.png"
+                    },
+                    {
+                        "name":  "a563.png",
+                        "path":  "./assets/angle=a/a563.png"
+                    },
+                    {
+                        "name":  "a565.png",
+                        "path":  "./assets/angle=a/a565.png"
+                    },
+                    {
+                        "name":  "a568.png",
+                        "path":  "./assets/angle=a/a568.png"
+                    },
+                    {
+                        "name":  "a581.png",
+                        "path":  "./assets/angle=a/a581.png"
+                    },
+                    {
+                        "name":  "a583.png",
+                        "path":  "./assets/angle=a/a583.png"
+                    },
+                    {
+                        "name":  "a586.png",
+                        "path":  "./assets/angle=a/a586.png"
+                    },
+                    {
+                        "name":  "a589.png",
+                        "path":  "./assets/angle=a/a589.png"
+                    },
+                    {
+                        "name":  "a590.png",
+                        "path":  "./assets/angle=a/a590.png"
+                    },
+                    {
+                        "name":  "a594.png",
+                        "path":  "./assets/angle=a/a594.png"
+                    },
+                    {
+                        "name":  "a605.png",
+                        "path":  "./assets/angle=a/a605.png"
+                    },
+                    {
+                        "name":  "a675.png",
+                        "path":  "./assets/angle=a/a675.png"
+                    },
+                    {
+                        "name":  "a689.png",
+                        "path":  "./assets/angle=a/a689.png"
+                    },
+                    {
+                        "name":  "a1172.png",
+                        "path":  "./assets/angle=a/a1172.png"
+                    }
+                ],
+    "Braces=D":  [
+                     {
+                         "name":  "10D.png",
+                         "path":  "./assets/Braces=D/10D.png"
+                     },
+                     {
+                         "name":  "11D.png",
+                         "path":  "./assets/Braces=D/11D.png"
+                     },
+                     {
+                         "name":  "12D.png",
+                         "path":  "./assets/Braces=D/12D.png"
+                     },
+                     {
+                         "name":  "13D-ref-E8.png",
+                         "path":  "./assets/Braces=D/13D-ref-E8.png"
+                     },
+                     {
+                         "name":  "14D-ref-E8.png",
+                         "path":  "./assets/Braces=D/14D-ref-E8.png"
+                     },
+                     {
+                         "name":  "15D-ref-E8.png",
+                         "path":  "./assets/Braces=D/15D-ref-E8.png"
+                     },
+                     {
+                         "name":  "16D-ref-E9.png",
+                         "path":  "./assets/Braces=D/16D-ref-E9.png"
+                     },
+                     {
+                         "name":  "17D-ref-E9.png",
+                         "path":  "./assets/Braces=D/17D-ref-E9.png"
+                     },
+                     {
+                         "name":  "18D-ref-E9.png",
+                         "path":  "./assets/Braces=D/18D-ref-E9.png"
+                     },
+                     {
+                         "name":  "19D-ref-E9.png",
+                         "path":  "./assets/Braces=D/19D-ref-E9.png"
+                     },
+                     {
+                         "name":  "20D-ref-E9.png",
+                         "path":  "./assets/Braces=D/20D-ref-E9.png"
+                     },
+                     {
+                         "name":  "21D-ref-E9.png",
+                         "path":  "./assets/Braces=D/21D-ref-E9.png"
+                     },
+                     {
+                         "name":  "22D-ref-E9.png",
+                         "path":  "./assets/Braces=D/22D-ref-E9.png"
+                     },
+                     {
+                         "name":  "23D-ref-E9.png",
+                         "path":  "./assets/Braces=D/23D-ref-E9.png"
+                     },
+                     {
+                         "name":  "24D-ref-E9.png",
+                         "path":  "./assets/Braces=D/24D-ref-E9.png"
+                     },
+                     {
+                         "name":  "25D-ref-E9.png",
+                         "path":  "./assets/Braces=D/25D-ref-E9.png"
+                     },
+                     {
+                         "name":  "26D-ref-E9.png",
+                         "path":  "./assets/Braces=D/26D-ref-E9.png"
+                     },
+                     {
+                         "name":  "27D-ref-E9.png",
+                         "path":  "./assets/Braces=D/27D-ref-E9.png"
+                     },
+                     {
+                         "name":  "28D-ref-E9.png",
+                         "path":  "./assets/Braces=D/28D-ref-E9.png"
+                     },
+                     {
+                         "name":  "29D-ref-E9.png",
+                         "path":  "./assets/Braces=D/29D-ref-E9.png"
+                     },
+                     {
+                         "name":  "30D-ref-E7.png",
+                         "path":  "./assets/Braces=D/30D-ref-E7.png"
+                     },
+                     {
+                         "name":  "31D-ref-E7.png",
+                         "path":  "./assets/Braces=D/31D-ref-E7.png"
+                     },
+                     {
+                         "name":  "32D-ref-E7.png",
+                         "path":  "./assets/Braces=D/32D-ref-E7.png"
+                     },
+                     {
+                         "name":  "33D-ref-E7.png",
+                         "path":  "./assets/Braces=D/33D-ref-E7.png"
+                     },
+                     {
+                         "name":  "34D-ref-E7.png",
+                         "path":  "./assets/Braces=D/34D-ref-E7.png"
+                     },
+                     {
+                         "name":  "35D-ref-E7.png",
+                         "path":  "./assets/Braces=D/35D-ref-E7.png"
+                     },
+                     {
+                         "name":  "36D-ref-E7.png",
+                         "path":  "./assets/Braces=D/36D-ref-E7.png"
+                     },
+                     {
+                         "name":  "37D-ref-E7.png",
+                         "path":  "./assets/Braces=D/37D-ref-E7.png"
+                     },
+                     {
+                         "name":  "38D-ref-E7.png",
+                         "path":  "./assets/Braces=D/38D-ref-E7.png"
+                     },
+                     {
+                         "name":  "39D-ref-E7.png",
+                         "path":  "./assets/Braces=D/39D-ref-E7.png"
+                     },
+                     {
+                         "name":  "40D-ref-E7.png",
+                         "path":  "./assets/Braces=D/40D-ref-E7.png"
+                     },
+                     {
+                         "name":  "41D-ref-E7.png",
+                         "path":  "./assets/Braces=D/41D-ref-E7.png"
+                     },
+                     {
+                         "name":  "42D-ref-E7.png",
+                         "path":  "./assets/Braces=D/42D-ref-E7.png"
+                     },
+                     {
+                         "name":  "43D-ref-E7.png",
+                         "path":  "./assets/Braces=D/43D-ref-E7.png"
+                     },
+                     {
+                         "name":  "44D-ref-E7.png",
+                         "path":  "./assets/Braces=D/44D-ref-E7.png"
+                     },
+                     {
+                          "name":  "45D-ref-E7.png",
+                          "path":  "./assets/Braces=D/45D-ref-E7.png"
+                     },
+                     {
+                         "name":  "46D-ref-E9.png",
+                         "path":  "./assets/Braces=D/46D-ref-E9.png"
+                     },
+                     {
+                         "name":  "47D-ref-E8.png",
+                         "path":  "./assets/Braces=D/47D-ref-E8.png"
+                     },
+                     {
+                         "name":  "48D-ref-E9.png",
+                         "path":  "./assets/Braces=D/48D-ref-E9.png"
+                     },
+                     {
+                         "name":  "49D-ref-E9.png",
+                         "path":  "./assets/Braces=D/49D-ref-E9.png"
+                     },
+                     {
+                         "name":  "50D-ref-E8.png",
+                         "path":  "./assets/Braces=D/50D-ref-E8.png"
+                     },
+                     {
+                         "name":  "15D-ref-E8.png",
+                         "path":  "./assets/Braces=D/51D-ref-E8.png"
+                     },
+                     {
+                         "name":  "52D-ref-E8.png",
+                         "path":  "./assets/Braces=D/52D-ref-E8.png"
+                     },
+                     {
+                         "name":  "53D-ref-E8.png",
+                         "path":  "./assets/Braces=D/53D-ref-E8.png"
+                     },
+                     {
+                         "name":  "54D-ref-E9.png",
+                         "path":  "./assets/Braces=D/54D-ref-E9.png"
+                     }, 
+                     {
+                         "name":  "55D-ref-E9.png",
+                         "path":  "./assets/Braces=D/55D-ref-E9.png"
+                     },
+                     {
+                         "name":  "56D-ref-E8-E9.png",
+                         "path":  "./assets/Braces=D/56D-ref-E8-E9.png"
+                     },
+                     {
+                         "name":  "57D-ref-E7.png",
+                         "path":  "./assets/Braces=D/57D-ref-E7.png"
+                     },
+                     {
+                         "name":  "58D-ref-E7.png",
+                         "path":  "./assets/Braces=D/58D-ref-E7.png"
+                     },
+                     {
+                         "name":  "59D-ref-E7.png",
+                         "path":  "./assets/Braces=D/59D-ref-E7.png"
+                     },
+                     {
+                         "name":  "60D-ref-E7.png",
+                         "path":  "./assets/Braces=D/60D-ref-E7.png"
+                     },
+                     {
+                         "name":  "274D-ref-E4.png", 
+                         "path":  "./assets/Braces=D/274D-ref-E4.png"
+                     }, 
+                     {
+                         "name":  "275D-ref-E4.png",
+                         "path":  "./assets/Braces=D/275D-ref-E4.png"
+                     },
+                     {
+                         "name":  "276D-ref-E4.png",
+                         "path":  "./assets/Braces=D/276D-ref-E4.png"
+                     },
+                     {
+                         "name":  "278D-ref-E4.png",
+                         "path":  "./assets/Braces=D/278D-ref-E4.png"
+                     },
+                     {
+                         "name":  "279D-ref-E4.png",
+                         "path":  "./assets/Braces=D/279D-ref-E4.png"
+                     },
+                     {
+                         "name":  "280D-ref-E4.png",
+                         "path":  "./assets/Braces=D/280D-ref-E4.png"
+                     },
+                     {
+                         "name":  "281D-ref-E4.png",
+                         "path":  "./assets/Braces=D/281D-ref-E4.png"
+                     },
+                     {
+                         "name":  "282D-ref-E4.png",
+                         "path":  "./assets/Braces=D/282D-ref-E4.png"
+                     },
+                     {
+                         "name":  "283D-ref-E4.png",
+                         "path":  "./assets/Braces=D/283D-ref-E4.png"
+                     },
+                     {
+                         "name":  "284D-ref-E4.png",
+                         "path":  "./assets/Braces=D/284D-ref-E4.png"
+                     },
+                     {
+                         "name":  "285D-ref-E4.png",
+                         "path":  "./assets/Braces=D/285D-ref-E4.png"
+                     },
+                     {
+                         "name":  "286D-ref-E4.png",
+                         "path":  "./assets/Braces=D/286D-ref-E4.png"
+                     },
+                     {
+                         "name":  "287D-ref-E4.png",
+                         "path":  "./assets/Braces=D/287D-ref-E4.png"
+                     },  
+                     {
+                         "name":  "288-BP7D-ref-E5.png",
+                         "path":  "./assets/Braces=D/288-BP7D-ref-E5.png"
+                     },                   
+                     {
+                         "name":  "288-BP7.png",
+                         "path":  "./assets/Braces=D/288-BP7.png"
+                     },
+                     {
+                         "name":  "289D-ref-E5.png",
+                         "path":  "./assets/Braces=D/289D-ref-E5.png"
+                     },
+                     {
+                         "name":  "290D-ref-E5.png",
+                         "path":  "./assets/Braces=D/290D-ref-E5.png"
+                     },
+                     {
+                         "name":  "291D-ref-E5.png",
+                         "path":  "./assets/Braces=D/291D-ref-E5.png"
+                     },
+                     {
+                         "name":  "292-BP7.png",
+                         "path":  "./assets/Braces=D/292-BP7.png"
+                     },
+                     { 
+                         "name":  "292D-ref-E5.png",
+                         "path":  "./assets/Braces=D/292D-ref-E7.png"
+                     },
+                     {
+                         "name":  "293D-ref-E5.png",
+                         "path":  "./assets/Braces=D/293D-ref-E5.png"
+                     },
+                     {
+                         "name":  "294D-ref-E5.png",
+                         "path":  "./assets/Braces=D/294D-ref-E5.png"
+                     },
+                     {
+                         "name":  "295D-ref-E5.png",
+                         "path":  "./assets/Braces=D/295D-ref-E5.png"
+                     },
+                     {
+                         "name":  "296D-ref-E5.png",
+                         "path":  "./assets/Braces=D/296D-ref-E5.png"
+                     },
+                     {
+                         "name":  "297D-ref-E5.png",
+                         "path":  "./assets/Braces=D/297D-ref-E5.png"
+                     },
+                     {
+                         "name":  "298D-ref-E5.png",
+                         "path":  "./assets/Braces=D/298D-ref-E5.png"
+                     },
+                     {
+                         "name":  "299D-ref-E5.png",
+                         "path":  "./assets/Braces=D/299D-ref-E5.png"
+                     },
+                     {
+                         "name":  "300D-ref-E5.png",
+                         "path":  "./assets/Braces=D/300D-ref-E5.png"
+                     },
+                     {
+                         "name":  "301D-ref-E5.png",
+                         "path":  "./assets/Braces=D/301D-ref-E5.png"
+                     },
+                     {
+                         "name":  "302D-ref-E5.png",
+                         "path":  "./assets/Braces=D/302D-ref-E5.png"
+                     },
+                     {
+                         "name":  "303D-ref-E5.png",
+                         "path":  "./assets/Braces=D/303D-ref-E5.png"
+                     },
+                     {
+                         "name":  "304D-ref-E5.png",
+                         "path":  "./assets/Braces=D/304D-ref-E5.png"
+                     },
+                     {
+                         "name":  "305D-ref-E5.png",
+                         "path":  "./assets/Braces=D/305D-ref-E5.png"
+                     },
+                     {
+                         "name":  "306D-ref-E5.png",
+                         "path":  "./assets/Braces=D/306D-ref-E5.png"
+                     },
+                     {
+                         "name":  "307D-ref-E5.png",
+                         "path":  "./assets/Braces=D/307D-ref-E5.png"
+                     },
+                     {
+                         "name":  "308D-ref-E5.png",
+                         "path":  "./assets/Braces=D/308D-ref-E5.png"
+                     },
+                     {
+                         "name":  "309D-ref-E5.png",
+                         "path":  "./assets/Braces=D/309D-ref-E5.png"
+                     },
+                     {
+                         "name":  "310D-ref-E5.png",
+                         "path":  "./assets/Braces=D/310D-ref-E5.png"
+                     },
+                     {
+                         "name":  "311D-ref-E5.png",
+                         "path":  "./assets/Braces=D/311D-ref-E5.png"
+                     },
+                     {
+                         "name":  "312D1.png",
+                         "path":  "./assets/Braces=D/312D1.png"
+                     },
+                     {
+                         "name":  "314D1.png",
+                         "path":  "./assets/Braces=D/314D1.png"
+                     },
+                     {
+                         "name":  "315D1.png",
+                         "path":  "./assets/Braces=D/315D1.png"
+                     },
+                     {
+                         "name":  "316D1.png",
+                         "path":  "./assets/Braces=D/316D1.png"
+                     },
+                     {
+                         "name":  "317D-ref-E-11.png",
+                         "path":  "./assets/Braces=D/317D-ref-E-11.png"
+                     },
+                     {
+                         "name":  "318D.png",
+                         "path":  "./assets/Braces=D/318D.png"
+                     },
+                     {
+                         "name":  "319D.png",
+                         "path":  "./assets/Braces=D/319D.png"
+                     },
+                     {
+                         "name":  "320D.png",
+                         "path":  "./assets/Braces=D/320D.png"
+                     },
+                     {
+                         "name":  "321D.png",
+                         "path":  "./assets/Braces=D/321D.png"
+                     },
+                     {
+                         "name":  "322D.png",
+                         "path":  "./assets/Braces=D/322D.png"
+                     },
+                     {
+                         "name":  "323D.png",
+                         "path":  "./assets/Braces=D/323D.png"
+                     },
+                     {
+                         "name":  "324D.png",
+                         "path":  "./assets/Braces=D/324D.png"
+                     },
+                     {
+                         "name":  "325D.png",
+                         "path":  "./assets/Braces=D/325D.png"
+                     },
+                     {
+                         "name":  "326D.png",
+                         "path":  "./assets/Braces=D/326D.png" 
+                     },
+                     {
+                         "name":  "327D.png",
+                         "path":  "./assets/Braces=D/327D.png"
+                     },
+                     {
+                         "name":  "328D.png",
+                         "path":  "./assets/Braces=D/328D.png"
+                     },
+                     {
+                         "name":  "396D.png",
+                         "path":  "./assets/Braces=D/396D.png"
+                     }
+                       ],
+    "plates=P":  [
+                     {
+                         "name":  "BP7.png",
+                         "path":  "./assets/plates=P/BP7.png"
+                     },
+                     {
+                         "name":  "P1.png",
+                         "path":  "./assets/plates=P/P1.png"
+                     },
+                     {
+                         "name":  "P2.png",
+                         "path":  "./assets/plates=P/P2.png"
+                     },
+                     {
+                         "name":  "P3.png",
+                         "path":  "./assets/plates=P/P3.png"
+                     },
+                     {
+                         "name":  "P4.png",
+                         "path":  "./assets/plates=P/P4.png"
+                     },
+                     {
+                         "name":  "P5.png",
+                         "path":  "./assets/plates=P/P5.png"
+                     },
+                     {
+                         "name":  "P6.png",
+                         "path":  "./assets/plates=P/P6.png"
+                     },
+                     {
+                         "name":  "P9.png",
+                         "path":  "./assets/plates=P/P9.png"
+                     },
+                     {
+                         "name":  "P10.png",
+                         "path":  "./assets/plates=P/P10.png"
+                     },
+                     {
+                         "name":  "P12.png",
+                         "path":  "./assets/plates=P/P12.png"
+                     },
+                     {
+                         "name":  "P14.png",
+                         "path":  "./assets/plates=P/P14.png"
+                     },
+                     {
+                         "name":  "P17.png",
+                         "path":  "./assets/plates=P/P17.png"
+                     },
+                     {
+                         "name":  "P21.png",
+                         "path":  "./assets/plates=P/P21.png"
+                     },
+                     {
+                         "name":  "P24.png",
+                         "path":  "./assets/plates=P/P24.png"
+                     },
+                     {
+                         "name":  "P28.png",
+                         "path":  "./assets/plates=P/P28.png"
+                     },
+                     {
+                         "name":  "P30.png",
+                         "path":  "./assets/plates=P/P30.png"
+                     },
+                     {
+                         "name":  "P33.png",
+                         "path":  "./assets/plates=P/P33.png"
+                     },
+                     {
+                         "name":  "P36.png",
+                         "path":  "./assets/plates=P/P36.png"
+                     },
+                     {
+                         "name":  "P39.png",
+                         "path":  "./assets/plates=P/P39.png"
+                     },
+                     {
+                         "name":  "P40.png",
+                         "path":  "./assets/plates=P/P40.png"
+                     },
+                     {
+                         "name":  "P41.png",
+                         "path":  "./assets/plates=P/P41.png"
+                     },
+                     {
+                         "name":  "P42.png",
+                         "path":  "./assets/plates=P/P42.png"
+                     },
+                     {
+                         "name":  "P43.png",
+                         "path":  "./assets/plates=P/P43.png"
+                     },
+                     {
+                         "name":  "P44.png",
+                         "path":  "./assets/plates=P/P44.png"
+                     },
+                     {
+                         "name":  "P50.png",
+                         "path":  "./assets/plates=P/P50.png"
+                     },
+                     {
+                         "name":  "P61.png",
+                         "path":  "./assets/plates=P/P61.png"
+                     },
+                     {
+                         "name":  "P67.png",
+                         "path":  "./assets/plates=P/P67.png"
+                     },
+                     {
+                         "name":  "P69.png",
+                         "path":  "./assets/plates=P/P69.png"
+                     },
+                     {
+                         "name":  "P70.png",
+                         "path":  "./assets/plates=P/P70.png"
+                     },
+                     {
+                         "name":  "P74.png",
+                         "path":  "./assets/plates=P/P74.png"
+                     },
+                     {
+                         "name":  "P82.png",
+                         "path":  "./assets/plates=P/P82.png"
+                     },
+                     {
+                         "name":  "P83.png",
+                         "path":  "./assets/plates=P/P83.png"
+                     },
+                     {
+                         "name":  "P84.png",
+                         "path":  "./assets/plates=P/P84.png"
+                     },
+                     {
+                         "name":  "P90.png",
+                         "path":  "./assets/plates=P/P90.png"
+                     },
+                     {
+                         "name":  "P91.png",
+                         "path":  "./assets/plates=P/P91.png"
+                     },
+                     {
+                         "name":  "P92.png",
+                         "path":  "./assets/plates=P/P92.png"
+                     },
+                     {
+                         "name":  "P93.png",
+                         "path":  "./assets/plates=P/P93.png"
+                     },
+                     {
+                         "name":  "P58-ref-96.png",
+                         "path":  "./assets/plates=P/P58-ref-96.png"
+                     },
+                     {
+                         "name":  "P97.png",
+                         "path":  "./assets/plates=P/P97.png"
+                     },
+                     {
+                         "name":  "P98.png",
+                         "path":  "./assets/plates=P/P98.png"
+                     },
+                     {
+                         "name":  "P99.png",
+                         "path":  "./assets/plates=P/P99.png"
+                     },
+                     { 
+                         "name":  "P100.png",
+                         "path":  "./assets/plates=P/P100.png"
+                     },
+                     {
+                         "name":  "P102.png",
+                         "path":  "./assets/plates=P/P102.png"
+                     },
+                     {
+                         "name":  "P104.png",
+                         "path":  "./assets/plates=P/P104.png"
+                     },
+                     {
+                         "name":  "P105.png",
+                         "path":  "./assets/plates=P/P105.png"
+                     },
+                     {
+                         "name":  "P106.png",
+                         "path":  "./assets/plates=P/P106.png"
+                     },
+                     {
+                         "name":  "P107.png",
+                         "path":  "./assets/plates=P/P107.png"
+                     },
+                     {
+                         "name":  "P108.png",
+                         "path":  "./assets/plates=P/P108.png"
+                     },
+                     {
+                         "name":  "P109.png",
+                         "path":  "./assets/plates=P/P109.png"
+                     },
+                     {
+                         "name":  "P115.png",
+                         "path":  "./assets/plates=P/P115.png"
+                     },
+                     {
+                         "name":  "P118.png",
+                         "path":  "./assets/plates=P/P118.png"
+                     },
+                     {
+                         "name":  "P119.png",
+                         "path":  "./assets/plates=P/P119.png"
+                     },
+                     {
+                         "name":  "P121.png",
+                         "path":  "./assets/plates=P/P121.png"
+                     },
+                     {
+                         "name":  "P122.png",
+                         "path":  "./assets/plates=P/P122.png"
+                     },
+                     {
+                         "name":  "P123.png",
+                         "path":  "./assets/plates=P/P123.png"
+                     },
+                     {
+                         "name":  "P124.png",
+                         "path":  "./assets/plates=P/P124.png"
+                     },
+                     {
+                         "name":  "P127.png",
+                         "path":  "./assets/plates=P/P127.png"
+                     },
+                     {
+                         "name":  "P128.png",
+                         "path":  "./assets/plates=P/P128.png"
+                     },
+                     {
+                         "name":  "P129.png",
+                         "path":  "./assets/plates=P/P129.png"
+                     },
+                     {
+                         "name":  "P132.png",
+                         "path":  "./assets/plates=P/P132.png"
+                     },                    
+                     {
+                         "name":  "P138.png",
+                         "path":  "./assets/plates=P/P138.png"
+                     },
+                     {
+                         "name":  "P139.png",
+                         "path":  "./assets/plates=P/P139.png"
+                     },
+                     {
+                         "name":  "P159.png",
+                         "path":  "./assets/plates=P/P159.png"
+                     },
+                     {
+                         "name":  "P161.png",
+                         "path":  "./assets/plates=P/P161.png"
+                     },
+                     {
+                         "name":  "P165.png",
+                         "path":  "./assets/plates=P/P165.png"
+                     },
+                     {
+                         "name":  "P169.png",
+                         "path":  "./assets/plates=P/P169.png"
+                     },
+                     {
+                         "name":  "P170.png",
+                         "path":  "./assets/plates=P/P170.png"
+                     },
+                     {
+                         "name":  "P171.png",
+                         "path":  "./assets/plates=P/P171.png"
+                     },
+                     {
+                         "name":  "P177.png",
+                         "path":  "./assets/plates=P/P177.png"
+                     },
+                     {
+                         "name":  "P178.png",
+                         "path":  "./assets/plates=P/P178.png"
+                     },
+                     {
+                         "name":  "P180.png",
+                         "path":  "./assets/plates=P/P180.png"
+                     },
+                     {
+                         "name":  "P183.png",
+                         "path":  "./assets/plates=P/P183.png"
+                     },
+                     {
+                         "name":  "P184.png",
+                         "path":  "./assets/plates=P/P184.png"
+                     },
+                     {
+                         "name":  "P185.png",
+                         "path":  "./assets/plates=P/P185.png"
+                     },
+                     {
+                         "name":  "P188.png",
+                         "path":  "./assets/plates=P/P188.png"
+                     },
+                     {
+                         "name":  "P192-ref-E6.png",
+                         "path":  "./assets/plates=P/P192-ref-E6.png"
+                     },
+                     {
+                         "name":  "P194.png",
+                         "path":  "./assets/plates=P/P194.png"
+                     },
+                     { 
+                         "name":  "P195.png",
+                         "path":  "./assets/plates=P/P195.png"
+                     },
+                     {
+                         "name":  "P196.png",
+                         "path":  "./assets/plates=P/P196.png"
+                     },
+                     {
+                         "name":  "P198.png",
+                         "path":  "./assets/plates=P/P198.png"
+                     },
+                     {
+                         "name":  "P199.png",
+                         "path":  "./assets/plates=P/P199.png"
+                     },
+                     {
+                         "name":  "P210.png",
+                         "path":  "./assets/plates=P/P210.png"
+                     },
+                     {
+                         "name":  "P212.png",
+                         "path":  "./assets/plates=P/P212.png"
+                     },
+                     {
+                         "name":  "P213.png",
+                         "path":  "./assets/plates=P/P213.png"
+                     },
+                     {
+                         "name":  "P214.png",
+                         "path":  "./assets/plates=P/P214.png"
+                     },
+                     {
+                         "name":  "P216.png",
+                         "path":  "./assets/plates=P/P216.png"
+                     },
+                     {
+                         "name":  "P217.png",
+                         "path":  "./assets/plates=P/P217.png"
+                     },
+                     {
+                         "name":  "P218.png",
+                         "path":  "./assets/plates=P/P218.png"
+                     },
+                     {
+                         "name":  "P219.png",
+                         "path":  "./assets/plates=P/P219.png"
+                     },
+                     {
+                         "name":  "P220.png",
+                         "path":  "./assets/plates=P/P220.png"
+                     },
+                     {
+                         "name":  "P221.png",
+                         "path":  "./assets/plates=P/P221.png"
+                     },
+                     {
+                         "name":  "P222.png",
+                         "path":  "./assets/plates=P/P222.png"
+                     },
+                     {
+                         "name":  "P223.png",
+                         "path":  "./assets/plates=P/P223.png"
+                     },
+                     {
+                         "name":  "P225.png",
+                         "path":  "./assets/plates=P/P225.png"
+                     },
+                     {
+                         "name":  "P227.png",
+                         "path":  "./assets/plates=P/P227.png"
+                     },
+                     {
+                         "name":  "P228.png",
+                         "path":  "./assets/plates=P/P228.png"
+                     },
+                     {
+                         "name":  "P230.png",
+                         "path":  "./assets/plates=P/P230.png"
+                     },
+                     {
+                         "name":  "P231.png",
+                         "path":  "./assets/plates=P/P231.png"
+                     },
+                     {
+                         "name":  "P232.png",
+                         "path":  "./assets/plates=P/P232.png"
+                     },
+                     {
+                         "name":  "P234.png",
+                         "path":  "./assets/plates=P/P234.png"
+                     },
+                     {
+                         "name":  "P238.png",
+                         "path":  "./assets/plates=P/P238.png"
+                     },
+                     {
+                         "name":  "P241.png",
+                         "path":  "./assets/plates=P/P241.png"
+                     },
+                     {
+                         "name":  "P243.png",
+                         "path":  "./assets/plates=P/P243.png"
+                     },
+                     {
+                         "name":  "P244.png",
+                         "path":  "./assets/plates=P/P244.png"
+                     },
+                     {
+                         "name":  "P246.png",
+                         "path":  "./assets/plates=P/P246.png"
+                     },
+                     {
+                         "name":  "P249.png",
+                         "path":  "./assets/plates=P/P249.png"
+                     },
+                     {
+                         "name":  "P252.png",
+                         "path":  "./assets/plates=P/P252.png"
+                     },
+                     {
+                         "name":  "P253.png",
+                         "path":  "./assets/plates=P/P253.png"
+                     },
+                     {
+                         "name":  "P254.png",
+                         "path":  "./assets/plates=P/P254.png"
+                     },
+                     {
+                         "name":  "P255.png",
+                         "path":  "./assets/plates=P/P255.png"
+                     },
+                     {
+                         "name":  "P256-ref-E9.png",
+                         "path":  "./assets/plates=P/P256-ref-E9.png"
+                     },
+                     {
+                         "name":  "P257-ref-E9.png",
+                         "path":  "./assets/plates=P/P257-ref-E9.png"
+                     },
+                     {
+                         "name":  "P258-ref-E6.png",
+                         "path":  "./assets/plates=P/P258-ref-E6.png"
+                     },
+                     {
+                         "name":  "P259.png",
+                         "path":  "./assets/plates=P/P259.png"
+                     },
+                     {
+                         "name":  "P260.png",
+                         "path":  "./assets/plates=P/P260.png"
+                     },
+                     {
+                         "name":  "P261.png",
+                         "path":  "./assets/plates=P/P261.png"
+                     },
+                     {
+                         "name":  "P261-ref-E6.png",
+                         "path":  "./assets/plates=P/P261-ref-E6.png"
+                     },
+                     {
+                         "name":  "P265.png",
+                         "path":  "./assets/plates=P/P265.png"
+                     },
+                     {
+                         "name":  "P266.png",
+                         "path":  "./assets/plates=P/P266.png"
+                     },
+                     {
+                         "name":  "P267.png",
+                         "path":  "./assets/plates=P/P267.png"
+                     },
+                     {
+                         "name":  "P267-ref-E6.png",
+                         "path":  "./assets/plates=P/P267-ref-E6.png"
+                     },
+                     {
+                         "name":  "P268.png",
+                         "path":  "./assets/plates=P/P268.png"
+                     },
+                     {
+                         "name":  "P271.png",
+                         "path":  "./assets/plates=P/P271.png"
+                     },
+                     {
+                         "name":  "P272.png",
+                         "path":  "./assets/plates=P/P272.png"
+                     },
+                     {
+                         "name":  "P273-ref-E6.png",
+                         "path":  "./assets/plates=P/P273-ref-E6.png"
+                     },
+                     {
+                         "name":  "P274.png",
+                         "path":  "./assets/plates=P/P274.png"
+                     },
+                     {
+                         "name":  "P276.png",
+                         "path":  "./assets/plates=P/P276.png"
+                     },
+                     {
+                         "name":  "P281.png",
+                         "path":  "./assets/plates=P/P281.png"
+                     },
+                     {
+                         "name":  "P282.png",
+                         "path":  "./assets/plates=P/P282.png"
+                     },
+                     {
+                         "name":  "P286.png",
+                         "path":  "./assets/plates=P/P286.png"
+                     },
+                     {
+                         "name":  "P288.png",
+                         "path":  "./assets/plates=P/P288.png"
+                     },
+                     {
+                         "name":  "P291.png",
+                         "path":  "./assets/plates=P/P291.png"
+                     },
+                     {
+                         "name":  "P293.png",
+                         "path":  "./assets/plates=P/P293.png"
+                     },
+                     {
+                         "name":  "P294.png",
+                         "path":  "./assets/plates=P/P294.png"
+                     },
+                     {
+                         "name":  "P313.png",
+                         "path":  "./assets/plates=P/P313.png"
+                     },
+                     {
+                         "name":  "P315.png",
+                         "path":  "./assets/plates=P/P315.png"
+                     },
+                     {
+                         "name":  "P318.png",
+                         "path":  "./assets/plates=P/P318.png"
+                     },
+                     {
+                         "name":  "P322.png",
+                         "path":  "./assets/plates=P/P322.png"
+                     },
+                     {
+                         "name":  "P326.png",
+                         "path":  "./assets/plates=P/P326.png"
+                     },
+                     {
+                         "name":  "P329.png",
+                         "path":  "./assets/plates=P/P329.png"
+                     },
+                     {
+                         "name":  "P332.png",
+                         "path":  "./assets/plates=P/P332.png"
+                     },
+                     {
+                         "name":  "P333.png",
+                         "path":  "./assets/plates=P/P333.png"
+                     },
+                     {
+                         "name":  "P337.png",
+                         "path":  "./assets/plates=P/P337.png"
+                     },
+                     {
+                         "name":  "P338.png",
+                         "path":  "./assets/plates=P/P338.png"
+                     },
+                     {
+                         "name":  "P341.png",
+                         "path":  "./assets/plates=P/P341.png"
+                     },
+                     {
+                         "name":  "P345.png",
+                         "path":  "./assets/plates=P/P345.png"
+                     },
+                     {
+                         "name":  "P348.png",
+                         "path":  "./assets/plates=P/P350.png"
+                     },
+                     {
+                         "name":  "P351.png",
+                         "path":  "./assets/plates=P/P351.png"
+                     },
+                     {
+                         "name":  "P352.png",
+                         "path":  "./assets/plates=P/P352.png"
+                     },
+                     {
+                         "name":  "P353.png",
+                         "path":  "./assets/plates=P/P353.png"
+                     },
+                     {
+                         "name":  "P354.png",
+                         "path":  "./assets/plates=P/P354.png"
+                     },
+                     {
+                         "name":  "P356.png",
+                         "path":  "./assets/plates=P/P356.png"
+                     },
+                     {
+                         "name":  "P357.png",
+                         "path":  "./assets/plates=P/P357.png"
+                     },
+                     {
+                         "name":  "P358.png",
+                         "path":  "./assets/plates=P/P358.png"
+                     },
+                     {
+                         "name":  "P362.png",
+                         "path":  "./assets/plates=P/P362.png"
+                     },
+                     {
+                         "name":  "P366.png",
+                         "path":  "./assets/plates=P/P366.png"
+                     },
+                     {
+                         "name":  "P371.png",
+                         "path":  "./assets/plates=P/P371.png"
+                     },
+                     {
+                         "name":  "P372.png",
+                         "path":  "./assets/plates=P/P372.png"
+                     },
+                     {
+                         "name":  "P376.png",
+                         "path":  "./assets/plates=P/P376.png"
+                     },
+                     {
+                         "name":  "P380.png",
+                         "path":  "./assets/plates=P/P380.png"
+                     },
+                     {
+                         "name":  "P386.png",
+                         "path":  "./assets/plates=P/P386.png"
+                     },
+                     {
+                         "name":  "P391-ref-E8.png",
+                         "path":  "./assets/plates=P/P391-ref-E8.png"
+                     },
+                     {
+                         "name":  "P393.png",
+                         "path":  "./assets/plates=P/P393.png"
+                     },
+                     {
+                         "name":  "P397.png",
+                         "path":  "./assets/plates=P/P397.png"
+                     },
+                     {
+                         "name":  "P408.png",
+                         "path":  "./assets/plates=P/P408.png"
+                     },
+                     {
+                         "name":  "P415.png",
+                         "path":  "./assets/plates=P/P415.png"
+                     },
+                     {
+                         "name":  "P416.png",
+                         "path":  "./assets/plates=P/P416.png"
+                     },
+                     {
+                         "name":  "P417.png",
+                         "path":  "./assets/plates=P/P417.png"
+                     },
+                     {
+                         "name":  "P427.png",
+                         "path":  "./assets/plates=P/P427.png"
+                     },
+                     {
+                         "name":  "P428.png",
+                         "path":  "./assets/plates=P/P428.png"
+                     },
+                     {
+                         "name":  "P429.png",
+                         "path":  "./assets/plates=P/P429.png"
+                     },
+                     {
+                         "name":  "P431.png",
+                         "path":  "./assets/plates=P/P431.png"
+                     },
+                     {
+                         "name":  "P446.png",
+                         "path":  "./assets/plates=P/P446.png"
+                     },
+                     {
+                         "name":  "P449.png",
+                         "path":  "./assets/plates=P/P449.png"
+                     },
+                     {
+                         "name":  "P452.png",
+                         "path":  "./assets/plates=P/P452.png"
+                     },
+                     {
+                         "name":  "P454.png",
+                         "path":  "./assets/plates=P/P454.png"
+                     },
+                     {
+                         "name":  "P458.png",
+                         "path":  "./assets/plates=P/P458.png"
+                     },
+                     {
+                         "name":  "P459.png",
+                         "path":  "./assets/plates=P/P459.png"
+                     },
+                     {
+                         "name":  "P461.png",
+                         "path":  "./assets/plates=P/P461.png"
+                     },
+                     {
+                         "name":  "P463.png",
+                         "path":  "./assets/plates=P/P463.png"
+                     },
+                     {
+                         "name":  "P467.png",
+                         "path":  "./assets/plates=P/P467.png"
+                     },
+
+                     {
+                         "name":  "P469.png",
+                         "path":  "./assets/plates=P/P469.png"
+                     },
+                     {
+                         "name":  "P470.png",
+                         "path":  "./assets/plates=P/P470.png"
+                     },
+                     {
+                         "name":  "P471.png",
+                         "path":  "./assets/plates=P/P471.png"
+                     },
+                     {
+                         "name":  "P473.png",
+                         "path":  "./assets/plates=P/P473.png"
+                     },
+                     {
+                         "name":  "P475.png",
+                         "path":  "./assets/plates=P/P475.png"
+                     },
+                     {
+                         "name":  "P481.png",
+                         "path":  "./assets/plates=P/P481.png"
+                     },
+                     {
+                         "name":  "P483.png",
+                         "path":  "./assets/plates=P/P483.png"
+                     },
+                     {
+                         "name":  "P484.png",
+                         "path":  "./assets/plates=P/P484.png"
+                     },
+                     {
+                         "name":  "P489.png",
+                         "path":  "./assets/plates=P/P489.png"
+                     },
+                     {
+                         "name":  "P490.png",
+                         "path":  "./assets/plates=P/P490.png"
+                     },
+                     {
+                         "name":  "P491.png",
+                         "path":  "./assets/plates=P/P491.png"
+                     },
+                     {
+                         "name":  "P492.png",
+                         "path":  "./assets/plates=P/P492.png"
+                     },
+                     {
+                         "name":  "P496.png",
+                         "path":  "./assets/plates=P/P496.png"
+                     },
+                     {
+                         "name":  "P498.png",
+                         "path":  "./assets/plates=P/P498.png"
+                     },
+
+                     {
+                         "name":  "P507.png",
+                         "path":  "./assets/plates=P/P507.png"
+                     },
+                     {
+                         "name":  "P509.png",
+                         "path":  "./assets/plates=P/P509.png"
+                     },
+                     {
+                         "name":  "P510.png",
+                         "path":  "./assets/plates=P/P510.png"
+                     },
+                     {
+                         "name":  "P511.png",
+                         "path":  "./assets/plates=P/P511.png"
+                     },
+                     {
+                         "name":  "P512.png",
+                         "path":  "./assets/plates=P/P512.png"
+                     },
+                     {
+                         "name":  "P514.png",
+                         "path":  "./assets/plates=P/P514.png"
+                     },
+                     {
+                         "name":  "P517.png",
+                         "path":  "./assets/plates=P/P517.png"
+                     },
+                     {
+                         "name":  "P518.png",
+                         "path":  "./assets/plates=P/P518.png"
+                     },
+                     {
+                         "name":  "P519.png",
+                         "path":  "./assets/plates=P/P519.png"
+                     },
+                     {
+                         "name":  "P520.png",
+                         "path":  "./assets/plates=P/P520.png"
+                     },
+                     {
+                         "name":  "P544.png",
+                         "path":  "./assets/plates=P/P544.png"
+                     },
+                     {
+                         "name":  "P548.png",
+                         "path":  "./assets/plates=P/P548.png"
+                     },
+                     {
+                         "name":  "P550.png",
+                         "path":  "./assets/plates=P/P550.png"
+                     },
+                     {
+                         "name":  "P552.png",
+                         "path":  "./assets/plates=P/P552.png"
+                     },
+                     {
+                         "name":  "P555.png",
+                         "path":  "./assets/plates=P/P555.png"
+                     },
+                     {
+                         "name":  "P561.png",
+                         "path":  "./assets/plates=P/P561.png"
+                     },
+                     {
+                         "name":  "P564.png",
+                         "path":  "./assets/plates=P/P564.png"
+                     },
+                     {
+                         "name":  "P565.png",
+                         "path":  "./assets/plates=P/P565.png"
+                     },
+                     {
+                         "name":  "P568.png",
+                         "path":  "./assets/plates=P/P568.png"
+                     },
+                     {
+                         "name":  "P569.png",
+                         "path":  "./assets/plates=P/P569.png"
+                     },
+                     {
+                         "name":  "P570.png",
+                         "path":  "./assets/plates=P/P570.png"
+                     },
+                     {
+                         "name":  "P597.png",
+                         "path":  "./assets/plates=P/P597.png"
+                     },
+                     {
+                         "name":  "P598.png",
+                         "path":  "./assets/plates=P/P598.png"
+                     },
+                     {
+                         "name":  "P599.png",
+                         "path":  "./assets/plates=P/P599.png"
+                     },
+                     {
+                         "name":  "P600.png",
+                         "path":  "./assets/plates=P/P600.png"
+                     },
+                     {
+                         "name":  "P601.png",
+                         "path":  "./assets/plates=P/P601.png"
+                     },
+                     {
+                         "name":  "P602.png",
+                         "path":  "./assets/plates=P/P602.png"
+                     },
+                     {
+                         "name":  "P626.png",
+                         "path":  "./assets/plates=P/P626.png"
+                     },
+                     {
+                         "name":  "P632.png",
+                         "path":  "./assets/plates=P/P632.png"
+                     },
+                     {
+                         "name":  "P633.png",
+                         "path":  "./assets/plates=P/P633.png"
+                     },
+                     {
+                         "name":  "P634.png",
+                         "path":  "./assets/plates=P/P634.png"
+                     },
+                     {
+                         "name":  "P648.png",
+                         "path":  "./assets/plates=P/P648.png"
+                     },
+                     {
+                         "name":  "P649.png",
+                         "path":  "./assets/plates=P/P649.png"
+                     },
+                     {
+                         "name":  "P652.png",
+                         "path":  "./assets/plates=P/P652.png"
+                     },
+                     {
+                         "name":  "P653.png",
+                         "path":  "./assets/plates=P/P653.png"
+                     },
+                     {
+                         "name":  "P853.png",
+                         "path":  "./assets/plates=P/P853.png"
+                     }
+                ],
+    "columns=C":  [
+                      {
+                          "name":  "229C-E2-E9.png",
+                          "path":  "./assets/columns=C/229C-E2-E9.png"
+                      },
+                      {
+                          "name":  "231C-thru-E6-E9.png",
+                          "path":  "./assets/columns=C/231C-thru-E6-E9.png"
+                      },
+                      {
+                          "name":  "234C-thru-E9.png",
+                          "path":  "./assets/columns=C/234C-thru-E9.png"
+                      },
+                      {
+                          "name":  "235C-thru-E9.png",
+                          "path":  "./assets/columns=C/235C-thru-E9.png"
+                      },
+                      {
+                          "name":  "236C-thru-E9.png",
+                          "path":  "./assets/columns=C/236C-thru-E9.png"
+                      },
+                      {
+                          "name":  "238C-thru-E8.png",
+                          "path":  "./assets/columns=C/238C-thru-E8.png"
+                      },
+                      {
+                          "name":  "393.png",
+                          "path":  "./assets/columns=C/393.png"
+                      },
+                      {
+                          "name":  "394.png",
+                          "path":  "./assets/columns=C/394.png"
+                      }
+                    ],
+  "Column-Details":  
+                 [ 
+                      {  "name":  "229C-d1.png",
+                         "path":  "./assets/Column-Details/229C-d1.png"},
+
+                      { "name":  "229C-d2.png",
+                         "path":  "./assets/Column-Details/229C-d2.png"},
+                    {
+                              "name":  "230C-d1.png",
+                              "path":  "./assets/Column-Details/230C-d1.png"
+                },
+                 {
+                              "name":  "230C-d2.png",
+                              "path":  "./assets/Column-Details/230C-d2.png"
+                     },
+                          {
+                              "name":  "230C-d3.png",
+                              "path":  "./assets/Column-Details/230C-d3.png"
+                          },
+                          {
+                              "name":  "230C-d4.png",
+                              "path":  "./assets/Column-Details/230C-d4.png"
+                          },
+                          {
+                              "name":  "231C-d1.png",
+                              "path":  "./assets/Column-Details/231C-d1.png"
+                          },
+                          {
+                              "name":  "231C-d2.png",
+                              "path":  "./assets/Column-Details/231C-d2.png"
+                          },
+                          {
+                              "name":  "231C-d3.png",
+                              "path":  "./assets/Column-Details/231C-d3.png"
+                          },
+                          {
+                              "name":  "231C-d4.png",
+                              "path":  "./assets/Column-Details/231C-d4.png"
+                          },
+                          {
+                              "name":  "232C-d1.png",
+                              "path":  "./assets/Column-Details/232C-d1.png"
+                          },
+                          {
+                                "name":  "232C-d2.png",
+                                "path":  "./assets/Column-Details/232C-d2.png"
+                            },
+                            {
+                                "name":  "232C-d3.png",
+                                "path":  "./assets/Column-Details/232C-d3.png"
+                            },
+                            {
+                                "name":  "232C-d4.png",
+                                "path":  "./assets/Column-Details/232C-d4.png"
+                            },
+                            {
+                                "name":  "233C-d1.png",
+                                "path":  "./assets/Column-Details/233C-d1.png"
+                            },
+                            {
+                                "name":  "233C-d2.png",
+                                "path":  "./assets/Column-Details/233C-d2.png"
+                            },
+                            {
+                                "name":  "233C-d3.png",
+                                "path":  "./assets/Column-Details/233C-d3.png"
+                            },
+                            {
+                                "name":  "233C-d4.png",
+                                "path":  "./assets/Column-Details/233C-d4.png"
+                            },
+                            {
+                                "name":  "234C-d1.png",
+                                "path":  "./assets/Column-Details/234C-d1.png"
+                            },
+                            {
+                                "name":  "234C-d2.png",
+                                "path":  "./assets/Column-Details/234C-d2.png"
+                            },
+                            {
+                                "name":  "234C-d3.png",
+                                "path":  "./assets/Column-Details/234C-d3.png"
+                            },
+                            {
+                                "name":  "234C-d4.png",
+                                "path":  "./assets/Column-Details/234C-d4.png"
+                            },
+                            {
+                                "name":  "235C-d1.png",
+                                "path":  "./assets/Column-Details/235C-d1.png"
+                            },
+                            {
+                                "name":  "235C-d2.png",
+                                "path":  "./assets/Column-Details/235C-d2.png"
+                            },
+                            {
+                                "name":  "235C-d3.png",
+                                "path":  "./assets/Column-Details/235C-d3.png"
+                            },
+                            {
+                                "name":  "235C-d4.png",
+                                "path":  "./assets/Column-Details/235C-d4.png"
+                            },
+                            {
+                                "name":  "236C-d1.png",
+                                "path":  "./assets/Column-Details/236C-d1.png"
+                            },
+                            {
+                                "name":  "236C-d2.png",
+                                "path":  "./assets/Column-Details/236C-d2.png"
+                            },
+                            {
+                                "name":  "236C-d3.png",
+                                "path":  "./assets/Column-Details/236C-d3.png"
+                            },
+                            {
+                                "name":  "236C-d4.png",
+                                "path":  "./assets/Column-Details/236C-d4.png"
+                            },
+                            {
+                                "name":  "237C-d1.png",
+                                "path":  "./assets/Column-Details/237C-d1.png"
+                            },
+                            {
+                                "name":  "237C-d2.png",
+                                "path":  "./assets/Column-Details/237C-d2.png"
+                            },
+                            {
+                                "name":  "237C-d3.png",
+                                "path":  "./assets/Column-Details/237C-d3.png"
+                            },
+                            {
+                                "name":  "237C-d4.png",
+                                "path":  "./assets/Column-Details/238C-d4.png"  
+                          },
+                            {
+                                    "name":  "238C-d1.png",
+                                    "path":  "./assets/Column-Details/238C-d1.png"
+                                },
+                                {
+                                    "name":  "238C-d2.png",
+                                    "path":  "./assets/Column-Details/238C-d2.png"
+                                },
+                                {
+                                    "name":  "238C-d3.png",
+                                    "path":  "./assets/Column-Details/238C-d3.png"
+                                }, 
+                                {
+                                    "name":  "238C-d4.png",
+                                    "path":  "./assets/Column-Details/238C-d4.png"
+                                },
+                                {
+                                    "name":  "239C-d1.png",
+                                    "path":  "./assets/Column-Details/239C-d1.png"
+                                },
+                                {
+                                    "name":  "239C-d2.png",
+                                    "path":  "./assets/Column-Details/239C-d2.png"
+                                },
+                                {
+                                    "name":  "239C-d3.png",
+                                    "path":  "./assets/Column-Details/239C-d3.png"
+                                },
+                                {
+                                    "name":  "239C-d4.png",
+                                    "path":  "./assets/Column-Details/239C-d4.png"
+                                },
+                                {
+                                    "name":  "239C-d5.png",
+                                    "path":  "./assets/Column-Details/239C-d5.png"
+                                },
+                                {
+                                    "name":  "239C-d6.png",
+                                    "path":  "./assets/Column-Details/239C-d6.png"
+                                },
+                                {
+                                    "name":  "392C-d1.png",
+                                    "path":  "./assets/Column-Details/392C-d1.png"
+                                },
+                                {
+                                    "name":  "392C-d2.png",
+                                    "path":  "./assets/Column-Details/392C-d2.png"
+                                },
+                                {
+                                    "name":  "392C-d3.png",
+                                    "path":  "./assets/Column-Details/392C-d3.png"
+                                },
+                                {
+                                    "name":  "392C-d4.png",
+                                    "path":  "./assets/Column-Details/392C-d4.png"
+                                },
+                                {
+                                    "name":  "393C-d1.png",
+                                    "path":  "./assets/Column-Details/393C-d1.png"
+                                },
+                                {
+                                    "name":  "393C-d2.png",
+                                    "path":  "./assets/Column-Details/393C-d2.png"
+                                },
+                                {
+                                    "name":  "393C-d3.png",
+                                    "path":  "./assets/Column-Details/393C-d3.png"
+                                },
+                                {
+                                    "name":  "393C-d4.png",
+                                    "path":  "./assets/Column-Details/393C-d4.png"
+                                },
+                                {
+                                    "name":  "394C-d1.png",
+                                    "path":  "./assets/Column-Details/394C-d1.png"
+                                },
+                                {
+                                    "name":  "394C-d2.png",
+                                    "path":  "./assets/Column-Details/394C-d2.png"
+                                },
+                                {
+                                    "name":  "394C-d3.png",
+                                    "path":  "./assets/Column-Details/394C-d3.png"
+                                },
+                                {
+                                    "name":  "394C-d4.png",
+                                    "path":  "./assets/Column-Details/394C-d4.png"                                       
+                                },
+                                {
+                                    "name":  "395C-d1.png",
+                                    "path":  "./assets/Column-Details/395C-d1.png"
+                                },
+                                {
+                                    "name":  "395C-d2.png",
+                                    "path":  "./assets/Column-Details/395C-d2.png"
+                                },
+                                {
+                                    "name":  "395C-d3.png",
+                                    "path":  "./assets/Column-Details/395C-d3.png"
+                                },
+                                {
+                                    "name":  "395C-d4.png",
+                                    "path":  "./assets/Column-Details/395C-d4.png"
+                                }
+                            ],
+    "Beams=B":  
+                        [
+                    {
+                        "name":  "120B.png",
+                        "path":  "./assets/Beams=B/120B.png"
+                    },
+                    {
+                        "name":  "121B.png",
+                        "path":  "./assets/Beams=B/121B.png"
+                    },
+                    {
+                        "name":  "122B.png",
+                        "path":  "./assets/Beams=B/122B.png"
+                    },
+                    {
+                        "name":  "123B.png",
+                        "path":  "./assets/Beams=B/123B.png"
+                    },
+                    {
+                        "name":  "124B.png",
+                        "path":  "./assets/Beams=B/124B.png"
+                    },
+                    {
+                        "name":  "125-E7.png",
+                        "path":  "./assets/Beams=B/125-E7.png"
+                    },
+                    {
+                        "name":  "126B.png",
+                        "path":  "./assets/Beams=B/126B.png"
+                    },
+                    {
+                        "name":  "127B.png",
+                        "path":  "./assets/Beams=B/127B.png"
+                    },
+                    {
+                        "name":  "128B.png",
+                        "path":  "./assets/Beams=B/128B.png"
+                    },
+                    {
+                        "name":  "129B.png",
+                        "path":  "./assets/Beams=B/129B.png"
+                    },
+                    {
+                        "name":  "130-E7.png",
+                        "path":  "./assets/Beams=B/130-E7.png"
+                    },
+                    {
+                        "name":  "131.png",
+                        "path":  "./assets/Beams=B/131.png"
+                    },
+                    {
+                        "name":  "132B.png",
+                        "path":  "./assets/Beams=B/132B.png"
+                    },
+                    {
+                        "name":  "133B.png",
+                        "path":  "./assets/Beams=B/133B.png"
+                    },
+                    {
+                        "name":  "134B.png",
+                        "path":  "./assets/Beams=B/134B.png"
+                    },
+                    {
+                        "name":  "135.png",
+                        "path":  "./assets/Beams=B/135.png"
+                    },
+                    {
+                        "name":  "136B.png",
+                        "path":  "./assets/Beams=B/136B.png"
+                    },
+                    {
+                        "name":  "137B.png",
+                        "path":  "./assets/Beams=B/137B.png"
+                    },
+                    {
+                        "name":  "138B.png",
+                        "path":  "./assets/Beams=B/138B.png"
+                    },
+                    {
+                        "name":  "139-E7.png",
+                        "path":  "./assets/Beams=B/139-E7.png"
+                    },
+                    {
+                        "name":  "140-E7.png",
+                        "path":  "./assets/Beams=B/140-E7.png"
+                    },
+                    {
+                        "name":  "141B.png",
+                        "path":  "./assets/Beams=B/141B.png"
+                    },
+                    {
+                        "name":  "142B.png",
+                        "path":  "./assets/Beams=B/142B.png"
+                    },
+                    {
+                        "name":  "134B.png",
+                        "path":  "./assets/Beams=B/143B.png"
+                    },
+                    {
+                        "name":  "144B.png",
+                        "path":  "./assets/Beams=B/144B.png"
+                    },
+                    {
+                        "name":  "145B.png",
+                        "path":  "./assets/Beams=B/145B.png"
+                    },
+                    {
+                        "name":  "146B.png",
+                        "path":  "./assets/Beams=B/146B.png"
+                    },
+                    {
+                        "name":  "147B.png",
+                        "path":  "./assets/Beams=B/147B.png"
+                    },
+                    {
+                        "name":  "148B.png",
+                        "path":  "./assets/Beams=B/148B.png"
+                    },
+                    {
+                        "name":  "149B.png",
+                        "path":  "./assets/Beams=B/149B.png"
+                    },
+                    {
+                        "name":  "150B.png",
+                        "path":  "./assets/Beams=B/150B.png"
+                    },
+                    {
+                        "name":  "151B.png",
+                        "path":  "./assets/Beams=B/151B.png"
+                    },
+                    {
+                        "name":  "152B.png",
+                        "path":  "./assets/Beams=B/152B.png"
+                    },
+                    {
+                        "name":  "153B.png",
+                        "path":  "./assets/Beams=B/153B.png"
+                    },
+                    {
+                        "name":  "154B.png",
+                        "path":  "./assets/Beams=B/154B.png"
+                    },                    
+                    {
+                        "name":  "155B.png",
+                        "path":  "./assets/Beams=B/155B.png"
+                    },                    
+                    {
+                        "name":  "156B.png",
+                        "path":  "./assets/Beams=B/156B.png"
+                    },                
+                    {
+                        "name":  "167.png",
+                        "path":  "./assets/Beams=B/167.png"
+                    },
+                    {
+                        "name":  "329B.png",
+                        "path":  "./assets/Beams=B/329B.png"
+                    },
+                    {
+                        "name":  "330B.png",
+                        "path":  "./assets/Beams=B/330B.png"
+                    },
+                    {
+                        "name":  "331B.png",
+                        "path":  "./assets/Beams=B/331B.png"
+                    },
+                    {
+                        "name":  "332B.png",
+                        "path":  "./assets/Beams=B/332B.png"
+                    },
+                    {
+                        "name":  "333B.png",
+                        "path":  "./assets/Beams=B/333B.png"
+                    },
+                    {
+                        "name":  "334B.png",
+                        "path":  "./assets/Beams=B/334B.png"
+                    },
+                    {
+                        "name":  "335B.png",
+                        "path":  "./assets/Beams=B/335B.png"
+                    },
+                    {
+                        "name":  "336B.png",
+                        "path":  "./assets/Beams=B/336B.png"
+                    },
+                    {
+                        "name":  "337B.png",
+                        "path":  "./assets/Beams=B/337B.png"
+                    },
+                    {
+                        "name":  "338B.png",
+                        "path":  "./assets/Beams=B/338B.png"
+                    },
+                    {
+                        "name":  "339B.png",
+                        "path":  "./assets/Beams=B/339B.png"
+                    },
+                    {
+                        "name":  "340B.png",
+                        "path":  "./assets/Beams=B/340B.png"
+                    },
+                    {
+                        "name":  "341B.png",
+                        "path":  "./assets/Beams=B/341B.png"
+                    },
+                    {
+                        "name":  "342B.png",
+                        "path":  "./assets/Beams=B/342B.png"
+                    },
+                    {
+                        "name":  "343B.png",
+                        "path":  "./assets/Beams=B/343B.png"
+                    },
+                    {
+                        "name":  "344B.png",
+                        "path":  "./assets/Beams=B/344B.png"
+                    },
+                    {
+                        "name":  "345B.png",
+                        "path":  "./assets/Beams=B/345B.png"
+                    },
+                    {
+                        "name":  "346B.png",
+                        "path":  "./assets/Beams=B/346B.png"
+                    },
+                    {
+                        "name":  "347B.png",
+                        "path":  "./assets/Beams=B/347B.png"
+                    },
+                    {
+                        "name":  "348B.png",
+                        "path":  "./assets/Beams=B/348B.png"
+                    },
+                    {
+                        "name":  "349B.png",
+                        "path":  "./assets/Beams=B/349B.png"
+                    },
+                    {
+                        "name":  "350B.png",
+                        "path":  "./assets/Beams=B/350B.png"
+                    },
+                    {
+                        "name":  "351B.png",
+                        "path":  "./assets/Beams=B/351B.png"
+                    },
+                    {
+                        "name":  "352B.png",
+                        "path":  "./assets/Beams=B/352B.png"
+                    },
+                    {
+                        "name":  "353B.png",
+                        "path":  "./assets/Beams=B/353B.png"
+                    },
+                    {
+                        "name":  "354B.png",
+                        "path":  "./assets/Beams=B/354B.png"
+                    },
+                    {
+                        "name":  "355B.png",
+                        "path":  "./assets/Beams=B/355B.png"
+                    },
+                    {
+                        "name":  "356B.png",
+                        "path":  "./assets/Beams=B/356B.png"
+                    },
+                    {
+                        "name":  "357B.png",
+                        "path":  "./assets/Beams=B/357B.png"
+                    },
+                    {
+                        "name":  "358B.png",
+                        "path":  "./assets/Beams=B/358B.png"
+                    },                    
+
+                    {
+                        "name":  "362B.png",
+                        "path":  "./assets/Beams=B/362B.png"
+                    },
+                    {
+                        "name":  "363B.png",
+                        "path":  "./assets/Beams=B/363B.png"
+                    },
+                    {
+                        "name":  "364B.png",
+                        "path":  "./assets/Beams=B/364B.png" 
+                    },
+                    {
+                        "name":  "367B.png",
+                        "path":  "./assets/Beams=B/367B.png"
+                    },
+                    {
+                        "name":  "368.png",
+                        "path":  "./assets/Beams=B/368.png"
+                    },
+                    {
+                        "name":  "369B.png",
+                        "path":  "./assets/Beams=B/369B.png"
+                    },
+                    {
+                        "name":  "370B.png",
+                        "path":  "./assets/Beams=B/370B.png"
+                    },
+                    {
+                        "name":  "371.png",
+                        "path":  "./assets/Beams=B/371.png"
+                    },
+                    {
+                        "name":  "372B.png",
+                        "path":  "./assets/Beams=B/372B.png"
+                    }
+                    ],
+    "channel=c":  [
+                    {
+                        "name":  "c86 (2).png",
+                        "path":  "./assets/channel=c/c86 (2).png"
+                    }
+                    ],
+    "sag-rods=R":  [
+                       {
+                           "name":  "R-243-ref-E9.png",
+                           "path":  "./assets/sag-rods=R/R-243-ref-E9.png"
+                       },
+                       {
+                           "name":  "R-251B.png",
+                           "path":  "./assets/sag-rods=R/R-251-ref-E7.png"
+                       },
+                       {
+                           "name":  "R-252-ref-E8.png",
+                           "path":  "./assets/sag-rods=R/R-252-ref-E8.png"
+                       },
+                       {
+                           "name":  "R-253-ref-E8.png",
+                           "path":  "./assets/sag-rods=R/R-253-ref-E8.png"
+                       },
+                       {
+                           "name":  "R-254-E9.png",
+                           "path":  "./assets/sag-rods=R/R-254-E9.png"
+                       },
+                       {
+                           "name":  "R-255-ref-E8.png",
+                           "path":  "./assets/sag-rods=R/R-255-ref-E8.png"
+                       }
+                   ],
+    "girts=G":  [
+                    {
+                        "name":  "G-204-ref-E8.png",
+                        "path":  "./assets/girts=G/G-204-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-208-ref-E9.png",
+                        "path":  "./assets/girts=G/G-208-ref-E9.png"
+                    },
+                    {
+                        "name":  "G-210-ref-E9.png",
+                        "path":  "./assets/girts=G/G-210-ref-E9.png"
+                    },
+                    {
+                        "name":  "G-216-ref-E9.png",
+                        "path":  "./assets/girts=G/G-216-ref-E9.png"
+                    },
+                    {
+                        "name":  "G-221-ref-E7.png",
+                        "path":  "./assets/girts=G/G-221-ref-E7.png"
+                    },
+                    {
+                        "name":  "G-225-ref-E9.png",
+                        "path":  "./assets/girts=G/G-225-ref-E9.png"
+                    },
+                    {
+                        "name":  "G-373-ref-E8.png",
+                        "path":  "./assets/girts=G/G-373-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-374-ref-E8.png",
+                        "path":  "./assets/girts=G/G-374-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-375-ref-E8.png",
+                        "path":  "./assets/girts=G/G-375-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-376-ref-E8.png",
+                        "path":  "./assets/girts=G/G-376-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-377-ref-E8.png",
+                        "path":  "./assets/girts=G/G-377-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-379-ref-E8.png",
+                        "path":  "./assets/girts=G/G-379-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-380-ref-E8.png",
+                        "path":  "./assets/girts=G/G-380-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-382-ref-E8.png",
+                        "path":  "./assets/girts=G/G-382-ref-E8.png"
+                    },
+                    {
+                        "name":  "G-383-ref-E8.png",
+                        "path":  "./assets/girts=G/G-383-ref-E8.png"
+                    }
+                ],
+    "erection=E1-11":  [
+                                 {
+                                     "name":  "E-0.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-0.png"
+                                 },
+                                 {
+                                     "name":  "E-10-looking-east.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-10-looking-east.png"
+                                 },
+                                 {
+                                     "name":  "E-11-5details-lines-1.7-2-2.4-3-3.1+1.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-11-5details-lines-1.7-2-2.4-3-3.1+1.png"
+                                 },
+                                 {
+                                     "name":  "E-1-Framing-plan-tos112.0ft.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-1-Framing-plan-tos112.0ft.png"
+                                 },
+                                 {
+                                     "name":  "E-2-framing-plan-tos123.6ft.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-2-framing-plan-tos123.6ft.png"
+                                 },
+                                 {
+                                     "name":  "E-3-framing-plan-tos136ft-7.5in.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-3-framing-plan-tos136ft-7.5in.png"
+                                 },
+                                 {
+                                     "name":  "E-4 elevation 129ft.9in.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-4 elevation 129ft.9in.png"
+                                 },
+                                 {
+                                     "name":  "E-5-framing-plan-roof.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-5-framing-plan-roof.png"
+                                 },
+                                 {
+                                     "name":  "E-6 roof framing plan.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-6 roof framing plan.png"
+                                 },
+                                 {
+                                     "name":  "E-7-looking-east-line-C.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-7-looking-east-line-C.png"
+                                 },
+                                 {
+                                     "name":  "E-8-looking-North-lines-1-4.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-8-looking-North-lines-1-4.png"
+                                 },
+                                 {
+                                     "name":  "E-9-looking-South-line-4.png",
+                                     "path":  "./assets/erection=E0-thru-E11/E-9-looking-South-line-4.png"
+                                 }
+                             ],
+    "Wall-Truss-T-W-WT-and-M":  [
+                                    {
+                                        "name":  "M-398-60-spacers.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/M-398-60-spacers.png"
+                                    },
+                                    {
+                                        "name":  "T-365.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/T-365.png"
+                                    },
+                                    {
+                                        "name":  "T-366.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/T-366.png"
+                                    },
+                                    {
+                                        "name":  "W-137.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W-137.png"
+                                    },
+                                    {
+                                        "name":  "W197.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W197.png"
+                                    },
+                                    {
+                                        "name":  "W-197.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W-197.png"
+                                    },
+                                    {
+                                        "name":  "W-201.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W-201.png"
+                                    },
+                                    {
+                                        "name":  "W-257.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W-257.png"
+                                    },
+                                    {
+                                        "name":  "W-259.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W-259.png"
+                                    },
+                                    {
+                                        "name":  "W-260.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/W-260.png"
+                                    },
+                                    {
+                                        "name":  "WT-151.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/WT-151.png"
+                                    },
+                                    {
+                                        "name":  "WT-27.png",
+                                        "path":  "./assets/Wall-Truss-T-W-WT-and-M/WT-27.png"
+                                    }
+                                ],                                   {
+                                                                                "name":  "E-AR2-detail-5.png",
+                                                                              "path":  "./assets/E=Details-E1-thru-E11/E-AR2-detail-5.png"
+                                                                            }
+                                                                        ]
+                                    }

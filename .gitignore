@@ -1,0 +1,25 @@
+# Node / JS / temp
+node_modules/
+npm-debug.log
+dist/
+tmp/
+temp/
+
+# VSCode
+.vscode/
+.history/
+
+# OS junk
+Thumbs.db
+.DS_Store
+
+# PowerShell
+*.ps1.tmp
+
+# Build artifacts
+output/
+jobs/**/maps/*.autosave.json
+jobs/**/index/*.autosave.json
+
+# Live Server temp
+*.hot-update.*

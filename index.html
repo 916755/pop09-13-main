@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="assets/icons/logo.png">
+  <link rel="apple-touch-icon" href="assets/icons/logo.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="theme-color" content="#0b1020">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prince of Prints</title>
+  <link rel="stylesheet" href="style.css?v=zoom1" />
+  <style>
+    /* Touch-friendly controls */
+    select, input, button {
+      font-size: 18px !important;
+      padding: 14px 16px !important;
+      min-height: 44px !important;
+      border-radius: 12px !important;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">   <!-- new wrapper starts -->
+
+    <header class="app-header">
+      <h1>Prince of Prints</h1>
+      <p class="tagline">Fast blueprint browsing • Keyboard-ready • Zero setup</p>
+    </header>
+       <!--step 1 select construction type-->
+    <main class="container">
+      <div class="control">
+    <label for="type-select">Construction type</label>
+<select id="type-select">
+  <option value="industrial">Steel Erection</option>
+</select>
+
+
+  </div>
+<!-- STEP 1: Access Code -->
+<section class="step active" id="step-1" aria-labelledby="step1-title">
+  <h2 id="step1-title" class="visually-hidden">Step 1: Access Code</h2>
+
+  <!-- Office Logistics Button -->
+<div class="control">
+  <button type="button" id="office-logistics-btn">
+    Office Logistics
+  </button>
+</div>
+
+  <div class="control">
+    <label for="job-input">Access code:</label>
+    <input id="job-input" type="password" placeholder="Enter access code (e.g. 24-36N)" />
+  </div>
+
+    <!-- Supervisor Lock (front-page) -->
+  <div class="control" id="sup-panel" style="margin-top:10px;">
+    <div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">
+      <strong>Supervisor lock:</strong>
+      <span id="sup-state" style="opacity:.85;">Locked</span>
+    </div>
+
+    <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+      <button type="button" id="sup-unlock-btn">Unlock / Set PIN</button>
+      <button type="button" id="sup-lock-btn">Lock</button>
+      <button type="button" id="sup-reset-btn">Change PIN</button>
+    </div>
+
+    <div style="margin-top:8px; font-size:13px; opacity:.85; line-height:1.3;">
+      Unlock once at the start. While locked, status colors are blocked. Navigation never asks for a PIN.
+    </div>
+  </div>
+
+  <div class="step-nav">
+    <button type="button" class="back-btn" disabled>Back</button>
+    <button type="button" class="next-btn" data-go="2" disabled title="Viewer temporarily offline for maintenance">Next</button></div>
+</section>
+
+<!-- STEP 2: Category -->
+<section class="step" id="step-2" aria-labelledby="step2-title">
+  <h2 id="step2-title" class="visually-hidden">Step 2: Select Category</h2>
+
+  <div class="control">
+    <label for="category-select">Category</label>
+    <select id="category-select"></select>
+  </div>
+
+  <button id="open-inventory-step2" type="button" style="margin-top:10px;">
+    Offload Inventory
+  </button>
+
+  <div class="step-nav">
+    <button type="button" class="back-btn" data-go="1">Back</button>
+    <button type="button" class="next-btn" data-go="3" disabled>Next</button>
+  </div>
+</section>
+
+<!-- STEP: Office Logistics -->
+<section class="step" id="step-office" aria-labelledby="office-title">
+  <h2 id="office-title">Office Logistics</h2>
+
+
+<div class="control" style="font-size:14px; opacity:.85;">
+  <div><strong>Job:</strong> <span id="office-job-code">(not set)</span></div>
+  <div><strong>Docs sync:</strong> Realtime (Supabase)</div>
+</div>
+
+<div id="office-dailylog-panel" class="office-card" style="display:none;">
+  <h3>Daily Log (hands)</h3>
+<div class="control">
+  <label for="office-log-date">Log Date</label>
+  <input id="office-log-date" type="date" />
+</div>
+  <div class="control">
+  <label for="office-work-performed">Work Performed</label>
+  <textarea id="office-work-performed" rows="6" placeholder="What work was completed today? (Sheets worked, progress, milestones)"></textarea>
+</div>
+
+<div class="control">
+  <label for="office-issues-impacts">Issues / Impacts</label>
+  <textarea id="office-issues-impacts" rows="6" placeholder="Delays, breakdowns, repairs, missing material, backcharge notes, safety events…"></textarea>
+</div>
+
+  <div class="step-nav" style="gap:10px;">
+    <button type="button" id="office-daily-log-save">Save</button>
+    <button type="button" id="office-daily-log-close">Close</button>
+  </div>
+
+  <p class="muted" id="office-daily-log-meta"></p>
+</div>
+
+<div class="control" style="display:flex; gap:10px; flex-wrap:wrap;">
+  <div id="office-jsaphoto-list" style="margin-top:15px;"></div>
+  <button type="button" id="office-open-dailylog-btn">Daily Log / Notes</button>
+    <button type="button" id="office-jsaphoto-add-btn">JSA Photos</button>
+  <button type="button" id="office-open-inspection-btn">Daily Equipment Inspection</button>
+  <button type="button" id="office-open-timesheet-btn">Time Sheet (Supervisor)</button>
+  <button type="button" id="office-open-equipmenthours-btn">Equipment Hours (Supervisor)</button>
+</div>
+
+<input
+  type="file"
+  id="office-jsaphoto-input"
+  accept="image/*"
+  capture="environment"
+  multiple
+  style="position:fixed; left:-9999px; top:auto; width:1px; height:1px; opacity:0;"
+/>
+<div class="control">
+    <button type="button" id="office-back-btn">Back to Categories</button>
+  </div>
+</section>
+
+
+<!-- Jump controls -->
+<div class="jump-row" style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-block:8px;">
+  <label for="jump-input">Jump to tag:</label>
+  <input id="jump-input" type="text" placeholder="e.g., 133B or P271" style="flex:1; min-width:180px;">
+  <button id="jump-btn" type="button">Jump</button>
+</div>
+
+<!-- STEP 3: Sheet + Filter -->
+<section class="step" id="step-3" aria-labelledby="step3-title">
+  <h2 id="step3-title" class="visually-hidden">Step 3: Select Sheet</h2>
+
+  <div class="control">
+    <label for="sheet-select">Sheet</label>
+    <select id="sheet-select"></select>
+  </div>
+
+  <div class="control">
+    <label for="filter-input">Filter (type to narrow)</label>
+    <input id="filter-input" type="text" placeholder="e.g. B-232, ref-E8, detail, C-12" />
+  </div>
+
+  <div class="step-nav">
+    <button type="button" class="back-btn" data-go="2">Back</button>
+    <button type="button" class="next-btn" data-go="4" disabled>Next</button>
+  </div>
+</section>
+
+<!-- STEP 4: Image viewer -->
+<section class="step" id="step-4" aria-labelledby="step4-title">
+  <h2 id="step4-title" class="visually-hidden">Step 4: Image Viewer</h2>
+
+  <section class="viewer">
+
+    <!-- Status toolbar: Default / Yellow / Pink / Blue / Green -->
+    <div class="status-toolbar">
+      <span class="status-label">Piece status:</span>
+
+      <button type="button"
+              class="status-btn status-none"
+              data-status="none">
+        Normal
+      </button>
+
+      <button type="button"
+        class="status-btn status-clear"
+        data-status="clear">
+        clear
+      </button>
+
+      <button type="button"
+              class="status-btn status-missing"
+              data-status="yellow">
+        Not located
+      </button>
+
+      <button type="button"
+              class="status-btn status-rigged"
+              data-status="pink">
+        Rigged
+      </button>
+
+      <button type="button"
+              class="status-btn status-erected"
+              data-status="blue">
+        Erected
+      </button>
+
+      <button type="button"
+              class="status-btn status-complete"
+              data-status="green">
+        100%
+      </button>
+
+      <button id="status-save-btn" type="button">
+              Save status JSON
+      </button>
+      <button id="undo-btn" type="button" title="Undo last status change">
+              Undo
+      </button>
+      
+      <label style="display:inline-flex; align-items:center; gap:8px; margin-left:10px;">
+      <input type="checkbox" id="inventory-mode" />
+        Inventory
+      </label>
+
+      <button id="open-inventory" type="button" style="margin-left:10px;">
+        Offload Inventory
+      </button>
+
+
+    </div>
+
+<div class="zoom-toolbar">
+  <button id="zoom-out" type="button" title="Zoom out">−</button>
+  <button id="zoom-reset" type="button" title="Reset zoom">100%</button>
+  <button id="zoom-in" type="button" title="Zoom in">+</button>
+</div>
+
+<div id="zoom-viewport">
+  <div id="zoom-stage">
+    <div id="image-wrapper">
+      <img id="sheet-image" alt="Blueprint" />
+      <div id="map-layer"></div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="control buttons">
+      <button id="prev-btn" title="Previous (←)">Prev</button>
+      <button id="next-btn" title="Next (→)">Next</button>
+    </div>
+
+  </section>
+
+  <div class="step-nav">
+    <button type="button" class="back-btn" data-go="3">Back</button>
+  </div>
+</section>
+<!-- STEP: Offload Inventory -->
+<section class="step" id="step-inventory">
+
+  <div class="control">
+    <h3>Offload Inventory</h3>
+    <div style="opacity:.8;">
+      Check pieces as they are unloaded.
+    </div>
+  </div>
+
+  <div class="control">
+    <div id="inv-list"></div>
+  </div>
+
+  <div class="step-nav">
+    <button type="button" class="back-btn" data-go="2">Back</button>
+  </div>
+
+</section>
+</main>
+
+
+    <footer class="app-footer">
+      <span id="status-text">Ready.</span>
+    </footer>
+
+  </div>                <!-- wrapper ends -->
+  
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="./script.js?v=zoom5"></script>
+
+</body>
+</html>   
+
+
+

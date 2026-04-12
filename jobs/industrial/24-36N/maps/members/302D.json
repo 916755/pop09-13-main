@@ -1,0 +1,26 @@
+[
+  {
+    "x": 1160,
+    "y": 870,
+    "w": 391,
+    "h": 452,
+    "label": "P431",
+    "fetch": "images/Plates=P/P431.png"
+  },
+  {
+    "x": 1322,
+    "y": 890,
+    "w": 187,
+    "h": 164,
+    "label": "bp7",
+    "fetch": "images/Plates=P/bp7.png"
+  },
+  {
+    "x": 1413,
+    "y": 1115,
+    "w": 113,
+    "h": 200,
+    "label": "a675",
+    "fetch": "images/Angles=A/a675.png"
+  }
+]

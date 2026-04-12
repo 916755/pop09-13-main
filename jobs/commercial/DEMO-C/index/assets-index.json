@@ -1,0 +1,22 @@
+[
+  {
+    "label": "COMM-E1",
+    "path": "./images/COMM-E1.png",
+    "thumb": "./thumbs/COMM-E1.png"
+  },
+  {
+    "label": "COMM-E2",
+    "path": "./images/COMM-E2.png",
+    "thumb": "./thumbs/COMM-E2.png"
+  },
+  {
+    "label": "COMM-F1",
+    "path": "./images/COMM-F1.png",
+    "thumb": "./thumbs/COMM-F1.png"
+  },
+  {
+    "label": "COMM-ROOF1",
+    "path": "./images/COMM-ROOF1.png",
+    "thumb": "./thumbs/COMM-ROOF1.png"
+  }
+]

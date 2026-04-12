@@ -1,0 +1,26 @@
+[
+  {
+    "label": "Cover",
+    "path": "images/Cover/Cover-1.png"
+  },
+  {
+    "label": "Site Plan",
+    "path": "images/Plans/P-1.png"
+  },
+  {
+    "label": "Floor Plan",
+    "path": "images/Plans/P-2.png"
+  },
+  {
+    "label": "Elevation",
+    "path": "images/Plans/P-3.png"
+  },
+  {
+    "label": "Bathroom Detail D-1",
+    "path": "images/Details/D-1.png"
+  },
+  {
+    "label": "Kitchen Detail D-2",
+    "path": "images/Details/D-2.png"
+  }
+]

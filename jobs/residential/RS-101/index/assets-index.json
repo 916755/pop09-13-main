@@ -1,0 +1,34 @@
+[
+  {
+    "label": "A-001 Cover",
+    "path": "Plans/A-001.png"
+  },
+  {
+    "label": "A-101 Floor Plan - Level 1",
+    "path": "Plans/A-101.png"
+  },
+  {
+    "label": "A-201 Exterior Elevations",
+    "path": "Plans/A-201.png"
+  },
+  {
+    "label": "D-101 Stair Detail",
+    "path": "Details/D-101.png"
+  },
+  {
+    "label": "D-202 Window Head Detail",
+    "path": "Details/D-202.png"
+  },
+  {
+    "label": "E-001 Lighting Plan",
+    "path": "Electrical/E-001.png"
+  },
+  {
+    "label": "E-101 Power Plan",
+    "path": "Electrical/E-101.png"
+  },
+  {
+    "label": "S-001 Foundation Plan",
+    "path": "Structural/S-001.png"
+  }
+]

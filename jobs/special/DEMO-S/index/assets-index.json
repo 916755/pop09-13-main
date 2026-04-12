@@ -1,0 +1,17 @@
+[
+  {
+    "label": "SPEC-PLANT-1",
+    "path": "./images/SPEC-PLANT-1.png",
+    "thumb": "./thumbs/SPEC-PLANT-1.png"
+  },
+  {
+    "label": "SPEC-PLANT-2",
+    "path": "./images/SPEC-PLANT-2.png",
+    "thumb": "./thumbs/SPEC-PLANT-2.png"
+  },
+  {
+    "label": "SPEC-DETAIL-1",
+    "path": "./images/SPEC-DETAIL-1.png",
+    "thumb": "./thumbs/SPEC-DETAIL-1.png"
+  }
+]

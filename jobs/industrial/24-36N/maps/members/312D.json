@@ -1,0 +1,18 @@
+[
+  {
+    "x": 1812,
+    "y": 1109,
+    "w": 247,
+    "h": 297,
+    "label": "P83",
+    "fetch": "images/Plates=P/P83.png"
+  },
+  {
+    "x": 2428,
+    "y": 1109,
+    "w": 230,
+    "h": 293,
+    "label": "P83",
+    "fetch": "images/Plates=P/P83.png"
+  }
+]

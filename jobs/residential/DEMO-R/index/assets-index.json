@@ -1,0 +1,22 @@
+[
+  {
+    "label": "RES-E1",
+    "path": "./images/RES-E1.png",
+    "thumb": "./thumbs/RES-E1.png"
+  },
+  {
+    "label": "RES-E2",
+    "path": "./images/RES-E2.png",
+    "thumb": "./thumbs/RES-E2.png"
+  },
+  {
+    "label": "RES-F1",
+    "path": "./images/RES-F1.png",
+    "thumb": "./thumbs/RES-F1.png"
+  },
+  {
+    "label": "RES-F2",
+    "path": "./images/RES-F2.png",
+    "thumb": "./thumbs/RES-F2.png"
+  }
+]

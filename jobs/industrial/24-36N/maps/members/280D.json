@@ -1,0 +1,50 @@
+[
+  {
+    "x": 910,
+    "y": 1203,
+    "w": 827,
+    "h": 1306,
+    "label": "P267",
+    "fetch": "images/Plates=P/P267.png"
+  },
+  {
+    "x": 927,
+    "y": 1255,
+    "w": 257,
+    "h": 314,
+    "label": "a675",
+    "fetch": "images/Angles=A/a675.png"
+  },
+  {
+    "x": 921,
+    "y": 2093,
+    "w": 302,
+    "h": 411,
+    "label": "a675",
+    "fetch": "images/Angles=A/a675.png"
+  },
+  {
+    "x": 2809,
+    "y": 1420,
+    "w": 633,
+    "h": 707,
+    "label": "P512",
+    "fetch": "images/Plates=P/P512.png"
+  },
+  {
+    "x": 3122,
+    "y": 1351,
+    "w": 308,
+    "h": 399,
+    "label": "a675",
+    "fetch": "images/Angles=A/a675.png"
+  },
+  {
+    "x": 3065,
+    "y": 1876,
+    "w": 336,
+    "h": 217,
+    "label": "a675",
+    "fetch": "images/Angles=A/a675.png"
+  }
+]
