@@ -3575,8 +3575,68 @@
                          "label":  "P256",
                          "path":  "images/plates=P/P256.png",
                          "thumb":  "images/plates=P/P256.png"
-                     }
-                 ],
+                     },
+                     {
+                                        "name":  "W-260.png",
+                                        "label":  "W-260",
+                                        "path":  "images/plates=P/W-260.png",
+                                        "thumb":  "images/plates=P/W-260.png"
+                                    },
+                                    {
+                                        "name":  "W-259.png",
+                                        "label":  "W-259",
+                                        "path":  "images/plates=P/W-259.png",
+                                        "thumb":  "images/plates=P/W-259.png"
+                                    },
+                                    {
+                                        "name":  "W-257.png",
+                                        "label":  "W-257",
+                                        "path":  "images/plates=P/W-257.png",
+                                        "thumb":  "images/plates=P/W-257.png"
+                                    },
+                                    {
+                                        "name":  "WT-27.png",
+                                        "label":  "WT-27",
+                                        "path":  "images/plates=P/WT-27.png",
+                                        "thumb":  "images/plates=P/WT-27.png"
+                                    },
+                                    {
+                                        "name":  "WT-151.png",
+                                        "label":  "WT-151",
+                                        "path":  "images/plates=P/WT-151.png",
+                                        "thumb":  "images/plates=P/WT-151.png"
+                                    },
+                                    {
+                                        "name":  "W-197.png",
+                                        "label":  "W-197",
+                                        "path":  "images/plates=P/W-197.png",
+                                        "thumb":  "images/plates=P/W-197.png"
+                                    },
+                                         {
+                                        "name":  "M-398-60-spacers.png",
+                                        "label":  "M-398-60-spacers",
+                                        "path":  "images/plates=P/M-398-60-spacers.png",
+                                        "thumb":  "images/plates=P/M-398-60-spacers.png"
+                                    },
+                                    {
+                                        "name":  "W-201.png",
+                                        "label":  "W-201",
+                                        "path":  "images/plates=P/W-201.png",
+                                        "thumb":  "images/plates=P/W-201.png"
+                                    },
+                                    {
+                                        "name":  "W-197.png",
+                                        "label":  "W-197",
+                                        "path":  "images/plates=P/W-197.png",
+                                        "thumb":  "images/plates=P/W-197.png"
+                                    },
+                                    {
+                                        "name":  "W-137.png",
+                                        "label":  "W-137",
+                                        "path":  "images/plates=P/W-137.png",
+                                        "thumb":  "images/plates=P/W-137.png"
+                                    }
+                                ],
     "sag-rods=R":  [
                        {
                            "name":  "R-253.png",
@@ -3615,43 +3675,7 @@
                            "thumb":  "images/sag-rods=R/R-252.png"
                        }
                    ],
-    "Wall-Truss-T-W-WT-and-M":  [
-                                    {
-                                        "name":  "W-260.png",
-                                        "label":  "W-260",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W-260.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W-260.png"
-                                    },
-                                    {
-                                        "name":  "W-259.png",
-                                        "label":  "W-259",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W-259.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W-259.png"
-                                    },
-                                    {
-                                        "name":  "W-257.png",
-                                        "label":  "W-257",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W-257.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W-257.png"
-                                    },
-                                    {
-                                        "name":  "WT-27.png",
-                                        "label":  "WT-27",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/WT-27.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/WT-27.png"
-                                    },
-                                    {
-                                        "name":  "WT-151.png",
-                                        "label":  "WT-151",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/WT-151.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/WT-151.png"
-                                    },
-                                    {
-                                        "name":  "W197.png",
-                                        "label":  "W197",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W197.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W197.png"
-                                    },
+   "Truss": [       
                                     {
                                         "name":  "T-366.png",
                                         "label":  "T-366",
@@ -3663,45 +3687,8 @@
                                         "label":  "T-365",
                                         "path":  "images/Wall-Truss-T-W-WT-and-M/T-365.png",
                                         "thumb":  "images/Wall-Truss-T-W-WT-and-M/T-365.png"
-                                    },
-                                    {
-                                        "name":  "M-398-60-spacers.png",
-                                        "label":  "M-398-60-spacers",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/M-398-60-spacers.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/M-398-60-spacers.png"
-                                    },
-                                    {
-                                        "name":  "W-201.png",
-                                        "label":  "W-201",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W-201.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W-201.png"
-                                    },
-                                    {
-                                        "name":  "W-197.png",
-                                        "label":  "W-197",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W-197.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W-197.png"
-                                    },
-                                    {
-                                        "name":  "W-137.png",
-                                        "label":  "W-137",
-                                        "path":  "images/Wall-Truss-T-W-WT-and-M/W-137.png",
-                                        "thumb":  "images/Wall-Truss-T-W-WT-and-M/W-137.png"
                                     }
-                                ],
+                                ]
+                                    
 
-"Erection-E0-11": [
-  { "name": "E0",  "label": "E0",  "path": "images/Erection-E0-11/E0.png" },
-  { "name": "E1",  "label": "E1",  "path": "images/Erection-E0-11/E1.png" },
-  { "name": "E2",  "label": "E2",  "path": "images/Erection-E0-11/E2.png" },
-  { "name": "E3",  "label": "E3",  "path": "images/Erection-E0-11/E3.png" },
-  { "name": "E4",  "label": "E4",  "path": "images/Erection-E0-11/E4.png" },
-  { "name": "E5",  "label": "E5",  "path": "images/Erection-E0-11/E5.png" },
-  { "name": "E6",  "label": "E6",  "path": "images/Erection-E0-11/E6.png" },
-  { "name": "E7",  "label": "E7",  "path": "images/Erection-E0-11/E7.png" },
-  { "name": "E8",  "label": "E8",  "path": "images/Erection-E0-11/E8.png" },
-  { "name": "E9",  "label": "E9",  "path": "images/Erection-E0-11/E9.png" },
-  { "name": "E10", "label": "E10", "path": "images/Erection-E0-11/E10.png" },
-  { "name": "E11", "label": "E11", "path": "images/Erection-E0-11/E11.png" }
-] 
 }
