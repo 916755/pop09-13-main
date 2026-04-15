@@ -237,7 +237,7 @@ function startJobLogsRealtime(jobCode) {
       (payload) => {
         console.log('[REALTIME] job_logs change', payload.eventType, payload.new || payload.old);
         window.__lastJobLogEvent = payload;
-        // later we will refresh the Office Logistics list UI here
+        
       }
     )
     .subscribe((status) => {
@@ -551,12 +551,34 @@ async function loadIndexForCurrentJob() {
       setStatus('No items in index.');
       return;
     }
+const groups = group(arr);
+Object.keys(groups).forEach(k => {
+  groups[k] = (groups[k] || []).slice().sort(naturalByLabel);
+});
 
-    const groups = group(arr);
-    Object.keys(groups).forEach(k => {
-      groups[k] = (groups[k] || []).slice().sort(naturalByLabel);
-    });
-    window.currentIndex = groups;
+// remove unwanted categories by normalized key
+for (const k of Object.keys(groups)) {
+  const nk = String(k).trim().toLowerCase();
+  if (
+    nk === 'office logistics' ||
+    nk === 'c-channels' ||
+    nk === 'column details' ||
+    nk === 'column-details'
+  ) {
+    delete groups[k];
+  }
+}
+
+// add Notes category
+groups['Notes'] = [
+  {
+    name: 'Job Notes',
+    label: 'Notes',
+    path: '__notes__'
+  }
+];
+
+window.currentIndex = groups;
 
     // categories
     const cats = Object.keys(groups).sort((a, b) => {
@@ -565,29 +587,7 @@ async function loadIndexForCurrentJob() {
       return a.localeCompare(b);
     });
 
-    cats.unshift('Office Logistics');
-
-    if (els.categorySelect) {
-      els.categorySelect.innerHTML = makeOptions(
-        cats.map(c => ({
-          value: c,
-          label: `${c} (${(groups[c] || []).length})`
-        })),
-        'Select a category'
-      );
-      els.categorySelect.value = '';
-      // ✅ Ensure Office Logistics is always available as a virtual category
-if (els.categorySelect && !Array.from(els.categorySelect.options).some(o => o.value === 'Office Logistics')) {
-  const opt = document.createElement('option');
-  opt.value = 'Office Logistics';
-  opt.textContent = 'Office Logistics';
-  els.categorySelect.appendChild(opt);
-}
-
-    }
-    if (els.step2Next) els.step2Next.disabled = true;
-    if (els.sheetSelect) els.sheetSelect.innerHTML = makeOptions([], 'Select a sheet');
-
+    
     // state
     window._allItems = arr;
     window._items = [];
@@ -595,19 +595,24 @@ if (els.categorySelect && !Array.from(els.categorySelect.options).some(o => o.va
 
 
 window._show = function (i) {
- 
-  if (window._restoringDrill === true) {
-  console.log('[SHOW BLOCKED] restore in progress');
-  return;
-}
-  const currentLabel = window.currentSheetLabel || "";
 
-  if (window._drillMode === true || window._suppressNextShow === true || /^[0-9]/.test(currentLabel)) {
-    console.log('[SHOW] blocked while in member view:', currentLabel);
-    window._drillMode = false;
-    window._suppressNextShow = false;
+  if (window._restoringDrill === true) {
+    console.log('[SHOW BLOCKED] restore in progress');
     return;
   }
+
+const currentLabel = window.currentSheetLabel || "";
+
+console.log('[SHOW FLAGS]', currentLabel, 'drill=', window._drillMode, 'suppress=', window._suppressNextShow);
+const isDrillDetailView =
+  window._drillMode === true ||
+  window._suppressNextShow === true;
+
+if (isDrillDetailView) {
+  console.log('[SHOW] clearing stale drill flags for normal navigation:', currentLabel);
+  window._drillMode = false;
+  window._suppressNextShow = false;
+}
 
   window._drillMode = false;
   window._viewToken = (window._viewToken || 0) + 1;
@@ -705,7 +710,7 @@ window._show = function (i) {
 
    img.src =buildSrc(window.currentJob.id, it);
 
-  if (els.sheetSelect) els.sheetSelect.value = it.path;
+  if (els.sheetSelect) els.sheetSelect.value = String(window._pos);
 };
     // wire once
     if (!window._wired) {
@@ -714,16 +719,6 @@ window._show = function (i) {
 els.categorySelect?.addEventListener('change', () => {
   const cat = els.categorySelect.value;
 
-  if (cat === 'Office Logistics') {
-    document.querySelectorAll('.step').forEach(s => s.classList.remove('active'));
-    document.getElementById('step-office')?.classList.add('active');
-
-    setStatus(`Office Logistics — job: ${window.currentJob?.id || ''}`);
-    document.getElementById('office-job-code').textContent = window.currentJob?.id || '';
-
-    if (els.step2Next) els.step2Next.disabled = true;
-    return;
-  }
 
   const base = window.currentIndex[cat] || [];
   const q = (els.filterInput?.value || '').toLowerCase();
@@ -736,15 +731,15 @@ els.categorySelect?.addEventListener('change', () => {
       )
     : base;
 
-  if (els.sheetSelect) {
-    els.sheetSelect.innerHTML = makeOptions(
-      window._items.map(x => ({
-        value: x.path,
-        label: x.label || x.name || x.path
-      })),
-      'Select a sheet'
-    );
-  }
+if (els.sheetSelect) {
+  els.sheetSelect.innerHTML = makeOptions(
+    window._items.map((x, idx) => ({
+      value: String(idx),
+      label: x.label || x.name || x.path
+    })),
+    'Select a sheet'
+  );
+}
 
   if (els.step2Next) els.step2Next.disabled = !cat;
 
@@ -755,7 +750,7 @@ if (window._items.length) {
     return;
   }
 
-  const viewingMember = /^[0-9]/.test(window.currentSheetLabel || '');
+  const viewingMember = (els.categorySelect?.value === 'Inventory');
 
   if (!window._drillMode && !window._suppressNextShow && !viewingMember && typeof window._show === 'function') {
     window._show(0);
@@ -769,9 +764,21 @@ if (window._items.length) {
 });
 
 els.sheetSelect?.addEventListener('change', () => {
-  const i = window._items.findIndex(it => it.path === els.sheetSelect.value);
-  if (i >= 0 && typeof window._show === 'function') window._show(i);
-  if (els.step3Next) els.step3Next.disabled = i < 0;
+  const i = Number(els.sheetSelect.value);
+
+  console.log('[INV PICK] raw value =', els.sheetSelect.value);
+  console.log('[INV PICK] index =', i);
+  console.log('[INV PICK] item =', window._items?.[i]);
+
+  // Leaving any stale drill/detail state before normal list navigation
+  window._drillMode = false;
+  window._suppressNextShow = false;
+
+  if (Number.isInteger(i) && i >= 0 && typeof window._show === 'function') {
+    window._show(i);
+  }
+
+  if (els.step3Next) els.step3Next.disabled = !(Number.isInteger(i) && i >= 0);
 });
 
 els.filterInput?.addEventListener('input', () => {
@@ -787,15 +794,15 @@ els.filterInput?.addEventListener('input', () => {
       )
     : base;
 
-  if (els.sheetSelect) {
-    els.sheetSelect.innerHTML = makeOptions(
-      window._items.map(x => ({
-        value: x.path,
-        label: x.label || x.name || x.path
-      })),
-      'Select a sheet'
-    );
-  }
+if (els.sheetSelect) {
+  els.sheetSelect.innerHTML = makeOptions(
+    window._items.map((x, idx) => ({
+      value: String(idx),
+      label: x.label || x.name || x.path
+    })),
+    'Select a sheet'
+  );
+}
 
   if (window._items.length) {
     if (!window._drillMode && typeof window._show === 'function') {
@@ -808,8 +815,15 @@ els.filterInput?.addEventListener('input', () => {
     setStatus('No matches.');
   }
 });
+   };
       
-    }
+  
+    setStatus(
+      `Index loaded. ${Object.keys(groups).length} categor${
+        Object.keys(groups).length === 1 ? 'y' : 'ies'
+      } found.`
+    );   
+  
     setStatus(
       `Index loaded. ${Object.keys(groups).length} categor${
         Object.keys(groups).length === 1 ? 'y' : 'ies'
@@ -839,10 +853,10 @@ document.addEventListener('click', (ev) => {
 
   const btn = ev.target.closest('.back-btn');
 
-if (!btn) return;
+  if (!btn) return;
 
-// ignore wizard buttons only
-if (btn.classList.contains('wizard-btn')) return;
+  // ignore wizard buttons only
+  if (btn.classList.contains('wizard-btn')) return;
 
   ev.preventDefault();
 
@@ -1083,7 +1097,7 @@ console.log('[SUP] isUnlocked?', !!window.popSupervisor?.isUnlocked?.(), 'reques
     window.popSupervisor?.updateToolbarDisabledState?.();
 
 })();
-(() => {
+;(() => {
 //job type selector
 const TYPE_LABELS = {
   industrial: "Steel Erection"
@@ -1869,105 +1883,9 @@ document.addEventListener('DOMContentLoaded', () => {
     e.preventDefault();
     window.undoLastStatus?.();
   });
-   // ===============================
-// Office Logistics — Daily Log SAVE
-// ===============================
-document.getElementById('office-daily-log-save')?.addEventListener('click', async () => {
-  try {
-    const sb = window.supabaseClient;
-    if (!sb) {
-      alert("Supabase not ready");
-      return;
-    }
-
-    const jobCode = window.currentJob?.id || '';
-    if (!jobCode) {
-      alert("No job loaded");
-      return;
-    }
-
-  const work = document.getElementById('office-work-performed')?.value.trim() || '';
-const issues = document.getElementById('office-issues-impacts')?.value.trim() || '';
-
-if (!work && !issues) {
-  alert("Nothing to save");
-  return;
-}
-
-const chosen = document.getElementById('office-log-date')?.value;
-const today = chosen || new Date().toISOString().slice(0, 10);
-const combinedLog =
-  "WORK PERFORMED:\n" + work +
-  "\n\nISSUES / IMPACTS:\n" + issues;
-
-const { error } = await sb
-  .from('daily_logs')
-  .upsert({
-    job_code: jobCode,
-    log_date: today,
-    appers: combinedLog,
-    updated_at: new Date().toISOString()
-  }, { onConflict: 'job_code,log_date' });
-
-if (error) throw error;
-
-document.getElementById('office-daily-log-meta').textContent =
-  "Saved at " + new Date().toLocaleTimeString();
-
-document.getElementById('office-work-performed').value = '';
-document.getElementById('office-issues-impacts').value = '';
-  } catch (err) {
-    console.error(err);
-    alert("Save failed — see console");
-  }
-});
-// ===============================
-// Office Logistics — Daily Log open/close
-// ===============================
-document.getElementById('office-open-dailylog-btn')?.addEventListener('click', () => {
-  document.getElementById('office-dailylog-panel').style.display = 'block';
-// Load today's saved log
-(async () => {
-  try {
-    const sb = window.supabaseClient;
-    const jobCode = window.currentJob?.id || '';
-    if (!sb || !jobCode) return;
-
-    const chosen = document.getElementById('office-log-date')?.value;
-const today = chosen || new Date().toISOString().slice(0, 10);
-    const { data, error } = await sb
-      .from('daily_logs')
-      .select('appers')
-      .eq('job_code', jobCode)
-      .eq('log_date', today)
-      .single();
-
-    if (error || !data) return;
-
-    const text = data.appers || '';
-
-    // Split back into the two sections
-    const parts = text.split("ISSUES / IMPACTS:");
-
-    document.getElementById('office-work-performed').value =
-      parts[0]?.replace("WORK PERFORMED:\n", "").trim() || '';
-
-    document.getElementById('office-issues-impacts').value =
-      parts[1]?.trim() || '';
-
-  } catch (err) {
-    console.error("Load log failed", err);
-  }
-})();
 
 });
 
-document.getElementById('office-daily-log-close')?.addEventListener('click', () => {
-  document.getElementById('office-dailylog-panel').style.display = 'none';
-});
-
-
-});
 // ===============================
 // Inventory Mode (DEMO ONLY)
 // ===============================
@@ -2114,143 +2032,8 @@ document.addEventListener('click', (ev) => {
 
   if (typeof setStatus === 'function') setStatus('Offload Inventory');
 });
-// Auto-fill today's date in Daily Field Log
-window.addEventListener('DOMContentLoaded', () => {
-  const el = document.getElementById('office-log-date');
-  if (el) {
-    el.value = new Date().toISOString().slice(0, 10);
-  }
-});
-// ===============================
-// Office Logistics — JSA Photos (IndexedDB, offline-safe, multi-photo)
-// ===============================
-console.log('[JSA] IndexedDB photo module LOADED', Date.now());
-const JSA_DB_NAME = 'pop_jsa_db';
-const JSA_STORE = 'photos';
 
-function __jsaJobKey() {
-  return (window.currentJob?.id || 'nojob').toString();
-}
 
-function __openJsaDb() {
-  return new Promise((resolve, reject) => {
-    const req = indexedDB.open(JSA_DB_NAME, 1);
-    req.onupgradeneeded = () => {
-      const db = req.result;
-      if (!db.objectStoreNames.contains(JSA_STORE)) {
-        const store = db.createObjectStore(JSA_STORE, { keyPath: 'id' });
-        store.createIndex('by_job', 'job', { unique: false });
-      }
-    };
-    req.onsuccess = () => resolve(req.result);
-    req.onerror = () => reject(req.error);
-  });
-}
-
-async function __jsaAddPhoto({ blob, name }) {
-  const db = await __openJsaDb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(JSA_STORE, 'readwrite');
-    const store = tx.objectStore(JSA_STORE);
-
-    store.add({
-      id: crypto.randomUUID(),
-      job: __jsaJobKey(),
-      name: name || 'photo',
-      saved_at: Date.now(),
-      blob
-    });
-
-    tx.oncomplete = () => resolve(true);
-    tx.onerror = () => reject(tx.error);
-  });
-}
-
-async function __jsaListPhotos() {
-  const db = await __openJsaDb();
-  return new Promise((resolve, reject) => {
-    const tx = db.transaction(JSA_STORE, 'readonly');
-    const store = tx.objectStore(JSA_STORE);
-    const idx = store.index('by_job');
-
-    const job = __jsaJobKey();
-    const out = [];
-
-    const req = idx.openCursor(IDBKeyRange.only(job));
-    req.onsuccess = () => {
-      const cur = req.result;
-      if (!cur) {
-        out.sort((a, b) => b.saved_at - a.saved_at);
-        resolve(out);
-        return;
-      }
-      out.push(cur.value);
-      cur.continue();
-    };
-    req.onerror = () => reject(req.error);
-  });
-}
-
-async function __renderJsaPhotos() {
-  const container = document.getElementById('office-jsaphoto-list');
-  if (!container) return;
-
-  const photos = await __jsaListPhotos();
-
-  if (!photos.length) {
-    container.innerHTML = '<div class="muted">(no JSA photos yet)</div>';
-    return;
-  }
-
-  container.innerHTML = photos.map(p => {
-    const when = new Date(p.saved_at).toLocaleString();
-    const url = URL.createObjectURL(p.blob);
-    return `
-      <div style="margin-bottom:12px; border:1px solid rgba(255,255,255,.08); padding:10px; border-radius:10px;">
-        <div style="font-size:13px; opacity:.8;">${when}</div>
-        <div style="font-size:13px; opacity:.8; margin-top:6px;">${p.name || 'photo'}</div>
-        <img src="${url}" style="max-width:100%; border-radius:8px; margin-top:8px;"
-             onload="URL.revokeObjectURL(this.src)" />
-      </div>
-    `;
-  }).join('');
-}
-
-// Open picker button (works reliably on mobile)
-document.getElementById('office-jsaphoto-add-btn')?.addEventListener('click', () => {
-  document.getElementById('office-jsaphoto-input')?.click();
-});
-
-// MULTIPLE photos supported
-document.getElementById('office-jsaphoto-input')?.addEventListener('change', async (e) => {
-  const files = Array.from(e.target.files || []);
-  e.target.value = ''; // allow choosing same file again
-
-  if (!files.length) return;
-
-  // Pull task (safe fallback)
-  const task =
-    document.getElementById("jsa-task")?.value ||
-    document.getElementById("jobtask")?.value ||
-    "";
-
-  const note =
-    document.getElementById("jsa-note")?.value ||
-    "";
-
-  // Save each file locally
-  for (const file of files) {
-    await __jsaEnqueueFile(file, { task, note });
-  }
-
-  // Try upload immediately if online
-  __jsaProcessQueueOnce();
-});
-
-// Render on load
-document.addEventListener('DOMContentLoaded', () => {
-  __renderJsaPhotos().catch(console.warn);
-});
 // POP DEV TOOL — clear service worker + cache
 window.clearPOPcache = async function () {
   if ('serviceWorker' in navigator) {

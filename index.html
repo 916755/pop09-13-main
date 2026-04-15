@@ -33,19 +33,10 @@
 <select id="type-select">
   <option value="industrial">Steel Erection</option>
 </select>
-
-
-  </div>
+</diV>
 <!-- STEP 1: Access Code -->
 <section class="step active" id="step-1" aria-labelledby="step1-title">
   <h2 id="step1-title" class="visually-hidden">Step 1: Access Code</h2>
-
-  <!-- Office Logistics Button -->
-<div class="control">
-  <button type="button" id="office-logistics-btn">
-    Office Logistics
-  </button>
-</div>
 
   <div class="control">
     <label for="job-input">Access code:</label>
@@ -93,63 +84,6 @@
     <button type="button" class="next-btn" data-go="3" disabled>Next</button>
   </div>
 </section>
-
-<!-- STEP: Office Logistics -->
-<section class="step" id="step-office" aria-labelledby="office-title">
-  <h2 id="office-title">Office Logistics</h2>
-
-
-<div class="control" style="font-size:14px; opacity:.85;">
-  <div><strong>Job:</strong> <span id="office-job-code">(not set)</span></div>
-  <div><strong>Docs sync:</strong> Realtime (Supabase)</div>
-</div>
-
-<div id="office-dailylog-panel" class="office-card" style="display:none;">
-  <h3>Daily Log (hands)</h3>
-<div class="control">
-  <label for="office-log-date">Log Date</label>
-  <input id="office-log-date" type="date" />
-</div>
-  <div class="control">
-  <label for="office-work-performed">Work Performed</label>
-  <textarea id="office-work-performed" rows="6" placeholder="What work was completed today? (Sheets worked, progress, milestones)"></textarea>
-</div>
-
-<div class="control">
-  <label for="office-issues-impacts">Issues / Impacts</label>
-  <textarea id="office-issues-impacts" rows="6" placeholder="Delays, breakdowns, repairs, missing material, backcharge notes, safety events…"></textarea>
-</div>
-
-  <div class="step-nav" style="gap:10px;">
-    <button type="button" id="office-daily-log-save">Save</button>
-    <button type="button" id="office-daily-log-close">Close</button>
-  </div>
-
-  <p class="muted" id="office-daily-log-meta"></p>
-</div>
-
-<div class="control" style="display:flex; gap:10px; flex-wrap:wrap;">
-  <div id="office-jsaphoto-list" style="margin-top:15px;"></div>
-  <button type="button" id="office-open-dailylog-btn">Daily Log / Notes</button>
-    <button type="button" id="office-jsaphoto-add-btn">JSA Photos</button>
-  <button type="button" id="office-open-inspection-btn">Daily Equipment Inspection</button>
-  <button type="button" id="office-open-timesheet-btn">Time Sheet (Supervisor)</button>
-  <button type="button" id="office-open-equipmenthours-btn">Equipment Hours (Supervisor)</button>
-</div>
-
-<input
-  type="file"
-  id="office-jsaphoto-input"
-  accept="image/*"
-  capture="environment"
-  multiple
-  style="position:fixed; left:-9999px; top:auto; width:1px; height:1px; opacity:0;"
-/>
-<div class="control">
-    <button type="button" id="office-back-btn">Back to Categories</button>
-  </div>
-</section>
-
 
 <!-- Jump controls -->
 <div class="jump-row" style="display:flex; gap:8px; align-items:center; flex-wrap:wrap; margin-block:8px;">
@@ -299,7 +233,7 @@
   </div>                <!-- wrapper ends -->
   
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-<script src="./script.js?v=zoom5"></script>
+<script src="script.js?v=zoom6"></script>
 
 </body>
 </html>   

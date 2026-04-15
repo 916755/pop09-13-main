@@ -1325,8 +1325,8 @@
                          "path":  "./assets/plates=P/P386.png"
                      },
                      {
-                         "name":  "P391-ref-E8.png",
-                         "path":  "./assets/plates=P/P391-ref-E8.png"
+                         "name":  "P391.png",
+                         "path":  "./assets/plates=P/P391.png"
                      },
                      {
                          "name":  "P393.png",
@@ -1640,246 +1640,6 @@
                           "name":  "394.png",
                           "path":  "./assets/columns=C/394.png"
                       }
-                    ],
-  "Column-Details":  
-                 [ 
-                      {  "name":  "229C-d1.png",
-                         "path":  "./assets/Column-Details/229C-d1.png"},
-
-                      { "name":  "229C-d2.png",
-                         "path":  "./assets/Column-Details/229C-d2.png"},
-                    {
-                              "name":  "230C-d1.png",
-                              "path":  "./assets/Column-Details/230C-d1.png"
-                },
-                 {
-                              "name":  "230C-d2.png",
-                              "path":  "./assets/Column-Details/230C-d2.png"
-                     },
-                          {
-                              "name":  "230C-d3.png",
-                              "path":  "./assets/Column-Details/230C-d3.png"
-                          },
-                          {
-                              "name":  "230C-d4.png",
-                              "path":  "./assets/Column-Details/230C-d4.png"
-                          },
-                          {
-                              "name":  "231C-d1.png",
-                              "path":  "./assets/Column-Details/231C-d1.png"
-                          },
-                          {
-                              "name":  "231C-d2.png",
-                              "path":  "./assets/Column-Details/231C-d2.png"
-                          },
-                          {
-                              "name":  "231C-d3.png",
-                              "path":  "./assets/Column-Details/231C-d3.png"
-                          },
-                          {
-                              "name":  "231C-d4.png",
-                              "path":  "./assets/Column-Details/231C-d4.png"
-                          },
-                          {
-                              "name":  "232C-d1.png",
-                              "path":  "./assets/Column-Details/232C-d1.png"
-                          },
-                          {
-                                "name":  "232C-d2.png",
-                                "path":  "./assets/Column-Details/232C-d2.png"
-                            },
-                            {
-                                "name":  "232C-d3.png",
-                                "path":  "./assets/Column-Details/232C-d3.png"
-                            },
-                            {
-                                "name":  "232C-d4.png",
-                                "path":  "./assets/Column-Details/232C-d4.png"
-                            },
-                            {
-                                "name":  "233C-d1.png",
-                                "path":  "./assets/Column-Details/233C-d1.png"
-                            },
-                            {
-                                "name":  "233C-d2.png",
-                                "path":  "./assets/Column-Details/233C-d2.png"
-                            },
-                            {
-                                "name":  "233C-d3.png",
-                                "path":  "./assets/Column-Details/233C-d3.png"
-                            },
-                            {
-                                "name":  "233C-d4.png",
-                                "path":  "./assets/Column-Details/233C-d4.png"
-                            },
-                            {
-                                "name":  "234C-d1.png",
-                                "path":  "./assets/Column-Details/234C-d1.png"
-                            },
-                            {
-                                "name":  "234C-d2.png",
-                                "path":  "./assets/Column-Details/234C-d2.png"
-                            },
-                            {
-                                "name":  "234C-d3.png",
-                                "path":  "./assets/Column-Details/234C-d3.png"
-                            },
-                            {
-                                "name":  "234C-d4.png",
-                                "path":  "./assets/Column-Details/234C-d4.png"
-                            },
-                            {
-                                "name":  "235C-d1.png",
-                                "path":  "./assets/Column-Details/235C-d1.png"
-                            },
-                            {
-                                "name":  "235C-d2.png",
-                                "path":  "./assets/Column-Details/235C-d2.png"
-                            },
-                            {
-                                "name":  "235C-d3.png",
-                                "path":  "./assets/Column-Details/235C-d3.png"
-                            },
-                            {
-                                "name":  "235C-d4.png",
-                                "path":  "./assets/Column-Details/235C-d4.png"
-                            },
-                            {
-                                "name":  "236C-d1.png",
-                                "path":  "./assets/Column-Details/236C-d1.png"
-                            },
-                            {
-                                "name":  "236C-d2.png",
-                                "path":  "./assets/Column-Details/236C-d2.png"
-                            },
-                            {
-                                "name":  "236C-d3.png",
-                                "path":  "./assets/Column-Details/236C-d3.png"
-                            },
-                            {
-                                "name":  "236C-d4.png",
-                                "path":  "./assets/Column-Details/236C-d4.png"
-                            },
-                            {
-                                "name":  "237C-d1.png",
-                                "path":  "./assets/Column-Details/237C-d1.png"
-                            },
-                            {
-                                "name":  "237C-d2.png",
-                                "path":  "./assets/Column-Details/237C-d2.png"
-                            },
-                            {
-                                "name":  "237C-d3.png",
-                                "path":  "./assets/Column-Details/237C-d3.png"
-                            },
-                            {
-                                "name":  "237C-d4.png",
-                                "path":  "./assets/Column-Details/238C-d4.png"  
-                          },
-                            {
-                                    "name":  "238C-d1.png",
-                                    "path":  "./assets/Column-Details/238C-d1.png"
-                                },
-                                {
-                                    "name":  "238C-d2.png",
-                                    "path":  "./assets/Column-Details/238C-d2.png"
-                                },
-                                {
-                                    "name":  "238C-d3.png",
-                                    "path":  "./assets/Column-Details/238C-d3.png"
-                                }, 
-                                {
-                                    "name":  "238C-d4.png",
-                                    "path":  "./assets/Column-Details/238C-d4.png"
-                                },
-                                {
-                                    "name":  "239C-d1.png",
-                                    "path":  "./assets/Column-Details/239C-d1.png"
-                                },
-                                {
-                                    "name":  "239C-d2.png",
-                                    "path":  "./assets/Column-Details/239C-d2.png"
-                                },
-                                {
-                                    "name":  "239C-d3.png",
-                                    "path":  "./assets/Column-Details/239C-d3.png"
-                                },
-                                {
-                                    "name":  "239C-d4.png",
-                                    "path":  "./assets/Column-Details/239C-d4.png"
-                                },
-                                {
-                                    "name":  "239C-d5.png",
-                                    "path":  "./assets/Column-Details/239C-d5.png"
-                                },
-                                {
-                                    "name":  "239C-d6.png",
-                                    "path":  "./assets/Column-Details/239C-d6.png"
-                                },
-                                {
-                                    "name":  "392C-d1.png",
-                                    "path":  "./assets/Column-Details/392C-d1.png"
-                                },
-                                {
-                                    "name":  "392C-d2.png",
-                                    "path":  "./assets/Column-Details/392C-d2.png"
-                                },
-                                {
-                                    "name":  "392C-d3.png",
-                                    "path":  "./assets/Column-Details/392C-d3.png"
-                                },
-                                {
-                                    "name":  "392C-d4.png",
-                                    "path":  "./assets/Column-Details/392C-d4.png"
-                                },
-                                {
-                                    "name":  "393C-d1.png",
-                                    "path":  "./assets/Column-Details/393C-d1.png"
-                                },
-                                {
-                                    "name":  "393C-d2.png",
-                                    "path":  "./assets/Column-Details/393C-d2.png"
-                                },
-                                {
-                                    "name":  "393C-d3.png",
-                                    "path":  "./assets/Column-Details/393C-d3.png"
-                                },
-                                {
-                                    "name":  "393C-d4.png",
-                                    "path":  "./assets/Column-Details/393C-d4.png"
-                                },
-                                {
-                                    "name":  "394C-d1.png",
-                                    "path":  "./assets/Column-Details/394C-d1.png"
-                                },
-                                {
-                                    "name":  "394C-d2.png",
-                                    "path":  "./assets/Column-Details/394C-d2.png"
-                                },
-                                {
-                                    "name":  "394C-d3.png",
-                                    "path":  "./assets/Column-Details/394C-d3.png"
-                                },
-                                {
-                                    "name":  "394C-d4.png",
-                                    "path":  "./assets/Column-Details/394C-d4.png"                                       
-                                },
-                                {
-                                    "name":  "395C-d1.png",
-                                    "path":  "./assets/Column-Details/395C-d1.png"
-                                },
-                                {
-                                    "name":  "395C-d2.png",
-                                    "path":  "./assets/Column-Details/395C-d2.png"
-                                },
-                                {
-                                    "name":  "395C-d3.png",
-                                    "path":  "./assets/Column-Details/395C-d3.png"
-                                },
-                                {
-                                    "name":  "395C-d4.png",
-                                    "path":  "./assets/Column-Details/395C-d4.png"
-                                }
                             ],
     "Beams=B":  
                         [
@@ -2193,12 +1953,7 @@
                         "path":  "./assets/Beams=B/372B.png"
                     }
                     ],
-    "channel=c":  [
-                    {
-                        "name":  "c86 (2).png",
-                        "path":  "./assets/channel=c/c86 (2).png"
-                    }
-                    ],
+   
     "sag-rods=R":  [
                        {
                            "name":  "R-243-ref-E9.png",
@@ -2386,9 +2141,5 @@
                                         "name":  "WT-27.png",
                                         "path":  "./assets/Wall-Truss-T-W-WT-and-M/WT-27.png"
                                     }
-                                ],                                   {
-                                                                                "name":  "E-AR2-detail-5.png",
-                                                                              "path":  "./assets/E=Details-E1-thru-E11/E-AR2-detail-5.png"
-                                                                            }
-                                                                        ]
-                                    }
+                                ]                                   
+}                                  
