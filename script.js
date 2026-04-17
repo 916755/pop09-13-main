@@ -578,6 +578,7 @@ groups['Notes'] = [
   }
 ];
 
+
 window.currentIndex = groups;
 
     // categories
@@ -586,8 +587,12 @@ window.currentIndex = groups;
       if (b === 'Inventory' && a !== 'Inventory') return -1;
       return a.localeCompare(b);
     });
-
-    
+     if (els.categorySelect) {
+  els.categorySelect.innerHTML = makeOptions(
+    cats.map(c => ({ value: c, label: c })),
+    'Select a category'
+  );
+}
     // state
     window._allItems = arr;
     window._items = [];
@@ -609,9 +614,8 @@ const isDrillDetailView =
   window._suppressNextShow === true;
 
 if (isDrillDetailView) {
-  console.log('[SHOW] clearing stale drill flags for normal navigation:', currentLabel);
-  window._drillMode = false;
-  window._suppressNextShow = false;
+  console.log('[SHOW] blocked during drill/detail view:', currentLabel);
+  return;
 }
 
   window._drillMode = false;
@@ -1826,15 +1830,36 @@ window.setCurrentSheetLabel = async function (label, item) {
     }
   }
 
-  // Otherwise: standard sheet map
   if (!mapCurrentSheet) {
     mapRects = [];
     mapClear();
     return;
   }
+
+  const isESheet = /^E\d+$/i.test(mapCurrentSheet);
+  if (isESheet) {
+    await loadMapForSheet(mapCurrentSheet);
+    return;
+  }
+
+  const memberUrl = `jobs/${job.id}/maps/members/${mapCurrentSheet}.json`;
+  try {
+    const res = await fetch(memberUrl, { cache: 'no-store' });
+    if (res.ok) {
+      const data = await res.json();
+      const rects = Array.isArray(data) ? data : (data.rects || []);
+      mapRects = rects || [];
+      setStatus(`Map loaded for ${mapCurrentSheet} (${mapRects.length} hotspots) via maps/members/${mapCurrentSheet}.json`);
+      console.log('[MAP] Loaded member map', mapCurrentSheet, 'from', memberUrl);
+      renderMapNow();
+      return;
+    }
+  } catch (err) {
+    console.warn('[MAP] Member fallback load error:', err);
+  }
+
   await loadMapForSheet(mapCurrentSheet);
 };
-
 // Keep overlay roughly in sync on resize
 window.addEventListener('resize', () => {
   renderMapNow();
@@ -2058,6 +2083,7 @@ window.clearPOPcache = async function () {
 // PREV (Drill-safe Back Button)
 // ===============================
 function goPrev() {
+  
 
  
 
